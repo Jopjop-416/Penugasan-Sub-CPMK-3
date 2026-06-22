@@ -1,17 +1,3 @@
-"""
-05_evaluation.py — Tahap 5: Model Evaluation
-=============================================
-Sistem CBR Tindak Pidana Disersi (Pasal 87 KUHPM)
-Mata Kuliah Penalaran Komputer — Semester Genap 2025/2026
-
-Alur kerja:
-1. Load queries.json (ground truth) dan retrieval_initial.json (hasil Tahap 3)
-2. Evaluasi retrieval: Hit@K, Accuracy, Precision, Recall, F1-score
-3. Evaluasi prediksi solusi (dari predictions.csv Tahap 4)
-4. Analisis kegagalan (error analysis)
-5. Simpan: data/eval/retrieval_metrics.csv dan data/eval/prediction_metrics.csv
-"""
-
 import os
 import json
 import logging
@@ -72,7 +58,6 @@ logger = logging.getLogger(__name__)
                                                               
 
 def load_queries(path: str) -> list:
-    """Load queries.json — list of {query_id, query, ground_truth_case_id}."""
     with open(path, "r", encoding="utf-8") as f:
         queries = json.load(f)
     logger.info("Loaded %d query dari %s", len(queries), path)
@@ -80,13 +65,6 @@ def load_queries(path: str) -> list:
 
 
 def load_retrieval_results(path: str) -> dict:
-    """
-    Load retrieval_initial.json.
-    Format yang didukung:
-      - dict  {query_id: {top_k: [...], ground_truth: ...}}
-      - list  [{query_id, top_k, ground_truth}, ...]
-    Mengembalikan dict {query_id: data}.
-    """
     with open(path, "r", encoding="utf-8") as f:
         raw = json.load(f)
 
@@ -102,14 +80,12 @@ def load_retrieval_results(path: str) -> dict:
 
 
 def load_cases(path: str) -> dict:
-    """Load cases.json → dict {case_id: data}."""
     with open(path, "r", encoding="utf-8") as f:
         cases_list = json.load(f)
     return {c["case_id"]: c for c in cases_list}
 
 
 def load_models():
-    """Load TF-IDF model dari models/."""
     vectorizer   = joblib.load(TFIDF_VEC_PATH)
     tfidf_matrix = joblib.load(TFIDF_MATRIX_PATH)
     case_ids     = joblib.load(CASE_IDS_PATH)
@@ -132,19 +108,6 @@ def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = 5):
                                                               
 
 def eval_retrieval(queries: list, retrieval_results: dict, k_values=(1, 3, 5)):
-    """
-    Hitung metrik retrieval untuk berbagai nilai k.
-
-    Metrik per query:
-    - Hit@K   : 1 jika ground_truth ada di top-K, else 0
-    - Rank    : posisi ground_truth di top-K (0 jika tidak ditemukan)
-
-    Metrik agregat (diperlakukan sebagai binary classification):
-    - Accuracy  : proporsi query dengan Hit@K = 1
-    - Precision : TP / (TP + FP) — dalam konteks IR = sama dengan accuracy di Hit@1
-    - Recall    : TP / (TP + FN) — dalam konteks ini = Hit Rate
-    - F1-score  : harmonic mean Precision & Recall
-    """
     logger.info("")
     logger.info("=" * 60)
     logger.info("EVALUASI RETRIEVAL")
@@ -255,10 +218,6 @@ def eval_retrieval(queries: list, retrieval_results: dict, k_values=(1, 3, 5)):
 
 def eval_retrieval_live(queries: list, vectorizer, tfidf_matrix, case_ids: list,
                         k_values=(1, 3, 5)):
-    """
-    Jalankan ulang retrieve() untuk setiap query dan hitung metrik.
-    Digunakan jika retrieval_initial.json tidak memiliki semua field yang diperlukan.
-    """
     logger.info("")
     logger.info("=" * 60)
     logger.info("EVALUASI RETRIEVAL (LIVE RE-RUN)")
@@ -288,14 +247,6 @@ def eval_retrieval_live(queries: list, vectorizer, tfidf_matrix, case_ids: list,
                                                               
 
 def eval_predictions(predictions_csv: str, cases_dict: dict):
-    """
-    Evaluasi kualitas prediksi solusi dari predictions.csv (Tahap 4).
-
-    Karena prediksi solusi bersifat teks (bukan label kategori),
-    evaluasi dilakukan secara:
-    - Kuantitatif: apakah prediksi = pidana_pokok kasus ground_truth (exact match)
-    - Kualitatif: tampilkan perbandingan
-    """
     logger.info("")
     logger.info("=" * 60)
     logger.info("EVALUASI PREDIKSI SOLUSI")
@@ -354,10 +305,6 @@ def eval_predictions(predictions_csv: str, cases_dict: dict):
                                                               
 
 def error_analysis(per_query_df: pd.DataFrame, queries: list, cases_dict: dict, k: int = 5):
-    """
-    Analisis kasus-kasus yang gagal di-retrieve pada k tertentu.
-    Tampilkan pola kegagalan beserta rekomendasi.
-    """
     logger.info("")
     logger.info("=" * 60)
     logger.info("ANALISIS KEGAGALAN (ERROR ANALYSIS) @ k=%d", k)

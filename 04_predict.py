@@ -1,18 +1,3 @@
-"""
-04_predict.py — Tahap 4: Case Solution Reuse
-=============================================
-Sistem CBR Tindak Pidana Disersi (Pasal 87 KUHPM)
-Mata Kuliah Penalaran Komputer — Semester Genap 2025/2026
-
-Alur kerja:
-1. Load model TF-IDF dan case base dari Tahap 3
-2. Fungsi retrieve() berbasis cosine similarity (sama dengan Tahap 3)
-3. Ekstrak solusi (amar_putusan / pidana_pokok) dari top-k kasus
-4. Algoritma prediksi: majority vote + weighted similarity
-5. Demo 5 kasus baru
-6. Simpan hasil ke data/results/predictions.csv
-"""
-
 import os
 import json
 import logging
@@ -64,7 +49,6 @@ logger = logging.getLogger(__name__)
                                                               
 
 def load_models():
-    """Load TF-IDF vectorizer, matrix, dan case_ids dari folder models/."""
     logger.info("Memuat model dari: %s", MODEL_DIR)
     vectorizer  = joblib.load(TFIDF_VEC_PATH)
     tfidf_matrix = joblib.load(TFIDF_MATRIX_PATH)
@@ -76,10 +60,6 @@ def load_models():
 
 
 def load_cases(cases_json: str) -> dict:
-    """
-    Load cases.json dan bangun dict {case_id: data_kasus}.
-    Mengembalikan dict untuk akses O(1).
-    """
     with open(cases_json, "r", encoding="utf-8") as f:
         cases_list = json.load(f)
     cases_dict = {c["case_id"]: c for c in cases_list}
@@ -91,23 +71,7 @@ def load_cases(cases_json: str) -> dict:
                                            
                                                               
 
-def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = TOP_K):
-    """
-    Temukan top-k kasus paling mirip dengan query.
-
-    Parameter
-    ---------
-    query        : teks query kasus baru
-    vectorizer   : TfidfVectorizer yang sudah di-fit
-    tfidf_matrix : matriks TF-IDF case base (sparse)
-    case_ids     : list case_id sesuai urutan baris tfidf_matrix
-    k            : jumlah kasus yang dikembalikan
-
-    Return
-    ------
-    List of tuple: [(case_id, similarity_score), ...]
-    """
-                                        
+def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = TOP_K):                                
     query_vec = vectorizer.transform([preprocess_text(query)])
 
                                                            
@@ -125,10 +89,6 @@ def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = TOP_
                                                               
 
 def extract_solution(case: dict) -> str:
-    """
-    Ambil teks solusi dari satu kasus.
-    Prioritas: pidana_pokok → amar_putusan → fallback.
-    """
     pidana_pokok  = (case.get("pidana_pokok") or "").strip()
     amar_putusan  = (case.get("amar_putusan") or "").strip()
 
@@ -140,13 +100,6 @@ def extract_solution(case: dict) -> str:
 
 
 def get_top_k_solutions(top_k_results: list, cases_dict: dict) -> list:
-    """
-    Dari hasil retrieve, bangun list solusi beserta skor similarity.
-
-    Return
-    ------
-    List of dict: [{case_id, sim, solution, terdakwa, lama_disersi}, ...]
-    """
     solutions = []
     for case_id, sim in top_k_results:
         case = cases_dict.get(case_id, {})
@@ -166,10 +119,6 @@ def get_top_k_solutions(top_k_results: list, cases_dict: dict) -> list:
                                                               
 
 def majority_vote(solutions: list) -> str:
-    """
-    Majority vote: pilih solusi yang paling banyak muncul di top-k.
-    Jika semua unik, ambil yang similarity-nya tertinggi.
-    """
     sol_texts = [s["solution"] for s in solutions if s["solution"] != "Solusi tidak tersedia"]
     if not sol_texts:
         return "Tidak ada solusi yang dapat diprediksi"
@@ -180,10 +129,6 @@ def majority_vote(solutions: list) -> str:
 
 
 def weighted_similarity(solutions: list) -> str:
-    """
-    Weighted similarity: bobot = skor cosine similarity.
-    Akumulasikan skor per solusi unik, pilih yang skornya tertinggi.
-    """
     weight_map: dict[str, float] = {}
     for s in solutions:
         sol = s["solution"]
@@ -200,18 +145,6 @@ def weighted_similarity(solutions: list) -> str:
 
 def predict_outcome(query: str, vectorizer, tfidf_matrix, case_ids: list,
                     cases_dict: dict, k: int = TOP_K) -> dict:
-    """
-    Prediksi solusi untuk query kasus baru.
-
-    Return
-    ------
-    dict berisi:
-        top_k_results    : list (case_id, sim)
-        solutions        : list detail solusi per kasus
-        majority_vote    : prediksi majority vote
-        weighted_sim     : prediksi weighted similarity
-        final_prediction : prediksi akhir (weighted similarity diprioritaskan)
-    """
     top_k_results = retrieve(query, vectorizer, tfidf_matrix, case_ids, k)
     solutions     = get_top_k_solutions(top_k_results, cases_dict)
 
@@ -292,7 +225,6 @@ DEMO_QUERIES = [
 
 
 def run_demo(vectorizer, tfidf_matrix, case_ids, cases_dict):
-    """Jalankan demo predict_outcome untuk 5 kasus baru dan tampilkan hasilnya."""
     logger.info("")
     logger.info("=" * 60)
     logger.info("DEMO PREDICT OUTCOME — 5 KASUS BARU")
@@ -343,7 +275,6 @@ def run_demo(vectorizer, tfidf_matrix, case_ids, cases_dict):
                                                               
 
 def save_predictions(rows: list, output_path: str):
-    """Simpan hasil prediksi ke predictions.csv."""
     df = pd.DataFrame(rows, columns=[
         "query_id", "description", "predicted_solution",
         "majority_vote", "weighted_sim",

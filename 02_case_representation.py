@@ -1,9 +1,3 @@
-"""
-Tahap 2: Case Representation
-CBR Sistem - Pidana Militer Disersi
-Script: 02_case_representation.py
-"""
-
 import os
 import re
 import json
@@ -44,7 +38,6 @@ logger = logging.getLogger(__name__)
                                                               
 
 def extract_no_perkara(text: str, source_file: str = "") -> str:
-    """Ekstrak nomor perkara dari teks atau nama file."""
     text = normalize_text(text)
 
     patterns = [
@@ -72,7 +65,6 @@ def extract_no_perkara(text: str, source_file: str = "") -> str:
     return ""
 
 def extract_tanggal_putusan(text: str) -> str:
-    """Ekstrak tanggal putusan."""
     text = normalize_text(text)
     bulan = r"(?:Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember|Nopember)"
     patterns = [
@@ -104,7 +96,6 @@ def extract_tanggal_putusan(text: str) -> str:
     return ""
 
 def extract_pengadilan(text: str) -> str:
-    """Ekstrak nama pengadilan."""
     text = normalize_text(text)
     patterns = [
         r"(Pengadilan Militer\s+[\w\-/]+(?:\s+\w+)?)\s+(?:yang bersidang|tersebut)",
@@ -119,7 +110,6 @@ def extract_pengadilan(text: str) -> str:
     return ""
 
 def extract_terdakwa(text: str) -> str:
-    """Ekstrak nama terdakwa."""
     text = normalize_text(text)
     patterns = [
         r"Nama\s+lengkap\s*:\s*([A-Z][A-Z\s]+?)(?:\n|Pangkat|NRP)",
@@ -138,7 +128,6 @@ def extract_terdakwa(text: str) -> str:
     return ""
 
 def extract_pangkat_nrp(text: str) -> str:
-    """Ekstrak pangkat dan NRP."""
     text = normalize_text(text)
     patterns = [
         r"Pangkat/NRP\s*:\s*([^\n#]+)",
@@ -154,7 +143,6 @@ def extract_pangkat_nrp(text: str) -> str:
     return ""
 
 def extract_kesatuan(text: str) -> str:
-    """Ekstrak kesatuan terdakwa."""
     text = normalize_text(text)
     patterns = [
         r"Kesatuan\s*:\s*([^\n#]+)",
@@ -184,7 +172,6 @@ def extract_kesatuan(text: str) -> str:
     return ""
 
 def extract_pasal(text: str) -> str:
-    """Ekstrak pasal dakwaan."""
     text = normalize_text(text)
     patterns = [
         r"(Pasal\s+87\s+ayat\s*\([^)]+\)[^.]{0,100}KUHPM)",
@@ -200,7 +187,6 @@ def extract_pasal(text: str) -> str:
     return ""
 
 def extract_lama_disersi(text: str) -> str:
-    """Ekstrak durasi disersi."""
     text = normalize_text(text)
     patterns = [
         r"selama\s+(\d+)\s*\([^)]+\)\s*hari\s+secara\s+berturut",
@@ -221,7 +207,6 @@ def extract_lama_disersi(text: str) -> str:
     return ""
 
 def extract_tanggal_disersi(text: str) -> dict:
-    """Ekstrak tanggal mulai dan akhir disersi."""
     text = normalize_text(text)
     result = {"mulai": "", "akhir": ""}
     bulan = r"(?:Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember|Nopember)"
@@ -235,7 +220,6 @@ def extract_tanggal_disersi(text: str) -> dict:
     return result
 
 def extract_pidana_pokok(text: str) -> str:
-    """Ekstrak pidana pokok."""
     text = normalize_text(text)
     patterns = [
         r"Pidana\s+Pokok\s*:\s*(Penjara\s+selama\s+[\w\s\(\)\-\.]+?)(?:\.|;|\n|Pidana\s+Tambahan|Membebankan|Menetapkan)",
@@ -252,7 +236,6 @@ def extract_pidana_pokok(text: str) -> str:
     return ""
 
 def extract_pidana_tambahan(text: str) -> str:
-    """Ekstrak pidana tambahan."""
     text = normalize_text(text)
     patterns = [
         r"Pidana\s+Tambahan\s*:\s*([^\n.]{5,120})",
@@ -268,7 +251,6 @@ def extract_pidana_tambahan(text: str) -> str:
     return ""
 
 def extract_jenis_sidang(text: str) -> str:
-    """Deteksi jenis sidang."""
     if re.search(r"in\s+absensia", text, re.IGNORECASE):
         return "In Absensia"
     elif re.search(r"terdakwa\s+hadir\s+di\s+persidangan", text, re.IGNORECASE):
@@ -277,7 +259,6 @@ def extract_jenis_sidang(text: str) -> str:
 
 
 def extract_ringkasan_fakta(text: str) -> str:
-    """Ekstrak ringkasan fakta kasus."""
     text = normalize_text(text)
     patterns = [
         r"(?:Terdakwa\s+telah\s+pergi|Bahwa\s+Terdakwa\s+telah\s+pergi)([\s\S]{50,600})(?=Menimbang|Mengingat|MENGADILI)",
@@ -316,7 +297,6 @@ def extract_ringkasan_fakta(text: str) -> str:
     return ""
 
 def extract_amar_putusan(text: str) -> str:
-    """Ekstrak amar putusan dari bagian MENGADILI."""
     text = normalize_text(text)
     m = re.search(
         r"MENGADILI[:\s]*([\s\S]{50,1200})(?=Demikian\s+diputuskan|Hakim\s+(?:Ketua|Anggota)|Panitera|$)",

@@ -1,16 +1,3 @@
-"""
-Tahap 1: Membangun Case Base
-CBR Sistem - Pidana Militer Disersi
-Script: 01_preprocessing.py
-
-Fungsi:
-- Membaca semua PDF dari folder data/pdf/
-- Mengekstrak teks
-- Membersihkan teks (hapus header/footer/watermark)
-- Menyimpan ke data/raw/case_XXX.txt
-- Mencatat log ke logs/cleaning.log
-"""
-
 import os
 import re
 import logging
@@ -60,7 +47,6 @@ NOISE_PATTERNS = [
 ]
 
 def clean_text(raw: str) -> str:
-    """Membersihkan teks hasil ekstraksi PDF."""
 
     text = raw
 
@@ -84,10 +70,6 @@ def clean_text(raw: str) -> str:
 
 
 def validate_text(text: str, filename: str) -> bool:
-    """
-    Validasi keutuhan teks.
-    Minimal harus mengandung kata kunci penting putusan disersi.
-    """
     min_words = 100                                        
     word_count = len(text.split())
 
@@ -107,8 +89,6 @@ def validate_text(text: str, filename: str) -> bool:
 
 
 def process_all_pdfs():
-    """Proses semua PDF di folder PDF_DIR."""
-
     pdf_files = sorted(PDF_DIR.glob("*.pdf"))
 
     if not pdf_files:

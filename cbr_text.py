@@ -1,5 +1,3 @@
-"""Shared text helpers for the CBR pipeline."""
-
 from __future__ import annotations
 
 import re
@@ -34,7 +32,6 @@ _NORMALIZE_MAP = str.maketrans(
 
 
 def normalize_text(text: str) -> str:
-    """Normalize common OCR / PDF extraction artifacts."""
     if not text:
         return ""
     text = text.translate(_NORMALIZE_MAP)
@@ -44,7 +41,6 @@ def normalize_text(text: str) -> str:
 
 
 def preprocess_text(text: str) -> str:
-    """Preprocess text for TF-IDF retrieval."""
     text = normalize_text(text)
     text = re.sub(r"^#.*?$", " ", text, flags=re.MULTILINE)
     text = text.lower()

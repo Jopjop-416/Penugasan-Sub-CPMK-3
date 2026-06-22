@@ -1,18 +1,3 @@
-"""
-Tahap 3: Case Retrieval
-CBR Sistem - Pidana Militer Disersi
-Script: 03_retrieval.py
-
-Fungsi:
-- Load data dari cases.json
-- Vectorisasi teks dengan TF-IDF
-- Split data train/test (80:20)
-- Training model SVM untuk klasifikasi/retrieval
-- Fungsi retrieve(query, k=5) berbasis cosine similarity
-- Evaluasi awal dengan query uji
-- Simpan query uji ke data/eval/queries.json
-"""
-
 import json
 import re
 import argparse
@@ -74,10 +59,6 @@ def load_cases() -> list:
 
 
 def build_query_text(case: dict) -> str:
-    """
-    Gabungkan field penting untuk membentuk teks representasi kasus.
-    Lebih kaya dari text_full karena menekankan field kunci.
-    """
     parts = []
     if case.get("ringkasan_fakta"):
         parts.append(case["ringkasan_fakta"] * 2)
@@ -99,7 +80,6 @@ def build_query_text(case: dict) -> str:
                                                               
 
 def build_tfidf(cases: list):
-    """Bangun TF-IDF vectorizer dari semua kasus."""
     logger.info("Membangun TF-IDF vectors...")
 
                                        
@@ -129,21 +109,7 @@ def build_tfidf(cases: list):
 
 def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list,
              cases: list, k: int = 5) -> list:
-    """
-    Retrieve top-k kasus paling mirip dengan query.
-
-    Args:
-        query     : teks query kasus baru
-        vectorizer: TF-IDF vectorizer yang sudah di-fit
-        tfidf_matrix: matrix TF-IDF semua kasus
-        case_ids  : list case_id
-        cases     : list dict semua kasus (untuk ambil info)
-        k         : jumlah kasus yang dikembalikan
-
-    Returns:
-        list of dict berisi case_id, similarity score, dan info kasus
-    """
-                         
+                    
     query_processed = preprocess_text(query)
 
                             
@@ -176,10 +142,6 @@ def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list,
                                                               
 
 def train_svm(tfidf_matrix, cases: list):
-    """
-    Training SVM untuk klasifikasi berdasarkan label pidana_pokok.
-    Label = kategori hukuman (misal: '1 tahun', '1.5 tahun', dll).
-    """
     logger.info("\nMempersiapkan label untuk SVM...")
 
                                   
@@ -259,10 +221,6 @@ def train_svm(tfidf_matrix, cases: list):
                                                               
 
 def create_test_queries(cases: list) -> list:
-    """
-    Buat query uji dari sebagian kasus yang ada.
-    Ground truth = case_id yang paling relevan.
-    """
     queries = []
     complete_cases = [c for c in cases if c.get("terdakwa") and c.get("lama_disersi")]
 
@@ -392,7 +350,6 @@ def main():
 
 
 def run_interactive_demo(vectorizer, tfidf_matrix, case_ids, cases):
-    """Optional interactive demo for manual exploration."""
     print("\n" + "="*60)
     print("DEMO RETRIEVE — ketik query, ketik 'quit' untuk keluar")
     print("="*60)
