@@ -557,3 +557,318 @@ Query [q_007]: Terdakwa telah pergi meninggalkan Kesatua tanpa ijin yang sahdari
 2026-06-22 18:34:42,439 | INFO |   Hit@5        : 7/7 (100.0%)
 2026-06-22 18:34:42,439 | INFO | ============================================================
 2026-06-22 18:34:42,440 | INFO | Hasil retrieval disimpan: c:\file\cbr-desersi\data\eval\retrieval_initial.json
+2026-06-22 18:49:15,986 | INFO | ============================================================
+2026-06-22 18:49:15,986 | INFO | TAHAP 3: CASE RETRIEVAL
+2026-06-22 18:49:15,987 | INFO | Mulai: 2026-06-22 18:49:15
+2026-06-22 18:49:15,987 | INFO | ============================================================
+2026-06-22 18:49:15,993 | INFO | Loaded 34 kasus dari C:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 18:49:15,993 | INFO | Membangun TF-IDF vectors...
+2026-06-22 18:49:16,028 | INFO | TF-IDF matrix shape: (34, 2764)
+2026-06-22 18:49:16,028 | INFO |   Jumlah kasus  : 34
+2026-06-22 18:49:16,029 | INFO |   Jumlah fitur  : 2764
+2026-06-22 18:49:16,029 | INFO | 
+========================================
+2026-06-22 18:49:16,029 | INFO | TRAINING SVM
+2026-06-22 18:49:16,029 | INFO | ========================================
+2026-06-22 18:49:16,029 | INFO | 
+Mempersiapkan label untuk SVM...
+2026-06-22 18:49:16,030 | WARNING | Label kurang beragam untuk SVM, skip training SVM.
+2026-06-22 18:49:16,030 | INFO | 
+Menyimpan model...
+2026-06-22 18:49:16,080 | INFO | Model disimpan di: C:\file\cbr-desersi\models
+2026-06-22 18:49:16,080 | INFO | 
+========================================
+2026-06-22 18:49:16,080 | INFO | MEMBUAT QUERY UJI
+2026-06-22 18:49:16,080 | INFO | ========================================
+2026-06-22 18:49:16,081 | INFO | Query uji disimpan: C:\file\cbr-desersi\data\eval\queries.json (7 query)
+2026-06-22 18:49:16,081 | INFO | 
+========================================
+2026-06-22 18:49:16,081 | INFO | UJI FUNGSI RETRIEVE
+2026-06-22 18:49:16,081 | INFO | ========================================
+2026-06-22 18:49:16,081 | INFO | 
+Query [q_001]: kan,namun mengenai pembuktian unsur-unsur tindak pidana tersebut Majelis Hakim a...
+2026-06-22 18:49:16,084 | INFO |   Ground truth : case_002 (LABAN WANARURI)
+2026-06-22 18:49:16,084 | INFO |   Top-5 result : ['case_002', 'case_005', 'case_016', 'case_022', 'case_034']
+2026-06-22 18:49:16,084 | INFO |   Hit@5        : ✓ YA
+2026-06-22 18:49:16,085 | INFO |     [case_002] sim=0.4984 | LABAN WANARURI | 30 hari
+2026-06-22 18:49:16,085 | INFO |     [case_005] sim=0.0654 | MULYADI LHA | 30 hari
+2026-06-22 18:49:16,085 | INFO |     [case_016] sim=0.0653 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 18:49:16,085 | INFO |     [case_022] sim=0.0578 | JIMI FERI ALDI PAIKI | 97 hari
+2026-06-22 18:49:16,085 | INFO |     [case_034] sim=0.0559 | SPENYEL RAWEYAI | 30 hari
+2026-06-22 18:49:16,085 | INFO | 
+Query [q_002]: meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang Negara Kesat...
+2026-06-22 18:49:16,086 | INFO |   Ground truth : case_004 (ARNOLD JARE)
+2026-06-22 18:49:16,086 | INFO |   Top-5 result : ['case_004', 'case_006', 'case_027', 'case_005', 'case_031']
+2026-06-22 18:49:16,086 | INFO |   Hit@5        : ✓ YA
+2026-06-22 18:49:16,086 | INFO |     [case_004] sim=0.4214 | ARNOLD JARE | 491 hari
+2026-06-22 18:49:16,086 | INFO |     [case_006] sim=0.3695 | SAID MALEWA | 30 hari
+2026-06-22 18:49:16,087 | INFO |     [case_027] sim=0.2906 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 18:49:16,087 | INFO |     [case_005] sim=0.2478 | MULYADI LHA | 30 hari
+2026-06-22 18:49:16,087 | INFO |     [case_031] sim=0.2334 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 18:49:16,087 | INFO | 
+Query [q_003]: meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang, Negara Kesa...
+2026-06-22 18:49:16,088 | INFO |   Ground truth : case_005 (MULYADI LHA)
+2026-06-22 18:49:16,088 | INFO |   Top-5 result : ['case_005', 'case_027', 'case_034', 'case_031', 'case_016']
+2026-06-22 18:49:16,088 | INFO |   Hit@5        : ✓ YA
+2026-06-22 18:49:16,088 | INFO |     [case_005] sim=0.4520 | MULYADI LHA | 30 hari
+2026-06-22 18:49:16,088 | INFO |     [case_027] sim=0.2925 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 18:49:16,088 | INFO |     [case_034] sim=0.2717 | SPENYEL RAWEYAI | 30 hari
+2026-06-22 18:49:16,088 | INFO |     [case_031] sim=0.2657 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 18:49:16,088 | INFO |     [case_016] sim=0.2381 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 18:49:16,088 | INFO | 
+Query [q_004]: meninggalkan Kesatuan tanpa ijin yang sah dariAtasan yang berwenang, Negara Kesa...
+2026-06-22 18:49:16,091 | INFO |   Ground truth : case_006 (SAID MALEWA)
+2026-06-22 18:49:16,091 | INFO |   Top-5 result : ['case_006', 'case_004', 'case_005', 'case_027', 'case_031']
+2026-06-22 18:49:16,091 | INFO |   Hit@5        : ✓ YA
+2026-06-22 18:49:16,091 | INFO |     [case_006] sim=0.4423 | SAID MALEWA | 30 hari
+2026-06-22 18:49:16,091 | INFO |     [case_004] sim=0.3680 | ARNOLD JARE | 491 hari
+2026-06-22 18:49:16,091 | INFO |     [case_005] sim=0.2469 | MULYADI LHA | 30 hari
+2026-06-22 18:49:16,091 | INFO |     [case_027] sim=0.2422 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 18:49:16,092 | INFO |     [case_031] sim=0.2253 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 18:49:16,092 | INFO | 
+Query [q_005]: meninggalkan Kesatuan tanpa ijin yang sah dariDansat tidak membawa barang invent...
+2026-06-22 18:49:16,093 | INFO |   Ground truth : case_010 (RUSMAN RUMATA)
+2026-06-22 18:49:16,093 | INFO |   Top-5 result : ['case_010', 'case_024', 'case_004', 'case_027', 'case_005']
+2026-06-22 18:49:16,093 | INFO |   Hit@5        : ✓ YA
+2026-06-22 18:49:16,093 | INFO |     [case_010] sim=0.4343 | RUSMAN RUMATA | 42 hari
+2026-06-22 18:49:16,093 | INFO |     [case_024] sim=0.2552 | YUNUS LUIS NAPOLIN | 26 hari
+2026-06-22 18:49:16,093 | INFO |     [case_004] sim=0.1220 | ARNOLD JARE | 491 hari
+2026-06-22 18:49:16,093 | INFO |     [case_027] sim=0.1219 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 18:49:16,093 | INFO |     [case_005] sim=0.1218 | MULYADI LHA | 30 hari
+2026-06-22 18:49:16,094 | INFO | 
+Query [q_006]: tersebut Terdakwa mengerti dan atas dakwaan tersebut Terdakwa tidak mengajukan e...
+2026-06-22 18:49:16,095 | INFO |   Ground truth : case_011 (Olimpus Ae Monibor)
+2026-06-22 18:49:16,095 | INFO |   Top-5 result : ['case_011', 'case_022', 'case_002', 'case_015', 'case_024']
+2026-06-22 18:49:16,095 | INFO |   Hit@5        : ✓ YA
+2026-06-22 18:49:16,095 | INFO |     [case_011] sim=0.4838 | Olimpus Ae Monibor | 105 hari
+2026-06-22 18:49:16,095 | INFO |     [case_022] sim=0.2513 | JIMI FERI ALDI PAIKI | 97 hari
+2026-06-22 18:49:16,095 | INFO |     [case_002] sim=0.0594 | LABAN WANARURI | 30 hari
+2026-06-22 18:49:16,095 | INFO |     [case_015] sim=0.0556 | LEBRIK ADOLOF WANGGAI | 41 hari
+2026-06-22 18:49:16,095 | INFO |     [case_024] sim=0.0478 | YUNUS LUIS NAPOLIN | 26 hari
+2026-06-22 18:49:16,095 | INFO | 
+Query [q_007]: Terdakwa telah pergi meninggalkan Kesatua tanpa ijin yang sahdari Komandan Kesat...
+2026-06-22 18:49:16,097 | INFO |   Ground truth : case_015 (LEBRIK ADOLOF WANGGAI)
+2026-06-22 18:49:16,098 | INFO |   Top-5 result : ['case_015', 'case_028', 'case_021', 'case_023', 'case_011']
+2026-06-22 18:49:16,098 | INFO |   Hit@5        : ✓ YA
+2026-06-22 18:49:16,098 | INFO |     [case_015] sim=0.5181 | LEBRIK ADOLOF WANGGAI | 41 hari
+2026-06-22 18:49:16,098 | INFO |     [case_028] sim=0.1501 | SERGIUS BARANGKEA | 181 hari
+2026-06-22 18:49:16,098 | INFO |     [case_021] sim=0.1117 | NAFTALI SAKWARAI | 46 hari
+2026-06-22 18:49:16,098 | INFO |     [case_023] sim=0.1038 | PILISEN MOHI | 207 hari
+2026-06-22 18:49:16,098 | INFO |     [case_011] sim=0.0779 | Olimpus Ae Monibor | 105 hari
+2026-06-22 18:49:16,098 | INFO | 
+============================================================
+2026-06-22 18:49:16,098 | INFO | RINGKASAN RETRIEVAL
+2026-06-22 18:49:16,098 | INFO |   Total query  : 7
+2026-06-22 18:49:16,098 | INFO |   Hit@5        : 7/7 (100.0%)
+2026-06-22 18:49:16,098 | INFO | ============================================================
+2026-06-22 18:49:16,100 | INFO | Hasil retrieval disimpan: C:\file\cbr-desersi\data\eval\retrieval_initial.json
+2026-06-22 19:00:20,088 | INFO | ============================================================
+2026-06-22 19:00:20,088 | INFO | TAHAP 3: CASE RETRIEVAL
+2026-06-22 19:00:20,089 | INFO | Mulai: 2026-06-22 19:00:20
+2026-06-22 19:00:20,089 | INFO | ============================================================
+2026-06-22 19:00:20,109 | INFO | Loaded 34 kasus dari c:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 19:00:20,109 | INFO | Membangun TF-IDF vectors...
+2026-06-22 19:00:20,135 | INFO | TF-IDF matrix shape: (34, 2801)
+2026-06-22 19:00:20,136 | INFO |   Jumlah kasus  : 34
+2026-06-22 19:00:20,136 | INFO |   Jumlah fitur  : 2801
+2026-06-22 19:00:20,136 | INFO | 
+========================================
+2026-06-22 19:00:20,136 | INFO | TRAINING SVM
+2026-06-22 19:00:20,136 | INFO | ========================================
+2026-06-22 19:00:20,136 | INFO | 
+Mempersiapkan label untuk SVM...
+2026-06-22 19:00:20,137 | WARNING | Label kurang beragam untuk SVM, skip training SVM.
+2026-06-22 19:00:20,137 | INFO | 
+Menyimpan model...
+2026-06-22 19:00:20,175 | INFO | Model disimpan di: c:\file\cbr-desersi\models
+2026-06-22 19:00:20,176 | INFO | 
+========================================
+2026-06-22 19:00:20,176 | INFO | MEMBUAT QUERY UJI
+2026-06-22 19:00:20,176 | INFO | ========================================
+2026-06-22 19:00:20,177 | INFO | Query uji disimpan: c:\file\cbr-desersi\data\eval\queries.json (7 query)
+2026-06-22 19:00:20,177 | INFO | 
+========================================
+2026-06-22 19:00:20,177 | INFO | UJI FUNGSI RETRIEVE
+2026-06-22 19:00:20,177 | INFO | ========================================
+2026-06-22 19:00:20,177 | INFO | 
+Query [q_001]: Bahwa Terdakwa dalam perkara ini tidak pernah didampingi oleh PenasihatHukum....
+2026-06-22 19:00:20,179 | INFO |   Ground truth : case_002 (LABAN WANARURI)
+2026-06-22 19:00:20,179 | INFO |   Top-5 result : ['case_002', 'case_011', 'case_030', 'case_022', 'case_016']
+2026-06-22 19:00:20,179 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:20,179 | INFO |     [case_002] sim=0.2695 | LABAN WANARURI | 30 hari
+2026-06-22 19:00:20,180 | INFO |     [case_011] sim=0.0501 | Olimpus Ae Monibor | 105 hari
+2026-06-22 19:00:20,180 | INFO |     [case_030] sim=0.0414 | FADLI SUARA | 210 hari
+2026-06-22 19:00:20,180 | INFO |     [case_022] sim=0.0375 | JIMI FERI ALDI PAIKI | 97 hari
+2026-06-22 19:00:20,180 | INFO |     [case_016] sim=0.0318 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 19:00:20,180 | INFO | 
+Query [q_002]: meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang Negara Kesat...
+2026-06-22 19:00:20,182 | INFO |   Ground truth : case_004 (ARNOLD JARE)
+2026-06-22 19:00:20,182 | INFO |   Top-5 result : ['case_004', 'case_006', 'case_027', 'case_005', 'case_031']
+2026-06-22 19:00:20,182 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:20,182 | INFO |     [case_004] sim=0.4220 | ARNOLD JARE | 491 hari
+2026-06-22 19:00:20,182 | INFO |     [case_006] sim=0.3696 | SAID MALEWA | 30 hari
+2026-06-22 19:00:20,182 | INFO |     [case_027] sim=0.2907 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:20,183 | INFO |     [case_005] sim=0.2480 | MULYADI LHA | 30 hari
+2026-06-22 19:00:20,183 | INFO |     [case_031] sim=0.2337 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 19:00:20,183 | INFO | 
+Query [q_003]: meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang, Negara Kesa...
+2026-06-22 19:00:20,184 | INFO |   Ground truth : case_005 (MULYADI LHA)
+2026-06-22 19:00:20,184 | INFO |   Top-5 result : ['case_005', 'case_027', 'case_034', 'case_031', 'case_016']
+2026-06-22 19:00:20,184 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:20,185 | INFO |     [case_005] sim=0.4542 | MULYADI LHA | 30 hari
+2026-06-22 19:00:20,185 | INFO |     [case_027] sim=0.2941 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:20,185 | INFO |     [case_034] sim=0.2738 | SPENYEL RAWEYAI | 30 hari
+2026-06-22 19:00:20,185 | INFO |     [case_031] sim=0.2643 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 19:00:20,185 | INFO |     [case_016] sim=0.2425 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 19:00:20,185 | INFO | 
+Query [q_004]: meninggalkan Kesatuan tanpa ijin yang sah dariAtasan yang berwenang, Negara Kesa...
+2026-06-22 19:00:20,187 | INFO |   Ground truth : case_006 (SAID MALEWA)
+2026-06-22 19:00:20,187 | INFO |   Top-5 result : ['case_006', 'case_004', 'case_005', 'case_027', 'case_031']
+2026-06-22 19:00:20,187 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:20,188 | INFO |     [case_006] sim=0.4426 | SAID MALEWA | 30 hari
+2026-06-22 19:00:20,188 | INFO |     [case_004] sim=0.3684 | ARNOLD JARE | 491 hari
+2026-06-22 19:00:20,188 | INFO |     [case_005] sim=0.2471 | MULYADI LHA | 30 hari
+2026-06-22 19:00:20,188 | INFO |     [case_027] sim=0.2422 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:20,188 | INFO |     [case_031] sim=0.2255 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 19:00:20,188 | INFO | 
+Query [q_005]: meninggalkan Kesatuan tanpa ijin yang sah dariDansat tidak membawa barang invent...
+2026-06-22 19:00:20,190 | INFO |   Ground truth : case_010 (RUSMAN RUMATA)
+2026-06-22 19:00:20,190 | INFO |   Top-5 result : ['case_010', 'case_024', 'case_004', 'case_027', 'case_005']
+2026-06-22 19:00:20,190 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:20,190 | INFO |     [case_010] sim=0.4344 | RUSMAN RUMATA | 42 hari
+2026-06-22 19:00:20,190 | INFO |     [case_024] sim=0.2551 | YUNUS LUIS NAPOLIN | 26 hari
+2026-06-22 19:00:20,190 | INFO |     [case_004] sim=0.1220 | ARNOLD JARE | 491 hari
+2026-06-22 19:00:20,190 | INFO |     [case_027] sim=0.1218 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:20,191 | INFO |     [case_005] sim=0.1218 | MULYADI LHA | 30 hari
+2026-06-22 19:00:20,191 | INFO | 
+Query [q_006]: Bahwa Terdakwa merasa bersalah dan menyesali perbuatannya dan berjanji tidak aka...
+2026-06-22 19:00:20,192 | INFO |   Ground truth : case_011 (Olimpus Ae Monibor)
+2026-06-22 19:00:20,192 | INFO |   Top-5 result : ['case_011', 'case_023', 'case_005', 'case_016', 'case_020']
+2026-06-22 19:00:20,192 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:20,192 | INFO |     [case_011] sim=0.5077 | Olimpus Ae Monibor | 105 hari
+2026-06-22 19:00:20,193 | INFO |     [case_023] sim=0.0759 | PILISEN MOHI | 207 hari
+2026-06-22 19:00:20,193 | INFO |     [case_005] sim=0.0330 | MULYADI LHA | 30 hari
+2026-06-22 19:00:20,193 | INFO |     [case_016] sim=0.0317 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 19:00:20,193 | INFO |     [case_020] sim=0.0298 | CLAUDIO CANIGIA MAAIL | 30 hari
+2026-06-22 19:00:20,193 | INFO | 
+Query [q_007]: Terdakwa telah pergi meninggalkan Kesatua tanpa ijin yang sahdari Komandan Kesat...
+2026-06-22 19:00:20,195 | INFO |   Ground truth : case_015 (LEBRIK ADOLOF WANGGAI)
+2026-06-22 19:00:20,195 | INFO |   Top-5 result : ['case_015', 'case_028', 'case_021', 'case_023', 'case_022']
+2026-06-22 19:00:20,195 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:20,195 | INFO |     [case_015] sim=0.5162 | LEBRIK ADOLOF WANGGAI | 41 hari
+2026-06-22 19:00:20,195 | INFO |     [case_028] sim=0.1508 | SERGIUS BARANGKEA | 181 hari
+2026-06-22 19:00:20,196 | INFO |     [case_021] sim=0.1121 | NAFTALI SAKWARAI | 46 hari
+2026-06-22 19:00:20,196 | INFO |     [case_023] sim=0.1046 | PILISEN MOHI | 207 hari
+2026-06-22 19:00:20,196 | INFO |     [case_022] sim=0.0789 | JIMI FERI ALDI PAIKI | 97 hari
+2026-06-22 19:00:20,196 | INFO | 
+============================================================
+2026-06-22 19:00:20,196 | INFO | RINGKASAN RETRIEVAL
+2026-06-22 19:00:20,196 | INFO |   Total query  : 7
+2026-06-22 19:00:20,196 | INFO |   Hit@5        : 7/7 (100.0%)
+2026-06-22 19:00:20,196 | INFO | ============================================================
+2026-06-22 19:00:20,198 | INFO | Hasil retrieval disimpan: c:\file\cbr-desersi\data\eval\retrieval_initial.json
+2026-06-22 19:00:27,800 | INFO | ============================================================
+2026-06-22 19:00:27,800 | INFO | TAHAP 3: CASE RETRIEVAL
+2026-06-22 19:00:27,800 | INFO | Mulai: 2026-06-22 19:00:27
+2026-06-22 19:00:27,801 | INFO | ============================================================
+2026-06-22 19:00:27,806 | INFO | Loaded 34 kasus dari c:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 19:00:27,806 | INFO | Membangun TF-IDF vectors...
+2026-06-22 19:00:27,848 | INFO | TF-IDF matrix shape: (34, 2801)
+2026-06-22 19:00:27,848 | INFO |   Jumlah kasus  : 34
+2026-06-22 19:00:27,848 | INFO |   Jumlah fitur  : 2801
+2026-06-22 19:00:27,849 | INFO | 
+========================================
+2026-06-22 19:00:27,849 | INFO | TRAINING SVM
+2026-06-22 19:00:27,849 | INFO | ========================================
+2026-06-22 19:00:27,849 | INFO | 
+Mempersiapkan label untuk SVM...
+2026-06-22 19:00:27,850 | WARNING | Label kurang beragam untuk SVM, skip training SVM.
+2026-06-22 19:00:27,850 | INFO | 
+Menyimpan model...
+2026-06-22 19:00:27,896 | INFO | Model disimpan di: c:\file\cbr-desersi\models
+2026-06-22 19:00:27,896 | INFO | 
+========================================
+2026-06-22 19:00:27,897 | INFO | MEMBUAT QUERY UJI
+2026-06-22 19:00:27,897 | INFO | ========================================
+2026-06-22 19:00:27,898 | INFO | Query uji disimpan: c:\file\cbr-desersi\data\eval\queries.json (7 query)
+2026-06-22 19:00:27,898 | INFO | 
+========================================
+2026-06-22 19:00:27,898 | INFO | UJI FUNGSI RETRIEVE
+2026-06-22 19:00:27,899 | INFO | ========================================
+2026-06-22 19:00:27,899 | INFO | 
+Query [q_001]: Bahwa Terdakwa dalam perkara ini tidak pernah didampingi oleh PenasihatHukum....
+2026-06-22 19:00:27,900 | INFO |   Ground truth : case_002 (LABAN WANARURI)
+2026-06-22 19:00:27,901 | INFO |   Top-5 result : ['case_002', 'case_011', 'case_030', 'case_022', 'case_016']
+2026-06-22 19:00:27,901 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:27,901 | INFO |     [case_002] sim=0.2695 | LABAN WANARURI | 30 hari
+2026-06-22 19:00:27,901 | INFO |     [case_011] sim=0.0501 | Olimpus Ae Monibor | 105 hari
+2026-06-22 19:00:27,902 | INFO |     [case_030] sim=0.0414 | FADLI SUARA | 210 hari
+2026-06-22 19:00:27,902 | INFO |     [case_022] sim=0.0375 | JIMI FERI ALDI PAIKI | 97 hari
+2026-06-22 19:00:27,902 | INFO |     [case_016] sim=0.0318 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 19:00:27,902 | INFO | 
+Query [q_002]: meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang Negara Kesat...
+2026-06-22 19:00:27,904 | INFO |   Ground truth : case_004 (ARNOLD JARE)
+2026-06-22 19:00:27,904 | INFO |   Top-5 result : ['case_004', 'case_006', 'case_027', 'case_005', 'case_031']
+2026-06-22 19:00:27,904 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:27,905 | INFO |     [case_004] sim=0.4220 | ARNOLD JARE | 491 hari
+2026-06-22 19:00:27,905 | INFO |     [case_006] sim=0.3696 | SAID MALEWA | 30 hari
+2026-06-22 19:00:27,905 | INFO |     [case_027] sim=0.2907 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:27,905 | INFO |     [case_005] sim=0.2480 | MULYADI LHA | 30 hari
+2026-06-22 19:00:27,906 | INFO |     [case_031] sim=0.2337 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 19:00:27,906 | INFO | 
+Query [q_003]: meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang, Negara Kesa...
+2026-06-22 19:00:27,907 | INFO |   Ground truth : case_005 (MULYADI LHA)
+2026-06-22 19:00:27,907 | INFO |   Top-5 result : ['case_005', 'case_027', 'case_034', 'case_031', 'case_016']
+2026-06-22 19:00:27,908 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:27,908 | INFO |     [case_005] sim=0.4542 | MULYADI LHA | 30 hari
+2026-06-22 19:00:27,908 | INFO |     [case_027] sim=0.2941 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:27,908 | INFO |     [case_034] sim=0.2738 | SPENYEL RAWEYAI | 30 hari
+2026-06-22 19:00:27,909 | INFO |     [case_031] sim=0.2643 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 19:00:27,909 | INFO |     [case_016] sim=0.2425 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 19:00:27,909 | INFO | 
+Query [q_004]: meninggalkan Kesatuan tanpa ijin yang sah dariAtasan yang berwenang, Negara Kesa...
+2026-06-22 19:00:27,911 | INFO |   Ground truth : case_006 (SAID MALEWA)
+2026-06-22 19:00:27,911 | INFO |   Top-5 result : ['case_006', 'case_004', 'case_005', 'case_027', 'case_031']
+2026-06-22 19:00:27,911 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:27,912 | INFO |     [case_006] sim=0.4426 | SAID MALEWA | 30 hari
+2026-06-22 19:00:27,912 | INFO |     [case_004] sim=0.3684 | ARNOLD JARE | 491 hari
+2026-06-22 19:00:27,912 | INFO |     [case_005] sim=0.2471 | MULYADI LHA | 30 hari
+2026-06-22 19:00:27,912 | INFO |     [case_027] sim=0.2422 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:27,912 | INFO |     [case_031] sim=0.2255 | AGIL ROMANSA SAPUTRA LAY | 145 hari
+2026-06-22 19:00:27,913 | INFO | 
+Query [q_005]: meninggalkan Kesatuan tanpa ijin yang sah dariDansat tidak membawa barang invent...
+2026-06-22 19:00:27,914 | INFO |   Ground truth : case_010 (RUSMAN RUMATA)
+2026-06-22 19:00:27,914 | INFO |   Top-5 result : ['case_010', 'case_024', 'case_004', 'case_027', 'case_005']
+2026-06-22 19:00:27,915 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:27,915 | INFO |     [case_010] sim=0.4344 | RUSMAN RUMATA | 42 hari
+2026-06-22 19:00:27,915 | INFO |     [case_024] sim=0.2551 | YUNUS LUIS NAPOLIN | 26 hari
+2026-06-22 19:00:27,915 | INFO |     [case_004] sim=0.1220 | ARNOLD JARE | 491 hari
+2026-06-22 19:00:27,915 | INFO |     [case_027] sim=0.1218 | ADI SIGIT PRABOWO | 52 hari
+2026-06-22 19:00:27,916 | INFO |     [case_005] sim=0.1218 | MULYADI LHA | 30 hari
+2026-06-22 19:00:27,916 | INFO | 
+Query [q_006]: Bahwa Terdakwa merasa bersalah dan menyesali perbuatannya dan berjanji tidak aka...
+2026-06-22 19:00:27,918 | INFO |   Ground truth : case_011 (Olimpus Ae Monibor)
+2026-06-22 19:00:27,918 | INFO |   Top-5 result : ['case_011', 'case_023', 'case_005', 'case_016', 'case_020']
+2026-06-22 19:00:27,918 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:27,918 | INFO |     [case_011] sim=0.5077 | Olimpus Ae Monibor | 105 hari
+2026-06-22 19:00:27,919 | INFO |     [case_023] sim=0.0759 | PILISEN MOHI | 207 hari
+2026-06-22 19:00:27,919 | INFO |     [case_005] sim=0.0330 | MULYADI LHA | 30 hari
+2026-06-22 19:00:27,919 | INFO |     [case_016] sim=0.0317 | ARIF RAHMAN SOLIHIN | 30 hari
+2026-06-22 19:00:27,919 | INFO |     [case_020] sim=0.0298 | CLAUDIO CANIGIA MAAIL | 30 hari
+2026-06-22 19:00:27,919 | INFO | 
+Query [q_007]: Terdakwa telah pergi meninggalkan Kesatua tanpa ijin yang sahdari Komandan Kesat...
+2026-06-22 19:00:27,920 | INFO |   Ground truth : case_015 (LEBRIK ADOLOF WANGGAI)
+2026-06-22 19:00:27,921 | INFO |   Top-5 result : ['case_015', 'case_028', 'case_021', 'case_023', 'case_022']
+2026-06-22 19:00:27,921 | INFO |   Hit@5        : ✓ YA
+2026-06-22 19:00:27,921 | INFO |     [case_015] sim=0.5162 | LEBRIK ADOLOF WANGGAI | 41 hari
+2026-06-22 19:00:27,921 | INFO |     [case_028] sim=0.1508 | SERGIUS BARANGKEA | 181 hari
+2026-06-22 19:00:27,921 | INFO |     [case_021] sim=0.1121 | NAFTALI SAKWARAI | 46 hari
+2026-06-22 19:00:27,921 | INFO |     [case_023] sim=0.1046 | PILISEN MOHI | 207 hari
+2026-06-22 19:00:27,922 | INFO |     [case_022] sim=0.0789 | JIMI FERI ALDI PAIKI | 97 hari
+2026-06-22 19:00:27,922 | INFO | 
+============================================================
+2026-06-22 19:00:27,922 | INFO | RINGKASAN RETRIEVAL
+2026-06-22 19:00:27,923 | INFO |   Total query  : 7
+2026-06-22 19:00:27,923 | INFO |   Hit@5        : 7/7 (100.0%)
+2026-06-22 19:00:27,923 | INFO | ============================================================
+2026-06-22 19:00:27,925 | INFO | Hasil retrieval disimpan: c:\file\cbr-desersi\data\eval\retrieval_initial.json

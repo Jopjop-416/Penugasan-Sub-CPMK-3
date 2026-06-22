@@ -1,6 +1,6 @@
 # SOURCE_FILE: putusan_133-k_pm.iii-19_ad_iii_2023_20260619170403.pdf
 # CASE_ID: case_012
-# PROCESSED: 2026-06-22 18:33:26
+# PROCESSED: 2026-06-22 18:59:45
 # WORD_COUNT: 439
 # ==================================================
 

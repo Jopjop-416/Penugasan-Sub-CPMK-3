@@ -561,3 +561,203 @@
 2026-06-22 18:34:58,002 | INFO |   - C:\file\cbr-desersi\data\eval\retrieval_metrics.csv
 2026-06-22 18:34:58,002 | INFO |   - C:\file\cbr-desersi\data\eval\prediction_metrics.csv
 2026-06-22 18:34:58,003 | INFO | ============================================================
+2026-06-22 18:57:49,530 | INFO | ============================================================
+2026-06-22 18:57:49,531 | INFO | TAHAP 5: MODEL EVALUATION
+2026-06-22 18:57:49,531 | INFO | Mulai: 2026-06-22 18:57:49
+2026-06-22 18:57:49,531 | INFO | ============================================================
+2026-06-22 18:57:49,534 | INFO | Loaded 7 query dari C:\file\cbr-desersi\data\eval\queries.json
+2026-06-22 18:57:49,634 | INFO | Loaded retrieval results untuk 7 query dari C:\file\cbr-desersi\data\eval\retrieval_initial.json
+2026-06-22 18:57:49,634 | INFO | 
+2026-06-22 18:57:49,635 | INFO | ============================================================
+2026-06-22 18:57:49,635 | INFO | EVALUASI RETRIEVAL
+2026-06-22 18:57:49,635 | INFO | ============================================================
+2026-06-22 18:57:49,649 | INFO | 
+2026-06-22 18:57:49,649 | INFO | --- Metrik @ k=1 ---
+2026-06-22 18:57:49,650 | INFO |   Total query : 7
+2026-06-22 18:57:49,650 | INFO |   Hit@1      : 7/7 (100.0%)
+2026-06-22 18:57:49,650 | INFO |   Accuracy    : 1.0000
+2026-06-22 18:57:49,650 | INFO |   Precision   : 1.0000
+2026-06-22 18:57:49,650 | INFO |   Recall      : 1.0000
+2026-06-22 18:57:49,651 | INFO |   F1-score    : 1.0000
+2026-06-22 18:57:49,667 | INFO | 
+2026-06-22 18:57:49,667 | INFO | --- Metrik @ k=3 ---
+2026-06-22 18:57:49,667 | INFO |   Total query : 7
+2026-06-22 18:57:49,668 | INFO |   Hit@3      : 7/7 (100.0%)
+2026-06-22 18:57:49,668 | INFO |   Accuracy    : 1.0000
+2026-06-22 18:57:49,668 | INFO |   Precision   : 1.0000
+2026-06-22 18:57:49,669 | INFO |   Recall      : 1.0000
+2026-06-22 18:57:49,669 | INFO |   F1-score    : 1.0000
+2026-06-22 18:57:49,683 | INFO | 
+2026-06-22 18:57:49,683 | INFO | --- Metrik @ k=5 ---
+2026-06-22 18:57:49,683 | INFO |   Total query : 7
+2026-06-22 18:57:49,683 | INFO |   Hit@5      : 7/7 (100.0%)
+2026-06-22 18:57:49,683 | INFO |   Accuracy    : 1.0000
+2026-06-22 18:57:49,683 | INFO |   Precision   : 1.0000
+2026-06-22 18:57:49,683 | INFO |   Recall      : 1.0000
+2026-06-22 18:57:49,684 | INFO |   F1-score    : 1.0000
+2026-06-22 18:57:49,685 | INFO | 
+2026-06-22 18:57:49,686 | INFO | ============================================================
+2026-06-22 18:57:49,686 | INFO | TABEL RINGKASAN METRIK RETRIEVAL
+2026-06-22 18:57:49,686 | INFO | ============================================================
+2026-06-22 18:57:49,693 | INFO | 
+ k  total_query  hit  hit_rate  accuracy  precision  recall  f1_score
+ 1            7    7       1.0       1.0        1.0     1.0       1.0
+ 3            7    7       1.0       1.0        1.0     1.0       1.0
+ 5            7    7       1.0       1.0        1.0     1.0       1.0
+2026-06-22 18:57:49,701 | INFO | Retrieval metrics disimpan: C:\file\cbr-desersi\data\eval\retrieval_metrics.csv
+2026-06-22 18:57:49,702 | INFO | 
+2026-06-22 18:57:49,703 | INFO | ============================================================
+2026-06-22 18:57:49,703 | INFO | ANALISIS KEGAGALAN (ERROR ANALYSIS) @ k=5
+2026-06-22 18:57:49,704 | INFO | ============================================================
+2026-06-22 18:57:49,707 | INFO |   Tidak ada kegagalan pada k=5 — Hit Rate = 100%!
+2026-06-22 18:57:49,707 | INFO | 
+2026-06-22 18:57:49,707 | INFO |   Rekomendasi Perbaikan (preventif):
+2026-06-22 18:57:49,707 | INFO |   1. Tambahkan lebih banyak kasus (>50) agar case base lebih representatif.
+2026-06-22 18:57:49,707 | INFO |   2. Coba IndoBERT embedding untuk representasi semantik yang lebih kaya.
+2026-06-22 18:57:49,708 | INFO |   3. Implementasikan BM25 sebagai alternatif TF-IDF untuk perbandingan.
+2026-06-22 18:57:49,708 | INFO |   4. Tingkatkan kualitas preprocessing: stemming Bahasa Indonesia (Sastrawi).
+2026-06-22 18:57:49,708 | INFO | 
+2026-06-22 18:57:49,709 | INFO | ============================================================
+2026-06-22 18:57:49,709 | INFO | EVALUASI PREDIKSI SOLUSI
+2026-06-22 18:57:49,710 | INFO | ============================================================
+2026-06-22 18:57:49,718 | INFO | Loaded 5 prediksi dari C:\file\cbr-desersi\data\results\predictions.csv
+2026-06-22 18:57:49,719 | INFO | 
+2026-06-22 18:57:49,719 | INFO |   [new_001]
+2026-06-22 18:57:49,719 | INFO |     Prediksi       : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,719 | INFO |     Top-1 kasus    : case_010
+2026-06-22 18:57:49,720 | INFO |     Pidana top-1   : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,720 | INFO |     Exact Match    : ✓ YA
+2026-06-22 18:57:49,721 | INFO | 
+2026-06-22 18:57:49,721 | INFO |   [new_002]
+2026-06-22 18:57:49,721 | INFO |     Prediksi       : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukt
+2026-06-22 18:57:49,721 | INFO |     Top-1 kasus    : case_024
+2026-06-22 18:57:49,721 | INFO |     Pidana top-1   : 
+2026-06-22 18:57:49,722 | INFO |     Exact Match    : ✗ TIDAK
+2026-06-22 18:57:49,723 | INFO | 
+2026-06-22 18:57:49,723 | INFO |   [new_003]
+2026-06-22 18:57:49,724 | INFO |     Prediksi       : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,724 | INFO |     Top-1 kasus    : case_010
+2026-06-22 18:57:49,725 | INFO |     Pidana top-1   : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,725 | INFO |     Exact Match    : ✓ YA
+2026-06-22 18:57:49,725 | INFO | 
+2026-06-22 18:57:49,726 | INFO |   [new_004]
+2026-06-22 18:57:49,726 | INFO |     Prediksi       : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,726 | INFO |     Top-1 kasus    : case_010
+2026-06-22 18:57:49,726 | INFO |     Pidana top-1   : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,726 | INFO |     Exact Match    : ✓ YA
+2026-06-22 18:57:49,727 | INFO | 
+2026-06-22 18:57:49,727 | INFO |   [new_005]
+2026-06-22 18:57:49,727 | INFO |     Prediksi       : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,728 | INFO |     Top-1 kasus    : case_028
+2026-06-22 18:57:49,728 | INFO |     Pidana top-1   : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,728 | INFO |     Exact Match    : ✓ YA
+2026-06-22 18:57:49,730 | INFO | 
+2026-06-22 18:57:49,731 | INFO | Exact Match Prediksi: 4/5 (80.0%)
+2026-06-22 18:57:49,734 | INFO | Prediction metrics disimpan: C:\file\cbr-desersi\data\eval\prediction_metrics.csv
+2026-06-22 18:57:49,735 | INFO | 
+2026-06-22 18:57:49,735 | INFO | ============================================================
+2026-06-22 18:57:49,735 | INFO | Tahap 5 selesai.
+2026-06-22 18:57:49,735 | INFO | Output:
+2026-06-22 18:57:49,735 | INFO |   - C:\file\cbr-desersi\data\eval\retrieval_metrics.csv
+2026-06-22 18:57:49,736 | INFO |   - C:\file\cbr-desersi\data\eval\prediction_metrics.csv
+2026-06-22 18:57:49,736 | INFO | ============================================================
+2026-06-22 19:00:44,380 | INFO | ============================================================
+2026-06-22 19:00:44,381 | INFO | TAHAP 5: MODEL EVALUATION
+2026-06-22 19:00:44,381 | INFO | Mulai: 2026-06-22 19:00:44
+2026-06-22 19:00:44,382 | INFO | ============================================================
+2026-06-22 19:00:44,400 | INFO | Loaded 7 query dari C:\file\cbr-desersi\data\eval\queries.json
+2026-06-22 19:00:44,453 | INFO | Loaded retrieval results untuk 7 query dari C:\file\cbr-desersi\data\eval\retrieval_initial.json
+2026-06-22 19:00:44,454 | INFO | 
+2026-06-22 19:00:44,454 | INFO | ============================================================
+2026-06-22 19:00:44,454 | INFO | EVALUASI RETRIEVAL
+2026-06-22 19:00:44,454 | INFO | ============================================================
+2026-06-22 19:00:44,460 | INFO | 
+2026-06-22 19:00:44,461 | INFO | --- Metrik @ k=1 ---
+2026-06-22 19:00:44,461 | INFO |   Total query : 7
+2026-06-22 19:00:44,461 | INFO |   Hit@1      : 7/7 (100.0%)
+2026-06-22 19:00:44,461 | INFO |   Accuracy    : 1.0000
+2026-06-22 19:00:44,461 | INFO |   Precision   : 1.0000
+2026-06-22 19:00:44,461 | INFO |   Recall      : 1.0000
+2026-06-22 19:00:44,461 | INFO |   F1-score    : 1.0000
+2026-06-22 19:00:44,467 | INFO | 
+2026-06-22 19:00:44,467 | INFO | --- Metrik @ k=3 ---
+2026-06-22 19:00:44,468 | INFO |   Total query : 7
+2026-06-22 19:00:44,468 | INFO |   Hit@3      : 7/7 (100.0%)
+2026-06-22 19:00:44,468 | INFO |   Accuracy    : 1.0000
+2026-06-22 19:00:44,468 | INFO |   Precision   : 1.0000
+2026-06-22 19:00:44,468 | INFO |   Recall      : 1.0000
+2026-06-22 19:00:44,468 | INFO |   F1-score    : 1.0000
+2026-06-22 19:00:44,474 | INFO | 
+2026-06-22 19:00:44,474 | INFO | --- Metrik @ k=5 ---
+2026-06-22 19:00:44,475 | INFO |   Total query : 7
+2026-06-22 19:00:44,475 | INFO |   Hit@5      : 7/7 (100.0%)
+2026-06-22 19:00:44,475 | INFO |   Accuracy    : 1.0000
+2026-06-22 19:00:44,475 | INFO |   Precision   : 1.0000
+2026-06-22 19:00:44,475 | INFO |   Recall      : 1.0000
+2026-06-22 19:00:44,475 | INFO |   F1-score    : 1.0000
+2026-06-22 19:00:44,476 | INFO | 
+2026-06-22 19:00:44,476 | INFO | ============================================================
+2026-06-22 19:00:44,477 | INFO | TABEL RINGKASAN METRIK RETRIEVAL
+2026-06-22 19:00:44,477 | INFO | ============================================================
+2026-06-22 19:00:44,481 | INFO | 
+ k  total_query  hit  hit_rate  accuracy  precision  recall  f1_score
+ 1            7    7       1.0       1.0        1.0     1.0       1.0
+ 3            7    7       1.0       1.0        1.0     1.0       1.0
+ 5            7    7       1.0       1.0        1.0     1.0       1.0
+2026-06-22 19:00:44,484 | INFO | Retrieval metrics disimpan: C:\file\cbr-desersi\data\eval\retrieval_metrics.csv
+2026-06-22 19:00:44,484 | INFO | 
+2026-06-22 19:00:44,484 | INFO | ============================================================
+2026-06-22 19:00:44,484 | INFO | ANALISIS KEGAGALAN (ERROR ANALYSIS) @ k=5
+2026-06-22 19:00:44,485 | INFO | ============================================================
+2026-06-22 19:00:44,486 | INFO |   Tidak ada kegagalan pada k=5 — Hit Rate = 100%!
+2026-06-22 19:00:44,486 | INFO | 
+2026-06-22 19:00:44,486 | INFO |   Rekomendasi Perbaikan (preventif):
+2026-06-22 19:00:44,487 | INFO |   1. Tambahkan lebih banyak kasus (>50) agar case base lebih representatif.
+2026-06-22 19:00:44,487 | INFO |   2. Coba IndoBERT embedding untuk representasi semantik yang lebih kaya.
+2026-06-22 19:00:44,487 | INFO |   3. Implementasikan BM25 sebagai alternatif TF-IDF untuk perbandingan.
+2026-06-22 19:00:44,487 | INFO |   4. Tingkatkan kualitas preprocessing: stemming Bahasa Indonesia (Sastrawi).
+2026-06-22 19:00:44,487 | INFO | 
+2026-06-22 19:00:44,487 | INFO | ============================================================
+2026-06-22 19:00:44,487 | INFO | EVALUASI PREDIKSI SOLUSI
+2026-06-22 19:00:44,488 | INFO | ============================================================
+2026-06-22 19:00:44,509 | INFO | Loaded 5 prediksi dari C:\file\cbr-desersi\data\results\predictions.csv
+2026-06-22 19:00:44,510 | INFO | 
+2026-06-22 19:00:44,510 | INFO |   [new_001]
+2026-06-22 19:00:44,510 | INFO |     Prediksi       : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:44,510 | INFO |     Top-1 kasus    : case_010
+2026-06-22 19:00:44,510 | INFO |     Pidana top-1   : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:44,510 | INFO |     Exact Match    : ✓ YA
+2026-06-22 19:00:44,511 | INFO | 
+2026-06-22 19:00:44,511 | INFO |   [new_002]
+2026-06-22 19:00:44,511 | INFO |     Prediksi       : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukt
+2026-06-22 19:00:44,511 | INFO |     Top-1 kasus    : case_024
+2026-06-22 19:00:44,511 | INFO |     Pidana top-1   : 
+2026-06-22 19:00:44,511 | INFO |     Exact Match    : ✗ TIDAK
+2026-06-22 19:00:44,511 | INFO | 
+2026-06-22 19:00:44,511 | INFO |   [new_003]
+2026-06-22 19:00:44,512 | INFO |     Prediksi       : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:44,512 | INFO |     Top-1 kasus    : case_010
+2026-06-22 19:00:44,512 | INFO |     Pidana top-1   : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:44,512 | INFO |     Exact Match    : ✓ YA
+2026-06-22 19:00:44,512 | INFO | 
+2026-06-22 19:00:44,512 | INFO |   [new_004]
+2026-06-22 19:00:44,513 | INFO |     Prediksi       : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:44,513 | INFO |     Top-1 kasus    : case_010
+2026-06-22 19:00:44,513 | INFO |     Pidana top-1   : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:44,513 | INFO |     Exact Match    : ✓ YA
+2026-06-22 19:00:44,513 | INFO | 
+2026-06-22 19:00:44,513 | INFO |   [new_005]
+2026-06-22 19:00:44,513 | INFO |     Prediksi       : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:44,514 | INFO |     Top-1 kasus    : case_028
+2026-06-22 19:00:44,514 | INFO |     Pidana top-1   : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:44,514 | INFO |     Exact Match    : ✓ YA
+2026-06-22 19:00:44,514 | INFO | 
+2026-06-22 19:00:44,515 | INFO | Exact Match Prediksi: 4/5 (80.0%)
+2026-06-22 19:00:44,517 | INFO | Prediction metrics disimpan: C:\file\cbr-desersi\data\eval\prediction_metrics.csv
+2026-06-22 19:00:44,517 | INFO | 
+2026-06-22 19:00:44,517 | INFO | ============================================================
+2026-06-22 19:00:44,517 | INFO | Tahap 5 selesai.
+2026-06-22 19:00:44,517 | INFO | Output:
+2026-06-22 19:00:44,518 | INFO |   - C:\file\cbr-desersi\data\eval\retrieval_metrics.csv
+2026-06-22 19:00:44,518 | INFO |   - C:\file\cbr-desersi\data\eval\prediction_metrics.csv
+2026-06-22 19:00:44,518 | INFO | ============================================================

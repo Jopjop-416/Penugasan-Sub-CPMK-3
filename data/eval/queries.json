@@ -1,7 +1,7 @@
 [
   {
     "query_id": "q_001",
-    "query_text": "kan,namun mengenai pembuktian unsur-unsur tindak pidana tersebut Majelis Hakim akanmembuktikan sendiri dalam putusan ini;2.Bahwa mengenai pidana yang dijatuhkan terhadap diri Terdakwa, Majelis Hakimakan mempertimbangkan sendiri dalam putusannya.Menimbang, bahwa tindak pidana yang didakwakan oleh Odi",
+    "query_text": "Bahwa Terdakwa dalam perkara ini tidak pernah didampingi oleh PenasihatHukum.",
     "ground_truth_case_id": "case_002",
     "ground_truth_terdakwa": "LABAN WANARURI",
     "ground_truth_lama_disersi": "30 hari",
@@ -41,7 +41,7 @@
   },
   {
     "query_id": "q_006",
-    "query_text": "tersebut Terdakwa mengerti dan atas dakwaan tersebut Terdakwa tidak mengajukan eksepsi. Menimbang, bahwa atas dakwaan tersebut Terdakwa mengakui telah melakukan tindak pidana yang didakwakan kepadanya dan membenarkan semua dakwaan yang didakwakan kepadanya.",
+    "query_text": "Bahwa Terdakwa merasa bersalah dan menyesali perbuatannya dan berjanji tidak akan mengulangi lagi. Hal-hal yang memberatkan : 1. Perbuatan Terdakwa dapat merusak disiplin dan sendi-sendi kehidupan Prajurit TNI. 2. Bahwa Perbuatan Terdakwa dapat berpengaruh buruk terhadap pembinaan disiplin di satuan",
     "ground_truth_case_id": "case_011",
     "ground_truth_terdakwa": "Olimpus Ae Monibor",
     "ground_truth_lama_disersi": "105 hari",

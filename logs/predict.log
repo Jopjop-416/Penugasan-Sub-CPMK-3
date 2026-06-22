@@ -298,3 +298,153 @@
 2026-06-22 18:34:51,678 | INFO |   [new_005] → Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
 2026-06-22 18:34:51,678 | INFO | ============================================================
 2026-06-22 18:34:51,678 | INFO | Tahap 4 selesai.
+2026-06-22 18:57:49,491 | INFO | ============================================================
+2026-06-22 18:57:49,491 | INFO | TAHAP 4: CASE SOLUTION REUSE
+2026-06-22 18:57:49,492 | INFO | Mulai: 2026-06-22 18:57:49
+2026-06-22 18:57:49,492 | INFO | ============================================================
+2026-06-22 18:57:49,492 | INFO | Memuat model dari: C:\file\cbr-desersi\models
+2026-06-22 18:57:49,571 | INFO |   Vectorizer    : OK
+2026-06-22 18:57:49,572 | INFO |   TF-IDF matrix : shape (34, 2764)
+2026-06-22 18:57:49,572 | INFO |   Case IDs      : 34 kasus
+2026-06-22 18:57:49,581 | INFO | Loaded 34 kasus dari C:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 18:57:49,581 | INFO | 
+2026-06-22 18:57:49,581 | INFO | ============================================================
+2026-06-22 18:57:49,581 | INFO | DEMO PREDICT OUTCOME — 5 KASUS BARU
+2026-06-22 18:57:49,582 | INFO | ============================================================
+2026-06-22 18:57:49,582 | INFO | 
+2026-06-22 18:57:49,582 | INFO | Query [new_001]: Prajurit meninggalkan kesatuan tanpa ijin selama 30 hari
+2026-06-22 18:57:49,588 | INFO |   #1 [case_010] sim=0.2350 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,588 | INFO |   #2 [case_024] sim=0.2188 | YUNUS LUIS NAPOLIN | disersi=26 hari | pidana=
+2026-06-22 18:57:49,588 | INFO |   #3 [case_023] sim=0.1854 | PILISEN MOHI | disersi=207 hari | pidana=Penjara selama 1 (satu) tahun dikurangi selama Terdakwa beradadalam penahanan maka terhadap permohonan tersebut diatas M
+2026-06-22 18:57:49,588 | INFO |   #4 [case_028] sim=0.1714 | SERGIUS BARANGKEA | disersi=181 hari | pidana=Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,589 | INFO |   #5 [case_021] sim=0.1576 | NAFTALI SAKWARAI | disersi=46 hari | pidana=Penjara selama 8 (delapan) bulanMenetapkan
+2026-06-22 18:57:49,589 | INFO |   → Majority Vote     : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,589 | INFO |   → Weighted Sim      : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,589 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,590 | INFO | 
+2026-06-22 18:57:49,590 | INFO | Query [new_002]: Prajurit disersi lebih dari 6 bulan dengan barang inventaris
+2026-06-22 18:57:49,594 | INFO |   #1 [case_024] sim=0.2422 | YUNUS LUIS NAPOLIN | disersi=26 hari | pidana=
+2026-06-22 18:57:49,595 | INFO |   #2 [case_028] sim=0.1470 | SERGIUS BARANGKEA | disersi=181 hari | pidana=Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,595 | INFO |   #3 [case_023] sim=0.1230 | PILISEN MOHI | disersi=207 hari | pidana=Penjara selama 1 (satu) tahun dikurangi selama Terdakwa beradadalam penahanan maka terhadap permohonan tersebut diatas M
+2026-06-22 18:57:49,595 | INFO |   #4 [case_021] sim=0.1068 | NAFTALI SAKWARAI | disersi=46 hari | pidana=Penjara selama 8 (delapan) bulanMenetapkan
+2026-06-22 18:57:49,595 | INFO |   #5 [case_010] sim=0.1025 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,595 | INFO |   → Majority Vote     : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 18:57:49,595 | INFO |   → Weighted Sim      : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 18:57:49,595 | INFO |   → PREDIKSI AKHIR    : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 18:57:49,596 | INFO | 
+2026-06-22 18:57:49,596 | INFO | Query [new_003]: Prajurit disersi karena masalah keluarga selama 45 hari
+2026-06-22 18:57:49,600 | INFO |   #1 [case_010] sim=0.1529 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,600 | INFO |   #2 [case_020] sim=0.1395 | CLAUDIO CANIGIA MAAIL | disersi=30 hari | pidana=Pidana Pokok :Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,600 | INFO |   #3 [case_025] sim=0.1348 | DOMINGGUS FREDINAN UNTAILAWAL | disersi=30 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun dikurangi selamaTerdakwa menjalani penahanan sementara;
+2026-06-22 18:57:49,600 | INFO |   #4 [case_015] sim=0.1333 | LEBRIK ADOLOF WANGGAI | disersi=41 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,600 | INFO |   #5 [case_018] sim=0.1324 | TEREGIUS WANDIK | disersi=20 hari | pidana=Penjara selama 6 (enam) bulan.
+2026-06-22 18:57:49,600 | INFO |   → Majority Vote     : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,600 | INFO |   → Weighted Sim      : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,601 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,601 | INFO | 
+2026-06-22 18:57:49,601 | INFO | Query [new_004]: Prajurit disersi singkat sekitar 20 hari
+2026-06-22 18:57:49,603 | INFO |   #1 [case_010] sim=0.2210 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,603 | INFO |   #2 [case_024] sim=0.1770 | YUNUS LUIS NAPOLIN | disersi=26 hari | pidana=
+2026-06-22 18:57:49,603 | INFO |   #3 [case_023] sim=0.1715 | PILISEN MOHI | disersi=207 hari | pidana=Penjara selama 1 (satu) tahun dikurangi selama Terdakwa beradadalam penahanan maka terhadap permohonan tersebut diatas M
+2026-06-22 18:57:49,603 | INFO |   #4 [case_011] sim=0.1616 | Olimpus Ae Monibor | disersi=105 hari | pidana=Pidana pokok : Penjara selama 1 (satu) tahun dan 6 bulan.
+2026-06-22 18:57:49,603 | INFO |   #5 [case_021] sim=0.1604 | NAFTALI SAKWARAI | disersi=46 hari | pidana=Penjara selama 8 (delapan) bulanMenetapkan
+2026-06-22 18:57:49,603 | INFO |   → Majority Vote     : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,603 | INFO |   → Weighted Sim      : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,604 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,604 | INFO | 
+2026-06-22 18:57:49,604 | INFO | Query [new_005]: Prajurit disersi lebih dari 1 tahun tanpa kejelasan
+2026-06-22 18:57:49,607 | INFO |   #1 [case_028] sim=0.2165 | SERGIUS BARANGKEA | disersi=181 hari | pidana=Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,608 | INFO |   #2 [case_021] sim=0.1563 | NAFTALI SAKWARAI | disersi=46 hari | pidana=Penjara selama 8 (delapan) bulanMenetapkan
+2026-06-22 18:57:49,608 | INFO |   #3 [case_010] sim=0.1488 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,608 | INFO |   #4 [case_016] sim=0.1479 | ARIF RAHMAN SOLIHIN | disersi=30 hari | pidana=Pidana Pokok : Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,608 | INFO |   #5 [case_005] sim=0.1469 | MULYADI LHA | disersi=30 hari | pidana=Pidana pokok : Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,608 | INFO |   → Majority Vote     : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,608 | INFO |   → Weighted Sim      : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,608 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,616 | INFO | 
+2026-06-22 18:57:49,616 | INFO | Hasil prediksi disimpan: C:\file\cbr-desersi\data\results\predictions.csv (5 baris)
+2026-06-22 18:57:49,617 | INFO | 
+2026-06-22 18:57:49,617 | INFO | ============================================================
+2026-06-22 18:57:49,617 | INFO | RINGKASAN PREDIKSI
+2026-06-22 18:57:49,617 | INFO |   [new_001] → Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,617 | INFO |   [new_002] → 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 18:57:49,617 | INFO |   [new_003] → Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,617 | INFO |   [new_004] → Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 18:57:49,617 | INFO |   [new_005] → Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 18:57:49,617 | INFO | ============================================================
+2026-06-22 18:57:49,618 | INFO | Tahap 4 selesai.
+2026-06-22 19:00:39,118 | INFO | ============================================================
+2026-06-22 19:00:39,119 | INFO | TAHAP 4: CASE SOLUTION REUSE
+2026-06-22 19:00:39,119 | INFO | Mulai: 2026-06-22 19:00:39
+2026-06-22 19:00:39,119 | INFO | ============================================================
+2026-06-22 19:00:39,119 | INFO | Memuat model dari: C:\file\cbr-desersi\models
+2026-06-22 19:00:39,185 | INFO |   Vectorizer    : OK
+2026-06-22 19:00:39,185 | INFO |   TF-IDF matrix : shape (34, 2801)
+2026-06-22 19:00:39,185 | INFO |   Case IDs      : 34 kasus
+2026-06-22 19:00:39,191 | INFO | Loaded 34 kasus dari C:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 19:00:39,191 | INFO | 
+2026-06-22 19:00:39,191 | INFO | ============================================================
+2026-06-22 19:00:39,192 | INFO | DEMO PREDICT OUTCOME — 5 KASUS BARU
+2026-06-22 19:00:39,192 | INFO | ============================================================
+2026-06-22 19:00:39,192 | INFO | 
+2026-06-22 19:00:39,193 | INFO | Query [new_001]: Prajurit meninggalkan kesatuan tanpa ijin selama 30 hari
+2026-06-22 19:00:39,196 | INFO |   #1 [case_010] sim=0.2248 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,197 | INFO |   #2 [case_024] sim=0.2092 | YUNUS LUIS NAPOLIN | disersi=26 hari | pidana=
+2026-06-22 19:00:39,197 | INFO |   #3 [case_023] sim=0.1706 | PILISEN MOHI | disersi=207 hari | pidana=Penjara selama 1 (satu) tahun dikurangi selama Terdakwa beradadalam penahanan maka terhadap permohonan tersebut diatas M
+2026-06-22 19:00:39,197 | INFO |   #4 [case_011] sim=0.1692 | Olimpus Ae Monibor | disersi=105 hari | pidana=Pidana pokok : Penjara selama 1 (satu) tahun dan 6 bulan.
+2026-06-22 19:00:39,198 | INFO |   #5 [case_028] sim=0.1640 | SERGIUS BARANGKEA | disersi=181 hari | pidana=Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:39,198 | INFO |   → Majority Vote     : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,198 | INFO |   → Weighted Sim      : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,198 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,199 | INFO | 
+2026-06-22 19:00:39,199 | INFO | Query [new_002]: Prajurit disersi lebih dari 6 bulan dengan barang inventaris
+2026-06-22 19:00:39,202 | INFO |   #1 [case_024] sim=0.2420 | YUNUS LUIS NAPOLIN | disersi=26 hari | pidana=
+2026-06-22 19:00:39,203 | INFO |   #2 [case_028] sim=0.1467 | SERGIUS BARANGKEA | disersi=181 hari | pidana=Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:39,203 | INFO |   #3 [case_023] sim=0.1233 | PILISEN MOHI | disersi=207 hari | pidana=Penjara selama 1 (satu) tahun dikurangi selama Terdakwa beradadalam penahanan maka terhadap permohonan tersebut diatas M
+2026-06-22 19:00:39,204 | INFO |   #4 [case_021] sim=0.1065 | NAFTALI SAKWARAI | disersi=46 hari | pidana=Penjara selama 8 (delapan) bulanMenetapkan
+2026-06-22 19:00:39,204 | INFO |   #5 [case_010] sim=0.1022 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,205 | INFO |   → Majority Vote     : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 19:00:39,205 | INFO |   → Weighted Sim      : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 19:00:39,205 | INFO |   → PREDIKSI AKHIR    : 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 19:00:39,206 | INFO | 
+2026-06-22 19:00:39,206 | INFO | Query [new_003]: Prajurit disersi karena masalah keluarga selama 45 hari
+2026-06-22 19:00:39,209 | INFO |   #1 [case_010] sim=0.1601 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,209 | INFO |   #2 [case_020] sim=0.1460 | CLAUDIO CANIGIA MAAIL | disersi=30 hari | pidana=Pidana Pokok :Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,210 | INFO |   #3 [case_025] sim=0.1411 | DOMINGGUS FREDINAN UNTAILAWAL | disersi=30 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun dikurangi selamaTerdakwa menjalani penahanan sementara;
+2026-06-22 19:00:39,210 | INFO |   #4 [case_015] sim=0.1396 | LEBRIK ADOLOF WANGGAI | disersi=41 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,210 | INFO |   #5 [case_018] sim=0.1389 | TEREGIUS WANDIK | disersi=20 hari | pidana=Penjara selama 6 (enam) bulan.
+2026-06-22 19:00:39,211 | INFO |   → Majority Vote     : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,211 | INFO |   → Weighted Sim      : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,211 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,211 | INFO | 
+2026-06-22 19:00:39,211 | INFO | Query [new_004]: Prajurit disersi singkat sekitar 20 hari
+2026-06-22 19:00:39,213 | INFO |   #1 [case_010] sim=0.2268 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,214 | INFO |   #2 [case_024] sim=0.1815 | YUNUS LUIS NAPOLIN | disersi=26 hari | pidana=
+2026-06-22 19:00:39,214 | INFO |   #3 [case_023] sim=0.1729 | PILISEN MOHI | disersi=207 hari | pidana=Penjara selama 1 (satu) tahun dikurangi selama Terdakwa beradadalam penahanan maka terhadap permohonan tersebut diatas M
+2026-06-22 19:00:39,214 | INFO |   #4 [case_021] sim=0.1645 | NAFTALI SAKWARAI | disersi=46 hari | pidana=Penjara selama 8 (delapan) bulanMenetapkan
+2026-06-22 19:00:39,215 | INFO |   #5 [case_018] sim=0.1604 | TEREGIUS WANDIK | disersi=20 hari | pidana=Penjara selama 6 (enam) bulan.
+2026-06-22 19:00:39,215 | INFO |   → Majority Vote     : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,216 | INFO |   → Weighted Sim      : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,216 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,216 | INFO | 
+2026-06-22 19:00:39,217 | INFO | Query [new_005]: Prajurit disersi lebih dari 1 tahun tanpa kejelasan
+2026-06-22 19:00:39,219 | INFO |   #1 [case_028] sim=0.2075 | SERGIUS BARANGKEA | disersi=181 hari | pidana=Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:39,219 | INFO |   #2 [case_021] sim=0.1488 | NAFTALI SAKWARAI | disersi=46 hari | pidana=Penjara selama 8 (delapan) bulanMenetapkan
+2026-06-22 19:00:39,219 | INFO |   #3 [case_016] sim=0.1448 | ARIF RAHMAN SOLIHIN | disersi=30 hari | pidana=Pidana Pokok : Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,220 | INFO |   #4 [case_010] sim=0.1445 | RUSMAN RUMATA | disersi=42 hari | pidana=Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,220 | INFO |   #5 [case_005] sim=0.1429 | MULYADI LHA | disersi=30 hari | pidana=Pidana pokok : Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,220 | INFO |   → Majority Vote     : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:39,221 | INFO |   → Weighted Sim      : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:39,221 | INFO |   → PREDIKSI AKHIR    : Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:39,227 | INFO | 
+2026-06-22 19:00:39,227 | INFO | Hasil prediksi disimpan: C:\file\cbr-desersi\data\results\predictions.csv (5 baris)
+2026-06-22 19:00:39,228 | INFO | 
+2026-06-22 19:00:39,228 | INFO | ============================================================
+2026-06-22 19:00:39,229 | INFO | RINGKASAN PREDIKSI
+2026-06-22 19:00:39,229 | INFO |   [new_001] → Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,229 | INFO |   [new_002] → 1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor
+2026-06-22 19:00:39,230 | INFO |   [new_003] → Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,230 | INFO |   [new_004] → Pidana Pokok: Penjara selama 1 (satu) tahun.
+2026-06-22 19:00:39,230 | INFO |   [new_005] → Pidana Pokok : Penjara selama 12 BulanPidana Tambahan
+2026-06-22 19:00:39,230 | INFO | ============================================================
+2026-06-22 19:00:39,231 | INFO | Tahap 4 selesai.

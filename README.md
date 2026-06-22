@@ -1,3 +1,9 @@
+# Identitas
+- NAMA: Muhammad Zaky Praditama
+- NIM: 202310370311416
+- KELAS: Penalaran Komputer D
+
+
 # Sistem Case-Based Reasoning (CBR) - Tindak Pidana Disersi
 
 Implementasi sistem Case-Based Reasoning berbasis Python untuk mendukung analisis putusan pengadilan militer, khususnya tindak pidana Disersi (Pasal 87 KUHPM).
@@ -94,6 +100,12 @@ Output:
 python "python 03_retrieval.py"
 ```
 
+Jika ingin mencoba demo manual:
+
+```bash
+python "python 03_retrieval.py" --interactive
+```
+
 Output:
 
 - `models/tfidf_vectorizer.pkl`
@@ -129,7 +141,15 @@ Output:
 
 ## Notebook
 
-Lihat `notebooks/CBR_pipeline_overview.ipynb` untuk ringkasan pipeline dan alur kerja proyek.
+Notebook per tahap:
+
+- `notebooks/01_preprocessing.ipynb`
+- `notebooks/02_case_representation.ipynb`
+- `notebooks/03_retrieval.ipynb`
+- `notebooks/04_predict.ipynb`
+- `notebooks/05_evaluation.ipynb`
+
+Bisa dilihat juga `notebooks/CBR_pipeline_overview.ipynb` untuk ringkasan pipeline dan alur kerja proyek.
 
 ## Catatan Teknis
 

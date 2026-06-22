@@ -1,6 +1,6 @@
 # SOURCE_FILE: putusan_194-k_pm.iii-19_ad_vi_2023_20260619165111.pdf
 # CASE_ID: case_025
-# PROCESSED: 2026-06-22 18:33:38
+# PROCESSED: 2026-06-22 18:59:52
 # WORD_COUNT: 5859
 # ==================================================
 

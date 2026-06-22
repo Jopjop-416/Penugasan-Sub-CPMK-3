@@ -1,6 +1,6 @@
 # SOURCE_FILE: putusan_181-k_pm.iii-19_ad_vi_2023_20260619170539.pdf
 # CASE_ID: case_023
-# PROCESSED: 2026-06-22 18:33:35
+# PROCESSED: 2026-06-22 18:59:51
 # WORD_COUNT: 7432
 # ==================================================
 

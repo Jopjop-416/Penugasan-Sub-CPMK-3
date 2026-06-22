@@ -1,6 +1,6 @@
 # SOURCE_FILE: putusan_130-k_pm.iii-19_ad_iii_2023_20260619164523.pdf
 # CASE_ID: case_010
-# PROCESSED: 2026-06-22 18:33:23
+# PROCESSED: 2026-06-22 18:59:42
 # WORD_COUNT: 6754
 # ==================================================
 

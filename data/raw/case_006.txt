@@ -1,6 +1,6 @@
 # SOURCE_FILE: putusan_112-k_pm.iii-19_ad_iii_2023_20260619165150.pdf
 # CASE_ID: case_006
-# PROCESSED: 2026-06-22 18:33:19
+# PROCESSED: 2026-06-22 18:59:39
 # WORD_COUNT: 4987
 # ==================================================
 

@@ -15,6 +15,7 @@ Fungsi:
 
 import json
 import re
+import argparse
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -390,36 +391,47 @@ def main():
     return vectorizer, tfidf_matrix, case_ids, cases, svm
 
 
+def run_interactive_demo(vectorizer, tfidf_matrix, case_ids, cases):
+    """Optional interactive demo for manual exploration."""
+    print("\n" + "="*60)
+    print("DEMO RETRIEVE — ketik query, ketik 'quit' untuk keluar")
+    print("="*60)
+
+    while True:
+        try:
+            query = input("\nMasukkan query: ").strip()
+        except EOFError:
+            break
+        if query.lower() in ("quit", "exit", "q"):
+            break
+        if not query:
+            continue
+
+        results = retrieve(query, vectorizer, tfidf_matrix, case_ids, cases, k=5)
+        print(f"\nTop-5 kasus termirip:")
+        print(f"{'No':<4} {'Case ID':<12} {'Similarity':<12} {'Terdakwa':<30} {'Lama Disersi'}")
+        print("-" * 80)
+        for i, r in enumerate(results, 1):
+            print(
+                f"{i:<4} {r['case_id']:<12} {r['similarity']:<12.4f} "
+                f"{(r['terdakwa'] or '?'):<30} {r['lama_disersi'] or '?'}"
+            )
+
+
 # ============================================================
 # JALANKAN
 # ============================================================
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--interactive",
+        action="store_true",
+        help="Run an interactive retrieval demo after the pipeline finishes.",
+    )
+    args = parser.parse_args()
+
     result = main()
-    if result:
+    if result and args.interactive:
         vectorizer, tfidf_matrix, case_ids, cases, svm = result
-
-        # Demo interaktif
-        print("\n" + "="*60)
-        print("DEMO RETRIEVE — ketik query, ketik 'quit' untuk keluar")
-        print("="*60)
-
-        while True:
-            try:
-                query = input("\nMasukkan query: ").strip()
-            except EOFError:
-                break
-            if query.lower() in ("quit", "exit", "q"):
-                break
-            if not query:
-                continue
-
-            results = retrieve(query, vectorizer, tfidf_matrix, case_ids, cases, k=5)
-            print(f"\nTop-5 kasus termirip:")
-            print(f"{'No':<4} {'Case ID':<12} {'Similarity':<12} {'Terdakwa':<30} {'Lama Disersi'}")
-            print("-" * 80)
-            for i, r in enumerate(results, 1):
-                print(
-                    f"{i:<4} {r['case_id']:<12} {r['similarity']:<12.4f} "
-                    f"{(r['terdakwa'] or '?'):<30} {r['lama_disersi'] or '?'}"
-                )
+        run_interactive_demo(vectorizer, tfidf_matrix, case_ids, cases)

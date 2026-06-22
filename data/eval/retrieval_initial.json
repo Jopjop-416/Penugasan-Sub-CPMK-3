@@ -1,21 +1,21 @@
 [
   {
     "query_id": "q_001",
-    "query_text": "kan,namun mengenai pembuktian unsur-unsur tindak pidana tersebut Majelis Hakim akanmembuktikan sendi",
+    "query_text": "Bahwa Terdakwa dalam perkara ini tidak pernah didampingi oleh PenasihatHukum.",
     "ground_truth": "case_002",
     "top_5_ids": [
       "case_002",
-      "case_005",
-      "case_016",
+      "case_011",
+      "case_030",
       "case_022",
-      "case_034"
+      "case_016"
     ],
     "top_5_scores": [
-      0.4984,
-      0.0654,
-      0.0653,
-      0.0578,
-      0.0559
+      0.2695,
+      0.0501,
+      0.0414,
+      0.0375,
+      0.0318
     ],
     "hit_at_5": true
   },
@@ -31,11 +31,11 @@
       "case_031"
     ],
     "top_5_scores": [
-      0.4214,
-      0.3695,
-      0.2906,
-      0.2478,
-      0.2334
+      0.422,
+      0.3696,
+      0.2907,
+      0.248,
+      0.2337
     ],
     "hit_at_5": true
   },
@@ -51,11 +51,11 @@
       "case_016"
     ],
     "top_5_scores": [
-      0.452,
-      0.2925,
-      0.2717,
-      0.2657,
-      0.2381
+      0.4542,
+      0.2941,
+      0.2738,
+      0.2643,
+      0.2425
     ],
     "hit_at_5": true
   },
@@ -71,11 +71,11 @@
       "case_031"
     ],
     "top_5_scores": [
-      0.4423,
-      0.368,
-      0.2469,
+      0.4426,
+      0.3684,
+      0.2471,
       0.2422,
-      0.2253
+      0.2255
     ],
     "hit_at_5": true
   },
@@ -91,31 +91,31 @@
       "case_005"
     ],
     "top_5_scores": [
-      0.4343,
-      0.2552,
+      0.4344,
+      0.2551,
       0.122,
-      0.1219,
+      0.1218,
       0.1218
     ],
     "hit_at_5": true
   },
   {
     "query_id": "q_006",
-    "query_text": "tersebut Terdakwa mengerti dan atas dakwaan tersebut Terdakwa tidak mengajukan eksepsi. Menimbang, b",
+    "query_text": "Bahwa Terdakwa merasa bersalah dan menyesali perbuatannya dan berjanji tidak akan mengulangi lagi. H",
     "ground_truth": "case_011",
     "top_5_ids": [
       "case_011",
-      "case_022",
-      "case_002",
-      "case_015",
-      "case_024"
+      "case_023",
+      "case_005",
+      "case_016",
+      "case_020"
     ],
     "top_5_scores": [
-      0.4838,
-      0.2513,
-      0.0594,
-      0.0556,
-      0.0478
+      0.5077,
+      0.0759,
+      0.033,
+      0.0317,
+      0.0298
     ],
     "hit_at_5": true
   },
@@ -128,14 +128,14 @@
       "case_028",
       "case_021",
       "case_023",
-      "case_011"
+      "case_022"
     ],
     "top_5_scores": [
-      0.5181,
-      0.1501,
-      0.1117,
-      0.1038,
-      0.0779
+      0.5162,
+      0.1508,
+      0.1121,
+      0.1046,
+      0.0789
     ],
     "hit_at_5": true
   }

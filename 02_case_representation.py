@@ -81,10 +81,24 @@ def extract_tanggal_putusan(text: str) -> str:
         rf"(\d{{1,2}}\s+{bulan}\s+\d{{4}})\s*,\s*(?:pada\s+)?(?:hari\s+\w+\s+)?",
         rf"diputuskan.*?tanggal\s+(\d{{1,2}}\s+{bulan}\s+\d{{4}})",
         rf"ditetapkan.*?tanggal\s+(\d{{1,2}}\s+{bulan}\s+\d{{4}})",
+        rf"(?:Ditetapkan|Diputuskan|Diberikan)\s+di\s+[^\n,]+,\s+(\d{{1,2}}\s+{bulan}\s+\d{{4}})",
+        rf"(?:Jakarta|Jayapura|Merauke|Timika|Sorong|Ambon|Manokwari|Makasar|Makassar),\s+(\d{{1,2}}\s+{bulan}\s+\d{{4}})",
         rf"Putus\s*:\s*(\d{{2}}-\d{{2}}-\d{{4}})",
     ]
     for pat in patterns:
         m = re.search(pat, text, re.IGNORECASE)
+        if m:
+            return m.group(1).strip()
+
+    # Fallback: cari tanggal di bagian akhir dokumen karena biasanya tanggal putusan
+    # ditulis dekat penutup / tanda tangan majelis hakim.
+    tail = text[-5000:]
+    tail_patterns = [
+        rf"(\d{{1,2}}\s+{bulan}\s+\d{{4}})",
+        rf"(\d{{1,2}}[-/]\d{{1,2}}[-/]\d{{4}})",
+    ]
+    for pat in tail_patterns:
+        m = re.search(pat, tail, re.IGNORECASE)
         if m:
             return m.group(1).strip()
     return ""
@@ -144,8 +158,12 @@ def extract_kesatuan(text: str) -> str:
     text = normalize_text(text)
     patterns = [
         r"Kesatuan\s*:\s*([^\n#]+)",
+        r"Kesatuan\s*[-/]\s*([^\n#]+)",
         r"Kesatuan\s+([^\n,]+)",
         r"berkedudukan\s+di\s+([^\n,]+)",
+        r"bertugas\s+pada\s+([^\n,]+)",
+        r"berdinas\s+pada\s+([^\n,]+)",
+        r"menjadi\s+anggota\s+([^\n,]+)",
         r"berdinas\s+(?:aktif\s+)?di\s+([\w/\s]+?)(?:\s+menjabat|\s+dengan|\n)",
     ]
     for pat in patterns:
@@ -154,6 +172,15 @@ def extract_kesatuan(text: str) -> str:
             val = m.group(1).strip()
             if len(val) < 80:
                 return val
+
+    # Fallback: ambil potongan setelah kata kunci kesatuan/satuan
+    for kw in ["kesatuan", "satuan", "dinas di", "bertugas di"]:
+        idx = text.lower().find(kw)
+        if idx != -1:
+            snippet = text[idx:idx + 180]
+            m = re.search(r"(?:kesatuan|satuan|dinas di|bertugas di)\s*[:\-]?\s*([^\n,.;]{3,120})", snippet, re.IGNORECASE)
+            if m:
+                return m.group(1).strip()
     return ""
 
 def extract_pasal(text: str) -> str:
@@ -213,6 +240,8 @@ def extract_pidana_pokok(text: str) -> str:
     patterns = [
         r"Pidana\s+Pokok\s*:\s*(Penjara\s+selama\s+[\w\s\(\)\-\.]+?)(?:\.|;|\n|Pidana\s+Tambahan|Membebankan|Menetapkan)",
         r"pidana\s+pokok\s*[:\-]\s*(Penjara\s+selama\s+[\w\s\(\)\-\.]+?)(?:\.|;|\n|Pidana\s+Tambahan|Membebankan|Menetapkan)",
+        r"(?:menjatuhkan|dijatuhkan)\s+pidana\s+(?:penjara|kurungan)\s+selama\s+([\w\s\(\)\-\.]+?)(?:\.|;|\n|Pidana|Membebankan|Menetapkan)",
+        r"(?:pidana\s+penjara|penjara)\s+selama\s+([\w\s\(\)\-\.]+?(?:tahun|bulan)[\w\s\(\)\-\.]*?)(?:\.|;|\n|Pidana|Membebankan|Menetapkan)",
         r"Penjara\s+selama\s+([\w\s\(\)\-\.]+?(?:tahun|bulan)[\w\s\(\)\-\.]*?)(?:\.|;|\n|Pidana|Membebankan|Menetapkan)",
     ]
     for pat in patterns:
@@ -228,6 +257,7 @@ def extract_pidana_tambahan(text: str) -> str:
     patterns = [
         r"Pidana\s+Tambahan\s*:\s*([^\n.]{5,120})",
         r"pidana\s+tambahan\s*[:\-]\s*([^\n.]{5,120})",
+        r"(?:dipecat|diberhentikan|diputus\s+untuk\s+dipecat|dijatuhi\s+pidana\s+tambahan)[^\n.]{0,120}",
         r"[Dd]ipecat\s+dari\s+dinas\s+(?:Militer|TNI)[^\n.]{0,60}",
         r"diberhentikan\s+dari\s+dinas\s+[Kk]emiliteran[^\n.]{0,60}",
     ]
@@ -253,6 +283,7 @@ def extract_ringkasan_fakta(text: str) -> str:
         r"(?:Terdakwa\s+telah\s+pergi|Bahwa\s+Terdakwa\s+telah\s+pergi)([\s\S]{50,600})(?=Menimbang|Mengingat|MENGADILI)",
         r"(?:meninggalkan\s+Kesatuan\s+tanpa\s+ijin)([\s\S]{50,400})(?=Menimbang)",
         r"(?:Dengan\s+cara-cara\s+sebagai\s+berikut)([\s\S]{100,600})(?=Berpendapat|Menimbang)",
+        r"(?:Bahwa\s+Terdakwa[\s\S]{50,400}?)(?=Menimbang|Mengingat|MENGADILI)",
     ]
     for pat in patterns:
         m = re.search(pat, text, re.IGNORECASE)
@@ -263,6 +294,25 @@ def extract_ringkasan_fakta(text: str) -> str:
     m = re.search(r"(?:didakwa|dakwaan)([\s\S]{100,400})(?=Menimbang)", text, re.IGNORECASE)
     if m:
         return re.sub(r"\s+", " ", m.group(1)).strip()[:400]
+
+    # Fallback semantik ringan: cari potongan di sekitar kata kunci fakta yang umum.
+    keywords = [
+        "meninggalkan kesatuan",
+        "tanpa ijin",
+        "tidak masuk dinas",
+        "tidak hadir",
+        "dakwaan",
+        "bahwa terdakwa",
+    ]
+    lower = text.lower()
+    for kw in keywords:
+        idx = lower.find(kw)
+        if idx != -1:
+            start = max(0, idx - 180)
+            end = min(len(text), idx + 500)
+            snippet = re.sub(r"\s+", " ", text[start:end]).strip()
+            if len(snippet) >= 80:
+                return snippet[:400]
     return ""
 
 def extract_amar_putusan(text: str) -> str:
@@ -282,6 +332,13 @@ def extract_amar_putusan(text: str) -> str:
     if m:
         amar = re.sub(r"\s+", " ", m.group(1)).strip()
         return amar[:900]
+
+    for kw in ["MEMUTUSKAN", "MENETAPKAN", "MENGHUKUM", "Menyatakan Terdakwa"]:
+        idx = text.upper().find(kw.upper())
+        if idx != -1:
+            snippet = re.sub(r"\s+", " ", text[idx:idx + 1200]).strip()
+            if len(snippet) >= 80:
+                return snippet[:900]
     return ""
 
 def count_words(text: str) -> int:
