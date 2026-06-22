@@ -27,9 +27,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from cbr_text import preprocess_text
 
-# ============================================================
-# KONFIGURASI PATH
-# ============================================================
+                                                              
+                  
+                                                              
 BASE_DIR    = r"C:\file\cbr-desersi"
 MODEL_DIR   = os.path.join(BASE_DIR, "models")
 DATA_DIR    = os.path.join(BASE_DIR, "data")
@@ -50,9 +50,9 @@ RETRIEVAL_METRICS_CSV   = os.path.join(EVAL_DIR, "retrieval_metrics.csv")
 PREDICTION_METRICS_CSV  = os.path.join(EVAL_DIR, "prediction_metrics.csv")
 LOG_FILE                = os.path.join(LOG_DIR, "evaluation.log")
 
-# ============================================================
-# SETUP LOGGING
-# ============================================================
+                                                              
+               
+                                                              
 os.makedirs(EVAL_DIR, exist_ok=True)
 os.makedirs(LOG_DIR, exist_ok=True)
 
@@ -67,9 +67,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ============================================================
-# 1. LOAD DATA
-# ============================================================
+                                                              
+              
+                                                              
 
 def load_queries(path: str) -> list:
     """Load queries.json — list of {query_id, query, ground_truth_case_id}."""
@@ -116,9 +116,9 @@ def load_models():
     return vectorizer, tfidf_matrix, case_ids
 
 
-# ============================================================
-# 2. FUNGSI RETRIEVE (sama persis Tahap 3 & 4)
-# ============================================================
+                                                              
+                                              
+                                                              
 
 def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = 5):
     query_vec  = vectorizer.transform([preprocess_text(query)])
@@ -127,9 +127,9 @@ def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = 5):
     return [(case_ids[i], float(sim_scores[i])) for i in top_k_idx]
 
 
-# ============================================================
-# 3. EVALUASI RETRIEVAL
-# ============================================================
+                                                              
+                       
+                                                              
 
 def eval_retrieval(queries: list, retrieval_results: dict, k_values=(1, 3, 5)):
     """
@@ -150,11 +150,11 @@ def eval_retrieval(queries: list, retrieval_results: dict, k_values=(1, 3, 5)):
     logger.info("EVALUASI RETRIEVAL")
     logger.info("=" * 60)
 
-    per_query_rows = []  # detail per query
-    summary_rows   = []  # ringkasan per k
+    per_query_rows = []                    
+    summary_rows   = []                   
 
     for k in k_values:
-        y_true = []  # 1 jika hit, 0 jika tidak
+        y_true = []                            
         y_pred = []
 
         failed_queries = []
@@ -167,27 +167,27 @@ def eval_retrieval(queries: list, retrieval_results: dict, k_values=(1, 3, 5)):
                 continue
 
             res     = retrieval_results[qid]
-            # Ambil ground_truth: prioritaskan dari queries.json, fallback ke retrieval_initial.json
+                                                                                                    
             ground_truth = (
                 q.get("ground_truth_case_id")
                 or q.get("ground_truth")
                 or res.get("ground_truth")
             )
-            # Dukung berbagai nama field top_k dari retrieval_initial.json
+                                                                          
             raw_top = (
-                res.get("top_5_ids")       # format dari 03_retrieval.py
+                res.get("top_5_ids")                                    
                 or res.get("top_k")
                 or res.get("top_k_results")
                 or []
             )
-            # Dukung format list-of-str maupun list-of-[case_id, sim]
+                                                                     
             if raw_top and isinstance(raw_top[0], (list, tuple)):
                 top_k_ids = [item[0] for item in raw_top[:k]]
             else:
                 top_k_ids = raw_top[:k]
 
             hit = 1 if ground_truth in top_k_ids else 0
-            y_true.append(1)   # semua query seharusnya hit (ground truth ada)
+            y_true.append(1)                                                  
             y_pred.append(hit)
 
             rank = (top_k_ids.index(ground_truth) + 1) if hit else None
@@ -249,9 +249,9 @@ def eval_retrieval(queries: list, retrieval_results: dict, k_values=(1, 3, 5)):
     return pd.DataFrame(per_query_rows), pd.DataFrame(summary_rows)
 
 
-# ============================================================
-# 4. RE-EVALUATE RETRIEVAL DARI QUERY LANGSUNG (opsional, lebih lengkap)
-# ============================================================
+                                                              
+                                                                        
+                                                              
 
 def eval_retrieval_live(queries: list, vectorizer, tfidf_matrix, case_ids: list,
                         k_values=(1, 3, 5)):
@@ -283,9 +283,9 @@ def eval_retrieval_live(queries: list, vectorizer, tfidf_matrix, case_ids: list,
     return live_results
 
 
-# ============================================================
-# 5. EVALUASI PREDIKSI SOLUSI
-# ============================================================
+                                                              
+                             
+                                                              
 
 def eval_predictions(predictions_csv: str, cases_dict: dict):
     """
@@ -316,12 +316,12 @@ def eval_predictions(predictions_csv: str, cases_dict: dict):
         top5_ids    = str(row.get("top_5_case_ids", "")).split(",")
         top1_id     = top5_ids[0].strip() if top5_ids else ""
 
-        # Ambil solusi referensi dari kasus top-1
+                                                 
         ref_case    = cases_dict.get(top1_id, {})
         ref_pidana  = str(ref_case.get("pidana_pokok", "")).strip()
         ref_amar    = str(ref_case.get("amar_putusan", ""))[:200].strip()
 
-        # Exact match sederhana (normalisasi lowercase & strip)
+                                                               
         exact_match = (pred_sol.lower() == ref_pidana.lower()) if ref_pidana else False
 
         logger.info("")
@@ -349,9 +349,9 @@ def eval_predictions(predictions_csv: str, cases_dict: dict):
     return df_out
 
 
-# ============================================================
-# 6. ERROR ANALYSIS
-# ============================================================
+                                                              
+                   
+                                                              
 
 def error_analysis(per_query_df: pd.DataFrame, queries: list, cases_dict: dict, k: int = 5):
     """
@@ -363,12 +363,12 @@ def error_analysis(per_query_df: pd.DataFrame, queries: list, cases_dict: dict, 
     logger.info("ANALISIS KEGAGALAN (ERROR ANALYSIS) @ k=%d", k)
     logger.info("=" * 60)
 
-    # Guard: jika DataFrame kosong atau kolom 'k' tidak ada
+                                                           
     if per_query_df.empty or "k" not in per_query_df.columns:
         logger.warning("  per_query_df kosong atau tidak memiliki kolom 'k', skip error analysis.")
         return
 
-    # Filter baris yang gagal
+                             
     df_k    = per_query_df[per_query_df["k"] == k]
     df_fail = df_k[df_k["hit"] == 0]
 
@@ -406,9 +406,9 @@ def error_analysis(per_query_df: pd.DataFrame, queries: list, cases_dict: dict, 
     logger.info("  5. Tambah query uji yang lebih beragam untuk menguji edge-case.")
 
 
-# ============================================================
-# MAIN
-# ============================================================
+                                                              
+      
+                                                              
 
 def main():
     logger.info("=" * 60)
@@ -416,12 +416,12 @@ def main():
     logger.info("Mulai: %s", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     logger.info("=" * 60)
 
-    # --- Load data ---
+                       
     queries      = load_queries(QUERIES_JSON)
     cases_dict   = load_cases(CASES_JSON)
     vectorizer, tfidf_matrix, case_ids = load_models()
 
-    # --- Load retrieval results (Tahap 3) ---
+                                              
     try:
         retrieval_results = load_retrieval_results(RETRIEVAL_INITIAL_JSON)
         use_live = False
@@ -429,20 +429,20 @@ def main():
         logger.warning("Tidak bisa load retrieval_initial.json (%s), menjalankan ulang retrieve().", e)
         use_live = True
 
-    # --- Jika perlu, re-run retrieve() ---
+                                           
     if use_live:
         retrieval_results = eval_retrieval_live(
             queries, vectorizer, tfidf_matrix, case_ids, k_values=(1, 3, 5)
         )
     else:
-        # Pastikan field ground_truth ada di retrieval_results
+                                                              
         for q in queries:
             qid = q.get("query_id") or q.get("id")
             gt  = q.get("ground_truth_case_id") or q.get("ground_truth")
             if qid in retrieval_results and "ground_truth" not in retrieval_results[qid]:
                 retrieval_results[qid]["ground_truth"] = gt
 
-    # --- Evaluasi Retrieval ---
+                                
     per_query_df, summary_df = eval_retrieval(
         queries, retrieval_results, k_values=(1, 3, 5)
     )
@@ -453,14 +453,14 @@ def main():
     logger.info("=" * 60)
     logger.info("\n%s", summary_df.to_string(index=False))
 
-    # --- Simpan retrieval_metrics.csv ---
+                                          
     summary_df.to_csv(RETRIEVAL_METRICS_CSV, index=False, encoding="utf-8-sig")
     logger.info("Retrieval metrics disimpan: %s", RETRIEVAL_METRICS_CSV)
 
-    # --- Error analysis pada k=5 ---
+                                     
     error_analysis(per_query_df, queries, cases_dict, k=5)
 
-    # --- Evaluasi prediksi solusi (dari Tahap 4) ---
+                                                     
     df_pred_eval = eval_predictions(PREDICTIONS_CSV, cases_dict)
 
     if not df_pred_eval.empty:

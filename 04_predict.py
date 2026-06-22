@@ -24,9 +24,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from cbr_text import preprocess_text
 
-# ============================================================
-# KONFIGURASI PATH
-# ============================================================
+                                                              
+                  
+                                                              
 BASE_DIR    = r"C:\file\cbr-desersi"
 MODEL_DIR   = os.path.join(BASE_DIR, "models")
 DATA_DIR    = os.path.join(BASE_DIR, "data")
@@ -40,11 +40,11 @@ CASE_IDS_PATH       = os.path.join(MODEL_DIR, "case_ids.pkl")
 PREDICTIONS_CSV     = os.path.join(RESULTS_DIR, "predictions.csv")
 LOG_FILE            = os.path.join(LOG_DIR, "predict.log")
 
-TOP_K = 5  # jumlah kasus mirip yang diambil
+TOP_K = 5                                   
 
-# ============================================================
-# SETUP LOGGING
-# ============================================================
+                                                              
+               
+                                                              
 os.makedirs(RESULTS_DIR, exist_ok=True)
 os.makedirs(LOG_DIR, exist_ok=True)
 
@@ -59,9 +59,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ============================================================
-# 1. LOAD MODEL DAN DATA
-# ============================================================
+                                                              
+                        
+                                                              
 
 def load_models():
     """Load TF-IDF vectorizer, matrix, dan case_ids dari folder models/."""
@@ -87,9 +87,9 @@ def load_cases(cases_json: str) -> dict:
     return cases_dict
 
 
-# ============================================================
-# 2. FUNGSI RETRIEVE (sama seperti Tahap 3)
-# ============================================================
+                                                              
+                                           
+                                                              
 
 def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = TOP_K):
     """
@@ -107,22 +107,22 @@ def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list, k: int = TOP_
     ------
     List of tuple: [(case_id, similarity_score), ...]
     """
-    # 1) Pre-process & vektorisasi query
+                                        
     query_vec = vectorizer.transform([preprocess_text(query)])
 
-    # 2) Hitung cosine similarity dengan semua case vectors
+                                                           
     sim_scores = cosine_similarity(query_vec, tfidf_matrix).flatten()
 
-    # 3) Ambil top-k indeks (diurutkan descending)
+                                                  
     top_k_idx = sim_scores.argsort()[::-1][:k]
 
     results = [(case_ids[i], float(sim_scores[i])) for i in top_k_idx]
     return results
 
 
-# ============================================================
-# 3. EKSTRAKSI SOLUSI
-# ============================================================
+                                                              
+                     
+                                                              
 
 def extract_solution(case: dict) -> str:
     """
@@ -135,7 +135,7 @@ def extract_solution(case: dict) -> str:
     if pidana_pokok and pidana_pokok.lower() not in ("tidak ditemukan", "-", ""):
         return pidana_pokok
     if amar_putusan and amar_putusan.lower() not in ("tidak ditemukan", "-", ""):
-        return amar_putusan[:300]  # batasi 300 karakter agar ringkas
+        return amar_putusan[:300]                                    
     return "Solusi tidak tersedia"
 
 
@@ -161,9 +161,9 @@ def get_top_k_solutions(top_k_results: list, cases_dict: dict) -> list:
     return solutions
 
 
-# ============================================================
-# 4. ALGORITMA PREDIKSI
-# ============================================================
+                                                              
+                       
+                                                              
 
 def majority_vote(solutions: list) -> str:
     """
@@ -218,7 +218,7 @@ def predict_outcome(query: str, vectorizer, tfidf_matrix, case_ids: list,
     mv  = majority_vote(solutions)
     ws  = weighted_similarity(solutions)
 
-    # Prediksi akhir: gunakan weighted similarity (lebih akurat secara teoretis)
+                                                                                
     final = ws
 
     return {
@@ -230,9 +230,9 @@ def predict_outcome(query: str, vectorizer, tfidf_matrix, case_ids: list,
     }
 
 
-# ============================================================
-# 5. DEMO — 5 KASUS BARU
-# ============================================================
+                                                              
+                        
+                                                              
 
 DEMO_QUERIES = [
     {
@@ -308,7 +308,7 @@ def run_demo(vectorizer, tfidf_matrix, case_ids, cases_dict):
         logger.info("Query [%s]: %s", qid, desc)
         result = predict_outcome(query, vectorizer, tfidf_matrix, case_ids, cases_dict)
 
-        # Tampilkan top-k
+                         
         for rank, (case_id, sim) in enumerate(result["top_k_results"], 1):
             sol_detail = next(s for s in result["solutions"] if s["case_id"] == case_id)
             logger.info(
@@ -323,7 +323,7 @@ def run_demo(vectorizer, tfidf_matrix, case_ids, cases_dict):
         logger.info("  → Weighted Sim      : %s", result["weighted_sim"])
         logger.info("  → PREDIKSI AKHIR    : %s", result["final_prediction"])
 
-        # Siapkan baris untuk CSV
+                                 
         top5_ids = ",".join([cid for cid, _ in result["top_k_results"]])
         rows.append({
             "query_id":           qid,
@@ -338,9 +338,9 @@ def run_demo(vectorizer, tfidf_matrix, case_ids, cases_dict):
     return rows
 
 
-# ============================================================
-# 6. SIMPAN HASIL KE CSV
-# ============================================================
+                                                              
+                        
+                                                              
 
 def save_predictions(rows: list, output_path: str):
     """Simpan hasil prediksi ke predictions.csv."""
@@ -355,9 +355,9 @@ def save_predictions(rows: list, output_path: str):
     return df
 
 
-# ============================================================
-# MAIN
-# ============================================================
+                                                              
+      
+                                                              
 
 def main():
     logger.info("=" * 60)
@@ -365,17 +365,17 @@ def main():
     logger.info("Mulai: %s", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     logger.info("=" * 60)
 
-    # 1. Load model dan data
+                            
     vectorizer, tfidf_matrix, case_ids = load_models()
     cases_dict = load_cases(CASES_JSON)
 
-    # 2. Jalankan demo 5 kasus baru
+                                   
     rows = run_demo(vectorizer, tfidf_matrix, case_ids, cases_dict)
 
-    # 3. Simpan ke CSV
+                      
     save_predictions(rows, PREDICTIONS_CSV)
 
-    # 4. Tampilkan ringkasan
+                            
     logger.info("")
     logger.info("=" * 60)
     logger.info("RINGKASAN PREDIKSI")

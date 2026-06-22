@@ -30,9 +30,9 @@ from datetime import datetime
 
 from cbr_text import preprocess_text
 
-# ============================================================
-# KONFIGURASI PATH
-# ============================================================
+                                                              
+                  
+                                                              
 BASE_DIR      = Path(__file__).parent
 PROCESSED_DIR = BASE_DIR / "data" / "processed"
 EVAL_DIR      = BASE_DIR / "data" / "eval"
@@ -43,9 +43,9 @@ EVAL_DIR.mkdir(parents=True, exist_ok=True)
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-# ============================================================
-# SETUP LOGGING
-# ============================================================
+                                                              
+               
+                                                              
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s",
@@ -57,9 +57,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ============================================================
-# LOAD DATA
-# ============================================================
+                                                              
+           
+                                                              
 
 def load_cases() -> list:
     json_path = PROCESSED_DIR / "cases.json"
@@ -94,25 +94,25 @@ def build_query_text(case: dict) -> str:
     return " ".join(parts)
 
 
-# ============================================================
-# BANGUN VEKTOR TF-IDF
-# ============================================================
+                                                              
+                      
+                                                              
 
 def build_tfidf(cases: list):
     """Bangun TF-IDF vectorizer dari semua kasus."""
     logger.info("Membangun TF-IDF vectors...")
 
-    # Buat teks representasi tiap kasus
+                                       
     texts = [preprocess_text(build_query_text(c)) for c in cases]
     case_ids = [c["case_id"] for c in cases]
 
-    # TF-IDF Vectorizer
+                       
     vectorizer = TfidfVectorizer(
-        max_features=5000,       # ambil 5000 fitur teratas
-        ngram_range=(1, 2),      # unigram + bigram
-        min_df=1,                # minimal muncul di 1 dokumen
-        max_df=0.95,             # abaikan yang muncul di >95% dokumen
-        sublinear_tf=True,       # log normalisasi TF
+        max_features=5000,                                 
+        ngram_range=(1, 2),                        
+        min_df=1,                                             
+        max_df=0.95,                                                  
+        sublinear_tf=True,                           
     )
 
     tfidf_matrix = vectorizer.fit_transform(texts)
@@ -123,9 +123,9 @@ def build_tfidf(cases: list):
     return vectorizer, tfidf_matrix, texts, case_ids
 
 
-# ============================================================
-# FUNGSI RETRIEVE (COSINE SIMILARITY)
-# ============================================================
+                                                              
+                                     
+                                                              
 
 def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list,
              cases: list, k: int = 5) -> list:
@@ -143,16 +143,16 @@ def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list,
     Returns:
         list of dict berisi case_id, similarity score, dan info kasus
     """
-    # 1. Preprocess query
+                         
     query_processed = preprocess_text(query)
 
-    # 2. Hitung vektor query
+                            
     query_vec = vectorizer.transform([query_processed])
 
-    # 3. Hitung cosine similarity dengan semua case vectors
+                                                           
     similarities = cosine_similarity(query_vec, tfidf_matrix).flatten()
 
-    # 4. Ambil top-k index
+                          
     top_k_idx = np.argsort(similarities)[::-1][:k]
 
     results = []
@@ -171,9 +171,9 @@ def retrieve(query: str, vectorizer, tfidf_matrix, case_ids: list,
     return results
 
 
-# ============================================================
-# TRAINING SVM UNTUK KLASIFIKASI
-# ============================================================
+                                                              
+                                
+                                                              
 
 def train_svm(tfidf_matrix, cases: list):
     """
@@ -182,7 +182,7 @@ def train_svm(tfidf_matrix, cases: list):
     """
     logger.info("\nMempersiapkan label untuk SVM...")
 
-    # Buat label dari pidana_pokok
+                                  
     labels = []
     valid_idx = []
 
@@ -191,7 +191,7 @@ def train_svm(tfidf_matrix, cases: list):
         if not pidana:
             continue
 
-        # Kategorisasi label — hanya 2 kelas agar cukup data
+                                                            
         if "tahun" in pidana.lower():
             label = "penjara_dengan_pecat"  if re.search(r"pecat|dipecat|diberhentikan", pidana.lower()) else "penjara_tanpa_pecat"
         else:
@@ -203,7 +203,7 @@ def train_svm(tfidf_matrix, cases: list):
     from collections import Counter
     label_counts = Counter(labels)
 
-    # Gabungkan label yang terlalu sedikit (<2 anggota) ke label mayoritas
+                                                                          
     majority = label_counts.most_common(1)[0][0]
     labels = [l if label_counts[l] >= 2 else majority for l in labels]
     label_counts = Counter(labels)
@@ -212,7 +212,7 @@ def train_svm(tfidf_matrix, cases: list):
         logger.warning("Label kurang beragam untuk SVM, skip training SVM.")
         return None, None, None
 
-    # Filter matrix hanya index yang punya label
+                                                
     X = tfidf_matrix[valid_idx]
     y = np.array(labels)
 
@@ -220,8 +220,8 @@ def train_svm(tfidf_matrix, cases: list):
     for label, count in label_counts.items():
         logger.info(f"  {label}: {count} kasus")
 
-    # Split train/test 80:20
-    # Nonaktifkan stratify jika ada kelas dengan < 2 anggota
+                            
+                                                            
     min_class_count = min(label_counts.values())
     use_stratify = y if min_class_count >= 2 and len(set(labels)) > 1 else None
 
@@ -240,12 +240,12 @@ def train_svm(tfidf_matrix, cases: list):
 
     logger.info(f"Split data: train={X_train.shape[0]}, test={X_test.shape[0]}")
 
-    # Training SVM
+                  
     logger.info("Training LinearSVC...")
     svm = LinearSVC(C=1.0, max_iter=2000, random_state=42)
     svm.fit(X_train, y_train)
 
-    # Evaluasi training
+                       
     train_acc = svm.score(X_train, y_train)
     test_acc  = svm.score(X_test, y_test)
     logger.info(f"SVM Train Accuracy : {train_acc:.4f} ({train_acc*100:.1f}%)")
@@ -254,9 +254,9 @@ def train_svm(tfidf_matrix, cases: list):
     return svm, y_test, svm.predict(X_test)
 
 
-# ============================================================
-# BUAT QUERY UJI
-# ============================================================
+                                                              
+                
+                                                              
 
 def create_test_queries(cases: list) -> list:
     """
@@ -292,9 +292,9 @@ def create_test_queries(cases: list) -> list:
 
     return queries
 
-# ============================================================
-# MAIN
-# ============================================================
+                                                              
+      
+                                                              
 
 def main():
     logger.info(f"{'='*60}")
@@ -302,21 +302,21 @@ def main():
     logger.info(f"Mulai: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info(f"{'='*60}")
 
-    # 1. Load data
+                  
     cases = load_cases()
     if not cases:
         return
 
-    # 2. Bangun TF-IDF
+                      
     vectorizer, tfidf_matrix, texts, case_ids = build_tfidf(cases)
 
-    # 3. Training SVM
+                     
     logger.info(f"\n{'='*40}")
     logger.info("TRAINING SVM")
     logger.info(f"{'='*40}")
     svm, y_test, y_pred = train_svm(tfidf_matrix, cases)
 
-    # 4. Simpan model
+                     
     logger.info("\nMenyimpan model...")
     joblib.dump(vectorizer, MODEL_DIR / "tfidf_vectorizer.pkl")
     joblib.dump(tfidf_matrix, MODEL_DIR / "tfidf_matrix.pkl")
@@ -325,7 +325,7 @@ def main():
         joblib.dump(svm, MODEL_DIR / "svm_model.pkl")
     logger.info(f"Model disimpan di: {MODEL_DIR}")
 
-    # 5. Buat dan simpan query uji
+                                  
     logger.info(f"\n{'='*40}")
     logger.info("MEMBUAT QUERY UJI")
     logger.info(f"{'='*40}")
@@ -336,7 +336,7 @@ def main():
         json.dump(test_queries, f, ensure_ascii=False, indent=2)
     logger.info(f"Query uji disimpan: {queries_path} ({len(test_queries)} query)")
 
-    # 6. Uji fungsi retrieve dengan semua query
+                                               
     logger.info(f"\n{'='*40}")
     logger.info("UJI FUNGSI RETRIEVE")
     logger.info(f"{'='*40}")
@@ -350,7 +350,7 @@ def main():
             q["query_text"], vectorizer, tfidf_matrix, case_ids, cases, k=5
         )
 
-        # Cek apakah ground truth masuk top-5
+                                             
         top5_ids   = [r["case_id"] for r in results]
         is_hit     = q["ground_truth_case_id"] in top5_ids
         hit_count += int(is_hit)
@@ -374,7 +374,7 @@ def main():
             "hit_at_5"     : is_hit,
         })
 
-    # 7. Ringkasan Hit@5
+                        
     hit_rate = hit_count / len(test_queries) if test_queries else 0
     logger.info(f"\n{'='*60}")
     logger.info(f"RINGKASAN RETRIEVAL")
@@ -382,7 +382,7 @@ def main():
     logger.info(f"  Hit@5        : {hit_count}/{len(test_queries)} ({hit_rate*100:.1f}%)")
     logger.info(f"{'='*60}")
 
-    # 8. Simpan hasil retrieval awal
+                                    
     results_path = EVAL_DIR / "retrieval_initial.json"
     with open(results_path, "w", encoding="utf-8") as f:
         json.dump(all_results, f, ensure_ascii=False, indent=2)
@@ -418,9 +418,9 @@ def run_interactive_demo(vectorizer, tfidf_matrix, case_ids, cases):
             )
 
 
-# ============================================================
-# JALANKAN
-# ============================================================
+                                                              
+          
+                                                              
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

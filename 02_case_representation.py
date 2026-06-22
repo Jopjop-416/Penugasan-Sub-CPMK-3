@@ -14,9 +14,9 @@ from datetime import datetime
 
 from cbr_text import normalize_text
 
-# ============================================================
-# KONFIGURASI PATH
-# ============================================================
+                                                              
+                  
+                                                              
 BASE_DIR      = Path(__file__).parent
 RAW_DIR       = BASE_DIR / "data" / "raw"
 PROCESSED_DIR = BASE_DIR / "data" / "processed"
@@ -25,9 +25,9 @@ LOG_DIR       = BASE_DIR / "logs"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-# ============================================================
-# SETUP LOGGING
-# ============================================================
+                                                              
+               
+                                                              
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s",
@@ -39,9 +39,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ============================================================
-# FUNGSI EKSTRAKSI METADATA
-# ============================================================
+                                                              
+                           
+                                                              
 
 def extract_no_perkara(text: str, source_file: str = "") -> str:
     """Ekstrak nomor perkara dari teks atau nama file."""
@@ -90,8 +90,8 @@ def extract_tanggal_putusan(text: str) -> str:
         if m:
             return m.group(1).strip()
 
-    # Fallback: cari tanggal di bagian akhir dokumen karena biasanya tanggal putusan
-    # ditulis dekat penutup / tanda tangan majelis hakim.
+                                                                                    
+                                                         
     tail = text[-5000:]
     tail_patterns = [
         rf"(\d{{1,2}}\s+{bulan}\s+\d{{4}})",
@@ -173,7 +173,7 @@ def extract_kesatuan(text: str) -> str:
             if len(val) < 80:
                 return val
 
-    # Fallback: ambil potongan setelah kata kunci kesatuan/satuan
+                                                                 
     for kw in ["kesatuan", "satuan", "dinas di", "bertugas di"]:
         idx = text.lower().find(kw)
         if idx != -1:
@@ -273,7 +273,7 @@ def extract_jenis_sidang(text: str) -> str:
         return "In Absensia"
     elif re.search(r"terdakwa\s+hadir\s+di\s+persidangan", text, re.IGNORECASE):
         return "Terdakwa Hadir"
-    return "In Absensia"   # default kasus disersi biasanya in absensia
+    return "In Absensia"                                               
 
 
 def extract_ringkasan_fakta(text: str) -> str:
@@ -295,7 +295,7 @@ def extract_ringkasan_fakta(text: str) -> str:
     if m:
         return re.sub(r"\s+", " ", m.group(1)).strip()[:400]
 
-    # Fallback semantik ringan: cari potongan di sekitar kata kunci fakta yang umum.
+                                                                                    
     keywords = [
         "meninggalkan kesatuan",
         "tanpa ijin",
@@ -346,9 +346,9 @@ def count_words(text: str) -> int:
     return len(clean.split())
 
 
-# ============================================================
-# PROSES SEMUA KASUS
-# ============================================================
+                                                              
+                    
+                                                              
 
 def process_all_cases():
     txt_files = sorted(RAW_DIR.glob("*.txt"))
@@ -404,19 +404,19 @@ def process_all_cases():
             f"pidana: {'Ada' if record['pidana_pokok'] else '?'}"
         )
 
-    # Simpan CSV (tanpa text_full)
+                                  
     df = pd.DataFrame(records)
     csv_path = PROCESSED_DIR / "cases.csv"
     df.drop(columns=["text_full"]).to_csv(csv_path, index=False, encoding="utf-8-sig")
     logger.info(f"\nCSV disimpan: {csv_path}")
 
-    # Simpan JSON (dengan text_full)
+                                    
     json_path = PROCESSED_DIR / "cases.json"
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
     logger.info(f"JSON disimpan: {json_path}")
 
-    # Ringkasan kualitas
+                        
     logger.info(f"\n{'='*60}")
     logger.info("RINGKASAN KUALITAS EKSTRAKSI:")
     fields = ["no_perkara", "terdakwa", "pangkat_nrp", "kesatuan",
@@ -434,9 +434,9 @@ def process_all_cases():
     return df
 
 
-# ============================================================
-# JALANKAN
-# ============================================================
+                                                              
+          
+                                                              
 if __name__ == "__main__":
     df = process_all_cases()
 
