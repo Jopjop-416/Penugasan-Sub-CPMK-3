@@ -11,7 +11,7 @@ Implementasi sistem Case-Based Reasoning berbasis Python untuk mendukung analisi
 ## Ringkasan
 
 - Domain: Pidana Militer, tindak pidana Disersi
-- Jumlah data: 34 putusan
+- Jumlah data: 35 putusan
 - Alur kerja: preprocessing, case representation, retrieval, solution reuse, evaluation
 - Bahasa dan tools: Python, pandas, scikit-learn, pdfminer.six, joblib
 
