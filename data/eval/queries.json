@@ -1,0 +1,58 @@
+[
+  {
+    "query_id": "q_001",
+    "query_text": "kan,namun mengenai pembuktian unsur-unsur tindak pidana tersebut Majelis Hakim akanmembuktikan sendiri dalam putusan ini;2.Bahwa mengenai pidana yang dijatuhkan terhadap diri Terdakwa, Majelis Hakimakan mempertimbangkan sendiri dalam putusannya.Menimbang, bahwa tindak pidana yang didakwakan oleh Odi",
+    "ground_truth_case_id": "case_002",
+    "ground_truth_terdakwa": "LABAN WANARURI",
+    "ground_truth_lama_disersi": "30 hari",
+    "ground_truth_pidana": "Pidana pokok : Penjara selama 1 (satu) tahun."
+  },
+  {
+    "query_id": "q_002",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang Negara Kesatuan Repu a dalam keadaan amandan damai serta Kesatuan Terdakwa maupun Terdakwa tidak sedang dipersiapkanuntuk tugas Operasi Militer.Atas keterangan Saksi yang dibacakan tersebut, Terdakwa tidak dapat dimintaitanggapannya",
+    "ground_truth_case_id": "case_004",
+    "ground_truth_terdakwa": "ARNOLD JARE",
+    "ground_truth_lama_disersi": "491 hari",
+    "ground_truth_pidana": "Pidana pokok :Penjara selama 1 (satu) tahun."
+  },
+  {
+    "query_id": "q_003",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang, Negara Kesatuan Repu a dalam keadaan amandan damai dan Kesatuan Terdakwa maupun Terdakwa tidak di persiapkan untuktugas Operasi Militer.Berpendapat, bahwa perbuatan Terdakwa tersebut telah memenuhi unsur-unsur tindak pidana sebagai",
+    "ground_truth_case_id": "case_005",
+    "ground_truth_terdakwa": "MULYADI LHA",
+    "ground_truth_lama_disersi": "30 hari",
+    "ground_truth_pidana": "Pidana pokok : Penjara selama 1 (satu) tahun."
+  },
+  {
+    "query_id": "q_004",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariAtasan yang berwenang, Negara Kesatuan Repu a dalam keadaan amandan damai serta Kesatuan Yonif RK 762/VYS maupun Terdakwa tidak dipersiapkanuntuk tugas Operasi Militer.Atas keterangan Saksi yang dibacakan tersebut, Terdakwa tidak dapat dimintaitanggapann",
+    "ground_truth_case_id": "case_006",
+    "ground_truth_terdakwa": "SAID MALEWA",
+    "ground_truth_lama_disersi": "30 hari",
+    "ground_truth_pidana": "Pidana pokok : Penjara selama 1 (satu) tahun."
+  },
+  {
+    "query_id": "q_005",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariDansat tidak membawa barang inventaris Kesatuan, dan Negara Kesatuan RepublikIndonesia dalam keadaan damai, serta Terdakwa maupun Kesatuan Kodim1701/Jayapura tidak sedang melaksanakan tugas operasi militer.Berpendapat, bahwa Terdakwa tersebut telah memen",
+    "ground_truth_case_id": "case_010",
+    "ground_truth_terdakwa": "RUSMAN RUMATA",
+    "ground_truth_lama_disersi": "42 hari",
+    "ground_truth_pidana": "Pidana Pokok: Penjara selama 1 (satu) tahun."
+  },
+  {
+    "query_id": "q_006",
+    "query_text": "tersebut Terdakwa mengerti dan atas dakwaan tersebut Terdakwa tidak mengajukan eksepsi. Menimbang, bahwa atas dakwaan tersebut Terdakwa mengakui telah melakukan tindak pidana yang didakwakan kepadanya dan membenarkan semua dakwaan yang didakwakan kepadanya.",
+    "ground_truth_case_id": "case_011",
+    "ground_truth_terdakwa": "Olimpus Ae Monibor",
+    "ground_truth_lama_disersi": "105 hari",
+    "ground_truth_pidana": "Pidana pokok : Penjara selama 1 (satu) tahun dan 6 bulan."
+  },
+  {
+    "query_id": "q_007",
+    "query_text": "Terdakwa telah pergi meninggalkan Kesatua tanpa ijin yang sahdari Komandan Kesatuan atau atasan lain yang berwenang sejak tanggal 9Desember 2022 sampai dengan tanggal 18 Januari 2023 atau selama 41 (EmpatPuluh Satu) hari. Menimbang, bahwa apakah berdasrkan fakta-fakta hukum tersebut Terdakwadapat di",
+    "ground_truth_case_id": "case_015",
+    "ground_truth_terdakwa": "LEBRIK ADOLOF WANGGAI",
+    "ground_truth_lama_disersi": "41 hari",
+    "ground_truth_pidana": "Pidana Pokok: Penjara selama 1 (satu) tahun."
+  }
+]

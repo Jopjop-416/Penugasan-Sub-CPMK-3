@@ -1,0 +1,252 @@
+026-06-22 17:10:22,485 | INFO | ============================================================
+2026-06-22 17:10:22,485 | INFO | Mulai preprocessing — 2026-06-22 17:10:22
+2026-06-22 17:10:22,485 | INFO | Total PDF ditemukan: 35
+2026-06-22 17:10:22,486 | INFO | ============================================================
+2026-06-22 17:10:22,486 | INFO | [1/35] Memproses: putusan_100-k_pm.iii-19_ad_ii_2023_20260619164642.pdf
+2026-06-22 17:10:23,378 | INFO |   → OK | 493 kata | disimpan ke case_001.txt
+2026-06-22 17:10:23,379 | INFO | [2/35] Memproses: putusan_102-k_pm.iii-19_ad_ii_2023_20260619165436.pdf
+2026-06-22 17:10:24,054 | INFO |   → OK | 4955 kata | disimpan ke case_002.txt
+2026-06-22 17:10:24,054 | INFO | [3/35] Memproses: putusan_103-k_pm.iii-19_ad_ii_2023_20260619164921.pdf
+2026-06-22 17:10:24,750 | INFO |   → OK | 466 kata | disimpan ke case_003.txt
+2026-06-22 17:10:24,750 | INFO | [4/35] Memproses: putusan_104-k_pm.iii-19_ad_ii_2023_20260619165338.pdf
+2026-06-22 17:10:25,399 | INFO |   → OK | 5069 kata | disimpan ke case_004.txt
+2026-06-22 17:10:25,399 | INFO | [5/35] Memproses: putusan_105-k_pm.iii-19_ad_ii_2023_20260619170014.pdf
+2026-06-22 17:10:26,012 | INFO |   → OK | 4561 kata | disimpan ke case_005.txt
+2026-06-22 17:10:26,012 | INFO | [6/35] Memproses: putusan_112-k_pm.iii-19_ad_iii_2023_20260619165150.pdf
+2026-06-22 17:10:26,654 | INFO |   → OK | 4987 kata | disimpan ke case_006.txt
+2026-06-22 17:10:26,654 | INFO | [7/35] Memproses: putusan_120-k_pm.iii-19_ad_iii_2023_20260619170311.pdf
+2026-06-22 17:10:27,452 | INFO |   → OK | 466 kata | disimpan ke case_007.txt
+2026-06-22 17:10:27,453 | INFO | [8/35] Memproses: putusan_122-k_pm.iii-19_ad_iii_2023_20260619170256.pdf
+2026-06-22 17:10:28,254 | INFO |   → OK | 493 kata | disimpan ke case_008.txt
+2026-06-22 17:10:28,255 | INFO | [9/35] Memproses: putusan_123-k_pm.iii-19_ad_iii_2023_20260619170329.pdf
+2026-06-22 17:10:29,096 | INFO |   → OK | 466 kata | disimpan ke case_009.txt
+2026-06-22 17:10:29,096 | INFO | [10/35] Memproses: putusan_130-k_pm.iii-19_ad_iii_2023_20260619164523.pdf
+2026-06-22 17:10:29,984 | INFO |   → OK | 6754 kata | disimpan ke case_010.txt
+2026-06-22 17:10:29,984 | INFO | [11/35] Memproses: putusan_131-k_pm.iii-19_ad_iii_2023_20260619170211.pdf
+2026-06-22 17:10:31,177 | INFO |   → OK | 10158 kata | disimpan ke case_011.txt
+2026-06-22 17:10:31,177 | INFO | [12/35] Memproses: putusan_133-k_pm.iii-19_ad_iii_2023_20260619170403.pdf
+2026-06-22 17:10:31,908 | INFO |   → OK | 439 kata | disimpan ke case_012.txt
+2026-06-22 17:10:31,908 | INFO | [13/35] Memproses: putusan_137-k_pm.iii-19_ad_iv_2023_20260619170505.pdf
+2026-06-22 17:10:32,632 | INFO |   → OK | 439 kata | disimpan ke case_013.txt
+2026-06-22 17:10:32,633 | INFO | [14/35] Memproses: putusan_152-k_pm.iii-19_ad_v_2023_20260619164244.pdf
+2026-06-22 17:10:32,667 | INFO |   → OK | 102 kata | disimpan ke case_014.txt
+2026-06-22 17:10:32,667 | INFO | [15/35] Memproses: putusan_154-k_pm.iii-19_ad_v_2023_20260619162749.pdf
+2026-06-22 17:10:33,458 | INFO |   → OK | 6429 kata | disimpan ke case_015.txt
+2026-06-22 17:10:33,458 | INFO | [16/35] Memproses: putusan_16-k_pm.iii-19_al_i_2023_20260619163748.pdf
+2026-06-22 17:10:34,131 | INFO |   → OK | 5286 kata | disimpan ke case_016.txt
+2026-06-22 17:10:34,131 | INFO | [17/35] Memproses: putusan_162-k_pm.iii-19_ad_v_2023_20260619164507.pdf
+2026-06-22 17:10:34,218 | INFO |   → OK | 472 kata | disimpan ke case_017.txt
+2026-06-22 17:10:34,218 | INFO | [18/35] Memproses: putusan_163-k_pm.iii-19_ad_v_2023_20260619164357.pdf
+2026-06-22 17:10:34,355 | INFO |   → OK | 737 kata | disimpan ke case_018.txt
+2026-06-22 17:10:34,355 | INFO | [19/35] Memproses: putusan_164-k_pm.iii-19_ad_v_2023_20260619164334.pdf
+2026-06-22 17:10:34,390 | INFO |   → OK | 102 kata | disimpan ke case_019.txt
+2026-06-22 17:10:34,391 | INFO | [20/35] Memproses: putusan_17-k_pm.iii-19_al_i_2023_20260619162844.pdf
+2026-06-22 17:10:35,186 | INFO |   → OK | 6166 kata | disimpan ke case_020.txt
+2026-06-22 17:10:35,186 | INFO | [21/35] Memproses: putusan_171-k_pm.iii-19_ad_v_2023_20260619165914.pdf
+2026-06-22 17:10:35,199 | WARNING | [SKIP] putusan_171-k_pm.iii-19_ad_v_2023_20260619165914.pdf — terlalu pendek (34 kata) → kemungkinan PDF scan/gambar
+2026-06-22 17:10:35,200 | INFO | [22/35] Memproses: putusan_180-k_pm.iii-19_ad_vi_2023_20260619170236.pdf
+2026-06-22 17:10:36,065 | INFO |   → OK | 7381 kata | disimpan ke case_022.txt
+2026-06-22 17:10:36,065 | INFO | [23/35] Memproses: putusan_181-k_pm.iii-19_ad_vi_2023_20260619170539.pdf
+2026-06-22 17:10:36,914 | INFO |   → OK | 7432 kata | disimpan ke case_023.txt
+2026-06-22 17:10:36,914 | INFO | [24/35] Memproses: putusan_193-k_pm.iii-19_ad_vi_2023_20260619170839.pdf
+2026-06-22 17:10:37,721 | INFO |   → OK | 6677 kata | disimpan ke case_024.txt
+2026-06-22 17:10:37,721 | INFO | [25/35] Memproses: putusan_194-k_pm.iii-19_ad_vi_2023_20260619165111.pdf
+2026-06-22 17:10:38,435 | INFO |   → OK | 5859 kata | disimpan ke case_025.txt
+2026-06-22 17:10:38,435 | INFO | [26/35] Memproses: putusan_212-k_pm.iii-19_ad_vi_2023_20260619170704.pdf
+2026-06-22 17:10:39,500 | INFO |   → OK | 6832 kata | disimpan ke case_026.txt
+2026-06-22 17:10:39,500 | INFO | [27/35] Memproses: putusan_26-k_pm.iii-19_al_i_2023_20260619163545.pdf
+2026-06-22 17:10:40,175 | INFO |   → OK | 5221 kata | disimpan ke case_027.txt
+2026-06-22 17:10:40,175 | INFO | [28/35] Memproses: putusan_30-k_pm.iii-19_al_i_2023_20260619163938.pdf
+2026-06-22 17:10:40,755 | INFO |   → OK | 4783 kata | disimpan ke case_028.txt
+2026-06-22 17:10:40,756 | INFO | [29/35] Memproses: putusan_40-k_pm.iii-19_ad_i_2023_20260619164146.pdf
+2026-06-22 17:10:41,830 | INFO |   → OK | 8618 kata | disimpan ke case_029.txt
+2026-06-22 17:10:41,830 | INFO | [30/35] Memproses: putusan_67-k_pm.iii-19_ad_i_2023_20260619165034.pdf
+2026-06-22 17:10:42,507 | INFO |   → OK | 439 kata | disimpan ke case_030.txt
+2026-06-22 17:10:42,507 | INFO | [31/35] Memproses: putusan_94-k_pm.iii-19_ad_ii_2023_20260619170036.pdf
+2026-06-22 17:10:43,121 | INFO |   → OK | 4810 kata | disimpan ke case_031.txt
+2026-06-22 17:10:43,121 | INFO | [32/35] Memproses: putusan_95-k_pm.iii-19_ad_ii_2023_20260619165811.pdf
+2026-06-22 17:10:43,815 | INFO |   → OK | 4864 kata | disimpan ke case_032.txt
+2026-06-22 17:10:43,816 | INFO | [33/35] Memproses: putusan_96-k_pm.iii-19_ad_ii_2023_20260619164748.pdf
+2026-06-22 17:10:44,484 | INFO |   → OK | 466 kata | disimpan ke case_033.txt
+2026-06-22 17:10:44,484 | INFO | [34/35] Memproses: putusan_98-k_pm.iii-19_ad_ii_2023_20260619165650.pdf
+2026-06-22 17:10:45,127 | INFO |   → OK | 4581 kata | disimpan ke case_034.txt
+2026-06-22 17:10:45,128 | INFO | [35/35] Memproses: putusan_99-k_pm.iii-19_ad_ii_2023_20260619164031.pdf
+2026-06-22 17:10:45,739 | INFO |   → OK | 4769 kata | disimpan ke case_035.txt
+2026-06-22 17:10:45,739 | INFO | 
+============================================================
+2026-06-22 17:10:45,740 | INFO | SELESAI PREPROCESSING
+2026-06-22 17:10:45,740 | INFO |   Berhasil : 34 file
+2026-06-22 17:10:45,740 | INFO |   Dilewati : 1 file
+2026-06-22 17:10:45,740 | INFO |   Error    : 0 file
+2026-06-22 17:10:45,740 | INFO |   Total    : 35 file
+2026-06-22 17:10:45,740 | INFO |   Output   : c:\file\cbr-desersi\data\raw
+2026-06-22 17:10:45,741 | INFO |   Log      : c:\file\cbr-desersi\logs\cleaning.log
+2026-06-22 17:10:45,741 | INFO | ============================================================
+2026-06-22 18:30:58,530 | INFO | ============================================================
+2026-06-22 18:30:58,530 | INFO | Mulai preprocessing — 2026-06-22 18:30:58
+2026-06-22 18:30:58,530 | INFO | Total PDF ditemukan: 35
+2026-06-22 18:30:58,531 | INFO | ============================================================
+2026-06-22 18:30:58,531 | INFO | [1/35] Memproses: putusan_100-k_pm.iii-19_ad_ii_2023_20260619164642.pdf
+2026-06-22 18:30:59,964 | INFO |   → OK | 493 kata | disimpan ke case_001.txt
+2026-06-22 18:30:59,964 | INFO | [2/35] Memproses: putusan_102-k_pm.iii-19_ad_ii_2023_20260619165436.pdf
+2026-06-22 18:31:00,883 | INFO |   → OK | 4955 kata | disimpan ke case_002.txt
+2026-06-22 18:31:00,883 | INFO | [3/35] Memproses: putusan_103-k_pm.iii-19_ad_ii_2023_20260619164921.pdf
+2026-06-22 18:31:01,959 | INFO |   → OK | 466 kata | disimpan ke case_003.txt
+2026-06-22 18:31:01,959 | INFO | [4/35] Memproses: putusan_104-k_pm.iii-19_ad_ii_2023_20260619165338.pdf
+2026-06-22 18:31:02,813 | INFO |   → OK | 5069 kata | disimpan ke case_004.txt
+2026-06-22 18:31:02,813 | INFO | [5/35] Memproses: putusan_105-k_pm.iii-19_ad_ii_2023_20260619170014.pdf
+2026-06-22 18:31:03,784 | INFO |   → OK | 4561 kata | disimpan ke case_005.txt
+2026-06-22 18:31:03,785 | INFO | [6/35] Memproses: putusan_112-k_pm.iii-19_ad_iii_2023_20260619165150.pdf
+2026-06-22 18:31:04,947 | INFO |   → OK | 4987 kata | disimpan ke case_006.txt
+2026-06-22 18:31:04,947 | INFO | [7/35] Memproses: putusan_120-k_pm.iii-19_ad_iii_2023_20260619170311.pdf
+2026-06-22 18:31:06,220 | INFO |   → OK | 466 kata | disimpan ke case_007.txt
+2026-06-22 18:31:06,220 | INFO | [8/35] Memproses: putusan_122-k_pm.iii-19_ad_iii_2023_20260619170256.pdf
+2026-06-22 18:31:07,412 | INFO |   → OK | 493 kata | disimpan ke case_008.txt
+2026-06-22 18:31:07,412 | INFO | [9/35] Memproses: putusan_123-k_pm.iii-19_ad_iii_2023_20260619170329.pdf
+2026-06-22 18:31:08,507 | INFO |   → OK | 466 kata | disimpan ke case_009.txt
+2026-06-22 18:31:08,507 | INFO | [10/35] Memproses: putusan_130-k_pm.iii-19_ad_iii_2023_20260619164523.pdf
+2026-06-22 18:31:09,764 | INFO |   → OK | 6754 kata | disimpan ke case_010.txt
+2026-06-22 18:31:09,765 | INFO | [11/35] Memproses: putusan_131-k_pm.iii-19_ad_iii_2023_20260619170211.pdf
+2026-06-22 18:31:11,891 | INFO |   → OK | 10158 kata | disimpan ke case_011.txt
+2026-06-22 18:31:11,891 | INFO | [12/35] Memproses: putusan_133-k_pm.iii-19_ad_iii_2023_20260619170403.pdf
+2026-06-22 18:31:13,048 | INFO |   → OK | 439 kata | disimpan ke case_012.txt
+2026-06-22 18:31:13,048 | INFO | [13/35] Memproses: putusan_137-k_pm.iii-19_ad_iv_2023_20260619170505.pdf
+2026-06-22 18:31:14,095 | INFO |   → OK | 439 kata | disimpan ke case_013.txt
+2026-06-22 18:31:14,096 | INFO | [14/35] Memproses: putusan_152-k_pm.iii-19_ad_v_2023_20260619164244.pdf
+2026-06-22 18:31:14,145 | INFO |   → OK | 102 kata | disimpan ke case_014.txt
+2026-06-22 18:31:14,145 | INFO | [15/35] Memproses: putusan_154-k_pm.iii-19_ad_v_2023_20260619162749.pdf
+2026-06-22 18:31:15,230 | INFO |   → OK | 6429 kata | disimpan ke case_015.txt
+2026-06-22 18:31:15,231 | INFO | [16/35] Memproses: putusan_16-k_pm.iii-19_al_i_2023_20260619163748.pdf
+2026-06-22 18:31:16,482 | INFO |   → OK | 5286 kata | disimpan ke case_016.txt
+2026-06-22 18:31:16,482 | INFO | [17/35] Memproses: putusan_162-k_pm.iii-19_ad_v_2023_20260619164507.pdf
+2026-06-22 18:31:16,620 | INFO |   → OK | 472 kata | disimpan ke case_017.txt
+2026-06-22 18:31:16,621 | INFO | [18/35] Memproses: putusan_163-k_pm.iii-19_ad_v_2023_20260619164357.pdf
+2026-06-22 18:31:16,885 | INFO |   → OK | 737 kata | disimpan ke case_018.txt
+2026-06-22 18:31:16,885 | INFO | [19/35] Memproses: putusan_164-k_pm.iii-19_ad_v_2023_20260619164334.pdf
+2026-06-22 18:31:16,952 | INFO |   → OK | 102 kata | disimpan ke case_019.txt
+2026-06-22 18:31:16,952 | INFO | [20/35] Memproses: putusan_17-k_pm.iii-19_al_i_2023_20260619162844.pdf
+2026-06-22 18:31:18,165 | INFO |   → OK | 6166 kata | disimpan ke case_020.txt
+2026-06-22 18:31:18,165 | INFO | [21/35] Memproses: putusan_171-k_pm.iii-19_ad_v_2023_20260619165914.pdf
+2026-06-22 18:31:18,190 | WARNING | [SKIP] putusan_171-k_pm.iii-19_ad_v_2023_20260619165914.pdf — terlalu pendek (34 kata) → kemungkinan PDF scan/gambar
+2026-06-22 18:31:18,190 | INFO | [22/35] Memproses: putusan_180-k_pm.iii-19_ad_vi_2023_20260619170236.pdf
+2026-06-22 18:31:19,791 | INFO |   → OK | 7381 kata | disimpan ke case_022.txt
+2026-06-22 18:31:19,791 | INFO | [23/35] Memproses: putusan_181-k_pm.iii-19_ad_vi_2023_20260619170539.pdf
+2026-06-22 18:31:21,179 | INFO |   → OK | 7432 kata | disimpan ke case_023.txt
+2026-06-22 18:31:21,179 | INFO | [24/35] Memproses: putusan_193-k_pm.iii-19_ad_vi_2023_20260619170839.pdf
+2026-06-22 18:31:22,262 | INFO |   → OK | 6677 kata | disimpan ke case_024.txt
+2026-06-22 18:31:22,262 | INFO | [25/35] Memproses: putusan_194-k_pm.iii-19_ad_vi_2023_20260619165111.pdf
+2026-06-22 18:31:23,397 | INFO |   → OK | 5859 kata | disimpan ke case_025.txt
+2026-06-22 18:31:23,397 | INFO | [26/35] Memproses: putusan_212-k_pm.iii-19_ad_vi_2023_20260619170704.pdf
+2026-06-22 18:31:24,929 | INFO |   → OK | 6832 kata | disimpan ke case_026.txt
+2026-06-22 18:31:24,929 | INFO | [27/35] Memproses: putusan_26-k_pm.iii-19_al_i_2023_20260619163545.pdf
+2026-06-22 18:31:25,986 | INFO |   → OK | 5221 kata | disimpan ke case_027.txt
+2026-06-22 18:31:25,986 | INFO | [28/35] Memproses: putusan_30-k_pm.iii-19_al_i_2023_20260619163938.pdf
+2026-06-22 18:31:26,888 | INFO |   → OK | 4783 kata | disimpan ke case_028.txt
+2026-06-22 18:31:26,888 | INFO | [29/35] Memproses: putusan_40-k_pm.iii-19_ad_i_2023_20260619164146.pdf
+2026-06-22 18:31:28,870 | INFO |   → OK | 8618 kata | disimpan ke case_029.txt
+2026-06-22 18:31:28,870 | INFO | [30/35] Memproses: putusan_67-k_pm.iii-19_ad_i_2023_20260619165034.pdf
+2026-06-22 18:31:29,920 | INFO |   → OK | 439 kata | disimpan ke case_030.txt
+2026-06-22 18:31:29,920 | INFO | [31/35] Memproses: putusan_94-k_pm.iii-19_ad_ii_2023_20260619170036.pdf
+2026-06-22 18:31:30,877 | INFO |   → OK | 4810 kata | disimpan ke case_031.txt
+2026-06-22 18:31:30,877 | INFO | [32/35] Memproses: putusan_95-k_pm.iii-19_ad_ii_2023_20260619165811.pdf
+2026-06-22 18:31:31,842 | INFO |   → OK | 4864 kata | disimpan ke case_032.txt
+2026-06-22 18:31:31,843 | INFO | [33/35] Memproses: putusan_96-k_pm.iii-19_ad_ii_2023_20260619164748.pdf
+2026-06-22 18:31:32,879 | INFO |   → OK | 466 kata | disimpan ke case_033.txt
+2026-06-22 18:31:32,879 | INFO | [34/35] Memproses: putusan_98-k_pm.iii-19_ad_ii_2023_20260619165650.pdf
+2026-06-22 18:31:33,949 | INFO |   → OK | 4581 kata | disimpan ke case_034.txt
+2026-06-22 18:31:33,949 | INFO | [35/35] Memproses: putusan_99-k_pm.iii-19_ad_ii_2023_20260619164031.pdf
+2026-06-22 18:31:35,018 | INFO |   → OK | 4769 kata | disimpan ke case_035.txt
+2026-06-22 18:31:35,018 | INFO | 
+============================================================
+2026-06-22 18:31:35,018 | INFO | SELESAI PREPROCESSING
+2026-06-22 18:31:35,018 | INFO |   Berhasil : 34 file
+2026-06-22 18:31:35,018 | INFO |   Dilewati : 1 file
+2026-06-22 18:31:35,018 | INFO |   Error    : 0 file
+2026-06-22 18:31:35,019 | INFO |   Total    : 35 file
+2026-06-22 18:31:35,019 | INFO |   Output   : C:\file\cbr-desersi\data\raw
+2026-06-22 18:31:35,019 | INFO |   Log      : C:\file\cbr-desersi\logs\cleaning.log
+2026-06-22 18:31:35,019 | INFO | ============================================================
+2026-06-22 18:33:16,372 | INFO | ============================================================
+2026-06-22 18:33:16,372 | INFO | Mulai preprocessing — 2026-06-22 18:33:16
+2026-06-22 18:33:16,372 | INFO | Total PDF ditemukan: 35
+2026-06-22 18:33:16,373 | INFO | ============================================================
+2026-06-22 18:33:16,373 | INFO | [1/35] Memproses: putusan_100-k_pm.iii-19_ad_ii_2023_20260619164642.pdf
+2026-06-22 18:33:17,027 | INFO |   → OK | 493 kata | disimpan ke case_001.txt
+2026-06-22 18:33:17,028 | INFO | [2/35] Memproses: putusan_102-k_pm.iii-19_ad_ii_2023_20260619165436.pdf
+2026-06-22 18:33:17,642 | INFO |   → OK | 4955 kata | disimpan ke case_002.txt
+2026-06-22 18:33:17,642 | INFO | [3/35] Memproses: putusan_103-k_pm.iii-19_ad_ii_2023_20260619164921.pdf
+2026-06-22 18:33:18,225 | INFO |   → OK | 466 kata | disimpan ke case_003.txt
+2026-06-22 18:33:18,225 | INFO | [4/35] Memproses: putusan_104-k_pm.iii-19_ad_ii_2023_20260619165338.pdf
+2026-06-22 18:33:18,808 | INFO |   → OK | 5069 kata | disimpan ke case_004.txt
+2026-06-22 18:33:18,808 | INFO | [5/35] Memproses: putusan_105-k_pm.iii-19_ad_ii_2023_20260619170014.pdf
+2026-06-22 18:33:19,327 | INFO |   → OK | 4561 kata | disimpan ke case_005.txt
+2026-06-22 18:33:19,327 | INFO | [6/35] Memproses: putusan_112-k_pm.iii-19_ad_iii_2023_20260619165150.pdf
+2026-06-22 18:33:19,852 | INFO |   → OK | 4987 kata | disimpan ke case_006.txt
+2026-06-22 18:33:19,852 | INFO | [7/35] Memproses: putusan_120-k_pm.iii-19_ad_iii_2023_20260619170311.pdf
+2026-06-22 18:33:20,614 | INFO |   → OK | 466 kata | disimpan ke case_007.txt
+2026-06-22 18:33:20,614 | INFO | [8/35] Memproses: putusan_122-k_pm.iii-19_ad_iii_2023_20260619170256.pdf
+2026-06-22 18:33:21,423 | INFO |   → OK | 493 kata | disimpan ke case_008.txt
+2026-06-22 18:33:21,423 | INFO | [9/35] Memproses: putusan_123-k_pm.iii-19_ad_iii_2023_20260619170329.pdf
+2026-06-22 18:33:22,194 | INFO |   → OK | 466 kata | disimpan ke case_009.txt
+2026-06-22 18:33:22,194 | INFO | [10/35] Memproses: putusan_130-k_pm.iii-19_ad_iii_2023_20260619164523.pdf
+2026-06-22 18:33:23,042 | INFO |   → OK | 6754 kata | disimpan ke case_010.txt
+2026-06-22 18:33:23,042 | INFO | [11/35] Memproses: putusan_131-k_pm.iii-19_ad_iii_2023_20260619170211.pdf
+2026-06-22 18:33:24,916 | INFO |   → OK | 10158 kata | disimpan ke case_011.txt
+2026-06-22 18:33:24,916 | INFO | [12/35] Memproses: putusan_133-k_pm.iii-19_ad_iii_2023_20260619170403.pdf
+2026-06-22 18:33:26,198 | INFO |   → OK | 439 kata | disimpan ke case_012.txt
+2026-06-22 18:33:26,198 | INFO | [13/35] Memproses: putusan_137-k_pm.iii-19_ad_iv_2023_20260619170505.pdf
+2026-06-22 18:33:28,229 | INFO |   → OK | 439 kata | disimpan ke case_013.txt
+2026-06-22 18:33:28,230 | INFO | [14/35] Memproses: putusan_152-k_pm.iii-19_ad_v_2023_20260619164244.pdf
+2026-06-22 18:33:28,337 | INFO |   → OK | 102 kata | disimpan ke case_014.txt
+2026-06-22 18:33:28,338 | INFO | [15/35] Memproses: putusan_154-k_pm.iii-19_ad_v_2023_20260619162749.pdf
+2026-06-22 18:33:30,304 | INFO |   → OK | 6429 kata | disimpan ke case_015.txt
+2026-06-22 18:33:30,304 | INFO | [16/35] Memproses: putusan_16-k_pm.iii-19_al_i_2023_20260619163748.pdf
+2026-06-22 18:33:31,245 | INFO |   → OK | 5286 kata | disimpan ke case_016.txt
+2026-06-22 18:33:31,245 | INFO | [17/35] Memproses: putusan_162-k_pm.iii-19_ad_v_2023_20260619164507.pdf
+2026-06-22 18:33:31,383 | INFO |   → OK | 472 kata | disimpan ke case_017.txt
+2026-06-22 18:33:31,384 | INFO | [18/35] Memproses: putusan_163-k_pm.iii-19_ad_v_2023_20260619164357.pdf
+2026-06-22 18:33:31,602 | INFO |   → OK | 737 kata | disimpan ke case_018.txt
+2026-06-22 18:33:31,603 | INFO | [19/35] Memproses: putusan_164-k_pm.iii-19_ad_v_2023_20260619164334.pdf
+2026-06-22 18:33:31,650 | INFO |   → OK | 102 kata | disimpan ke case_019.txt
+2026-06-22 18:33:31,650 | INFO | [20/35] Memproses: putusan_17-k_pm.iii-19_al_i_2023_20260619162844.pdf
+2026-06-22 18:33:32,861 | INFO |   → OK | 6166 kata | disimpan ke case_020.txt
+2026-06-22 18:33:32,862 | INFO | [21/35] Memproses: putusan_171-k_pm.iii-19_ad_v_2023_20260619165914.pdf
+2026-06-22 18:33:32,875 | WARNING | [SKIP] putusan_171-k_pm.iii-19_ad_v_2023_20260619165914.pdf — terlalu pendek (34 kata) → kemungkinan PDF scan/gambar
+2026-06-22 18:33:32,875 | INFO | [22/35] Memproses: putusan_180-k_pm.iii-19_ad_vi_2023_20260619170236.pdf
+2026-06-22 18:33:34,164 | INFO |   → OK | 7381 kata | disimpan ke case_022.txt
+2026-06-22 18:33:34,164 | INFO | [23/35] Memproses: putusan_181-k_pm.iii-19_ad_vi_2023_20260619170539.pdf
+2026-06-22 18:33:35,545 | INFO |   → OK | 7432 kata | disimpan ke case_023.txt
+2026-06-22 18:33:35,545 | INFO | [24/35] Memproses: putusan_193-k_pm.iii-19_ad_vi_2023_20260619170839.pdf
+2026-06-22 18:33:36,885 | INFO |   → OK | 6677 kata | disimpan ke case_024.txt
+2026-06-22 18:33:36,885 | INFO | [25/35] Memproses: putusan_194-k_pm.iii-19_ad_vi_2023_20260619165111.pdf
+2026-06-22 18:33:38,145 | INFO |   → OK | 5859 kata | disimpan ke case_025.txt
+2026-06-22 18:33:38,146 | INFO | [26/35] Memproses: putusan_212-k_pm.iii-19_ad_vi_2023_20260619170704.pdf
+2026-06-22 18:33:39,935 | INFO |   → OK | 6832 kata | disimpan ke case_026.txt
+2026-06-22 18:33:39,936 | INFO | [27/35] Memproses: putusan_26-k_pm.iii-19_al_i_2023_20260619163545.pdf
+2026-06-22 18:33:41,091 | INFO |   → OK | 5221 kata | disimpan ke case_027.txt
+2026-06-22 18:33:41,091 | INFO | [28/35] Memproses: putusan_30-k_pm.iii-19_al_i_2023_20260619163938.pdf
+2026-06-22 18:33:42,518 | INFO |   → OK | 4783 kata | disimpan ke case_028.txt
+2026-06-22 18:33:42,519 | INFO | [29/35] Memproses: putusan_40-k_pm.iii-19_ad_i_2023_20260619164146.pdf
+2026-06-22 18:33:44,271 | INFO |   → OK | 8618 kata | disimpan ke case_029.txt
+2026-06-22 18:33:44,271 | INFO | [30/35] Memproses: putusan_67-k_pm.iii-19_ad_i_2023_20260619165034.pdf
+2026-06-22 18:33:44,971 | INFO |   → OK | 439 kata | disimpan ke case_030.txt
+2026-06-22 18:33:44,971 | INFO | [31/35] Memproses: putusan_94-k_pm.iii-19_ad_ii_2023_20260619170036.pdf
+2026-06-22 18:33:45,610 | INFO |   → OK | 4810 kata | disimpan ke case_031.txt
+2026-06-22 18:33:45,610 | INFO | [32/35] Memproses: putusan_95-k_pm.iii-19_ad_ii_2023_20260619165811.pdf
+2026-06-22 18:33:46,363 | INFO |   → OK | 4864 kata | disimpan ke case_032.txt
+2026-06-22 18:33:46,364 | INFO | [33/35] Memproses: putusan_96-k_pm.iii-19_ad_ii_2023_20260619164748.pdf
+2026-06-22 18:33:47,076 | INFO |   → OK | 466 kata | disimpan ke case_033.txt
+2026-06-22 18:33:47,076 | INFO | [34/35] Memproses: putusan_98-k_pm.iii-19_ad_ii_2023_20260619165650.pdf
+2026-06-22 18:33:48,143 | INFO |   → OK | 4581 kata | disimpan ke case_034.txt
+2026-06-22 18:33:48,144 | INFO | [35/35] Memproses: putusan_99-k_pm.iii-19_ad_ii_2023_20260619164031.pdf
+2026-06-22 18:33:49,540 | INFO |   → OK | 4769 kata | disimpan ke case_035.txt
+2026-06-22 18:33:49,540 | INFO | 
+============================================================
+2026-06-22 18:33:49,540 | INFO | SELESAI PREPROCESSING
+2026-06-22 18:33:49,541 | INFO |   Berhasil : 34 file
+2026-06-22 18:33:49,541 | INFO |   Dilewati : 1 file
+2026-06-22 18:33:49,541 | INFO |   Error    : 0 file
+2026-06-22 18:33:49,541 | INFO |   Total    : 35 file
+2026-06-22 18:33:49,541 | INFO |   Output   : c:\file\cbr-desersi\data\raw
+2026-06-22 18:33:49,542 | INFO |   Log      : c:\file\cbr-desersi\logs\cleaning.log
+2026-06-22 18:33:49,542 | INFO | ============================================================

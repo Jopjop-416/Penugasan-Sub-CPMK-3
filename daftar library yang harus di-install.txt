@@ -1,0 +1,5 @@
+pdfminer.six
+pandas
+scikit-learn
+joblib
+

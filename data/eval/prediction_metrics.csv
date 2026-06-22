@@ -1,0 +1,6 @@
+﻿query_id,top_1_case_id,predicted_solution,reference_pidana,exact_match
+new_001,case_010,Pidana Pokok: Penjara selama 1 (satu) tahun.,Pidana Pokok: Penjara selama 1 (satu) tahun.,True
+new_002,case_024,"1. Menyatakan Terdakwa tersebut di atas yaitu :Yunus Lius Napolin, Koptu NRP 31030799391183, terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana Dengan sengaja melakukan ketidakhadiran tanpa ijin dalam waktu damai minimal satu hari dan tidak lebih lama dari tiga puluh hari . Direktor",,False
+new_003,case_010,Pidana Pokok: Penjara selama 1 (satu) tahun.,Pidana Pokok: Penjara selama 1 (satu) tahun.,True
+new_004,case_010,Pidana Pokok: Penjara selama 1 (satu) tahun.,Pidana Pokok: Penjara selama 1 (satu) tahun.,True
+new_005,case_028,Pidana Pokok : Penjara selama 12 BulanPidana Tambahan,Pidana Pokok : Penjara selama 12 BulanPidana Tambahan,True

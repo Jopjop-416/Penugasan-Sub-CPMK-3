@@ -1,0 +1,142 @@
+[
+  {
+    "query_id": "q_001",
+    "query_text": "kan,namun mengenai pembuktian unsur-unsur tindak pidana tersebut Majelis Hakim akanmembuktikan sendi",
+    "ground_truth": "case_002",
+    "top_5_ids": [
+      "case_002",
+      "case_005",
+      "case_016",
+      "case_022",
+      "case_034"
+    ],
+    "top_5_scores": [
+      0.4984,
+      0.0654,
+      0.0653,
+      0.0578,
+      0.0559
+    ],
+    "hit_at_5": true
+  },
+  {
+    "query_id": "q_002",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang Negara Kesatuan Repu a dalam kea",
+    "ground_truth": "case_004",
+    "top_5_ids": [
+      "case_004",
+      "case_006",
+      "case_027",
+      "case_005",
+      "case_031"
+    ],
+    "top_5_scores": [
+      0.4214,
+      0.3695,
+      0.2906,
+      0.2478,
+      0.2334
+    ],
+    "hit_at_5": true
+  },
+  {
+    "query_id": "q_003",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariatasan yang berwenang, Negara Kesatuan Repu a dalam ke",
+    "ground_truth": "case_005",
+    "top_5_ids": [
+      "case_005",
+      "case_027",
+      "case_034",
+      "case_031",
+      "case_016"
+    ],
+    "top_5_scores": [
+      0.452,
+      0.2925,
+      0.2717,
+      0.2657,
+      0.2381
+    ],
+    "hit_at_5": true
+  },
+  {
+    "query_id": "q_004",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariAtasan yang berwenang, Negara Kesatuan Repu a dalam ke",
+    "ground_truth": "case_006",
+    "top_5_ids": [
+      "case_006",
+      "case_004",
+      "case_005",
+      "case_027",
+      "case_031"
+    ],
+    "top_5_scores": [
+      0.4423,
+      0.368,
+      0.2469,
+      0.2422,
+      0.2253
+    ],
+    "hit_at_5": true
+  },
+  {
+    "query_id": "q_005",
+    "query_text": "meninggalkan Kesatuan tanpa ijin yang sah dariDansat tidak membawa barang inventaris Kesatuan, dan N",
+    "ground_truth": "case_010",
+    "top_5_ids": [
+      "case_010",
+      "case_024",
+      "case_004",
+      "case_027",
+      "case_005"
+    ],
+    "top_5_scores": [
+      0.4343,
+      0.2552,
+      0.122,
+      0.1219,
+      0.1218
+    ],
+    "hit_at_5": true
+  },
+  {
+    "query_id": "q_006",
+    "query_text": "tersebut Terdakwa mengerti dan atas dakwaan tersebut Terdakwa tidak mengajukan eksepsi. Menimbang, b",
+    "ground_truth": "case_011",
+    "top_5_ids": [
+      "case_011",
+      "case_022",
+      "case_002",
+      "case_015",
+      "case_024"
+    ],
+    "top_5_scores": [
+      0.4838,
+      0.2513,
+      0.0594,
+      0.0556,
+      0.0478
+    ],
+    "hit_at_5": true
+  },
+  {
+    "query_id": "q_007",
+    "query_text": "Terdakwa telah pergi meninggalkan Kesatua tanpa ijin yang sahdari Komandan Kesatuan atau atasan lain",
+    "ground_truth": "case_015",
+    "top_5_ids": [
+      "case_015",
+      "case_028",
+      "case_021",
+      "case_023",
+      "case_011"
+    ],
+    "top_5_scores": [
+      0.5181,
+      0.1501,
+      0.1117,
+      0.1038,
+      0.0779
+    ],
+    "hit_at_5": true
+  }
+]

@@ -1,0 +1,453 @@
+2026-06-22 17:14:26,805 | INFO | ============================================================
+2026-06-22 17:14:26,805 | INFO | Mulai Case Representation — 2026-06-22 17:14:26
+2026-06-22 17:14:26,806 | INFO | Total file: 34
+2026-06-22 17:14:26,806 | INFO | ============================================================
+2026-06-22 17:14:26,806 | INFO | [1/34] Memproses: case_001.txt
+2026-06-22 17:14:26,821 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,821 | INFO | [2/34] Memproses: case_002.txt
+2026-06-22 17:14:26,843 | INFO |   → OK | terdakwa: LABAN WANARURI | lama disersi: ? | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,844 | INFO | [3/34] Memproses: case_003.txt
+2026-06-22 17:14:26,858 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,858 | INFO | [4/34] Memproses: case_004.txt
+2026-06-22 17:14:26,864 | INFO |   → OK | terdakwa: ARNOLD JARE | lama disersi: ? | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,864 | INFO | [5/34] Memproses: case_005.txt
+2026-06-22 17:14:26,869 | INFO |   → OK | terdakwa: MULYADI LHA | lama disersi: 30 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,869 | INFO | [6/34] Memproses: case_006.txt
+2026-06-22 17:14:26,874 | INFO |   → OK | terdakwa: SAID MALEWA | lama disersi: 30 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,874 | INFO | [7/34] Memproses: case_007.txt
+2026-06-22 17:14:26,876 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,876 | INFO | [8/34] Memproses: case_008.txt
+2026-06-22 17:14:26,877 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,877 | INFO | [9/34] Memproses: case_009.txt
+2026-06-22 17:14:26,878 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,878 | INFO | [10/34] Memproses: case_010.txt
+2026-06-22 17:14:26,882 | INFO |   → OK | terdakwa: RUSMAN RUMATA | lama disersi: 42 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,883 | INFO | [11/34] Memproses: case_011.txt
+2026-06-22 17:14:26,890 | INFO |   → OK | terdakwa: Olimpus Ae Monibor | lama disersi: 105 hari | pidana: Penjara selama 1 (satu) tahun dan 6 bulan
+2026-06-22 17:14:26,890 | INFO | [12/34] Memproses: case_012.txt
+2026-06-22 17:14:26,891 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,891 | INFO | [13/34] Memproses: case_013.txt
+2026-06-22 17:14:26,892 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,892 | INFO | [14/34] Memproses: case_014.txt
+2026-06-22 17:14:26,893 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,893 | INFO | [15/34] Memproses: case_015.txt
+2026-06-22 17:14:26,898 | INFO |   → OK | terdakwa: LEBRIK ADOLOF WANGGAI | lama disersi: 41 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,898 | INFO | [16/34] Memproses: case_016.txt
+2026-06-22 17:14:26,904 | INFO |   → OK | terdakwa: ARIF RAHMAN SOLIHIN | lama disersi: 30 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,904 | INFO | [17/34] Memproses: case_017.txt
+2026-06-22 17:14:26,905 | INFO |   → OK | terdakwa: IIN KURNIAWAN | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,905 | INFO | [18/34] Memproses: case_018.txt
+2026-06-22 17:14:26,907 | INFO |   → OK | terdakwa: TEREGIUS WANDIK | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,907 | INFO | [19/34] Memproses: case_019.txt
+2026-06-22 17:14:26,908 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,908 | INFO | [20/34] Memproses: case_020.txt
+2026-06-22 17:14:26,913 | INFO |   → OK | terdakwa: CLAUDIO CANIGIA MAAIL | lama disersi: 30 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,913 | INFO | [21/34] Memproses: case_022.txt
+2026-06-22 17:14:26,923 | INFO |   → OK | terdakwa: NAFTALI SAKWARAI | lama disersi: 46 hari | pidana: ?
+2026-06-22 17:14:26,924 | INFO | [22/34] Memproses: case_023.txt
+2026-06-22 17:14:26,930 | INFO |   → OK | terdakwa: JIMI FERI ALDI PAIKI | lama disersi: 97 hari | pidana: Penjara selama 1 (satu) tahun dipotong masa penahanan sementara; danPidana Tambahan:Dipecat dari dinas Militer Cq
+2026-06-22 17:14:26,930 | INFO | [23/34] Memproses: case_024.txt
+2026-06-22 17:14:26,940 | INFO |   → OK | terdakwa: PILISEN MOHI | lama disersi: 207 hari | pidana: ?
+2026-06-22 17:14:26,940 | INFO | [24/34] Memproses: case_025.txt
+2026-06-22 17:14:26,949 | INFO |   → OK | terdakwa: YUNUS LUIS NAPOLIN | lama disersi: 26 hari | pidana: ?
+2026-06-22 17:14:26,949 | INFO | [25/34] Memproses: case_026.txt
+2026-06-22 17:14:26,957 | INFO |   → OK | terdakwa: DOMINGGUS FREDINAN UNTAILAWAL | lama disersi: 30 hari | pidana: Penjara selama 1 (satu) tahun dikurangi selamaTerdakwa menjalani penahanan sementara;Pidana Tambahan: Dipecat dari dinas Militer TNI ADMohon Terdakwa ditahanc
+2026-06-22 17:14:26,957 | INFO | [26/34] Memproses: case_027.txt
+2026-06-22 17:14:26,962 | INFO |   → OK | terdakwa: PAYANG APNER KENDY | lama disersi: 30 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,962 | INFO | [27/34] Memproses: case_028.txt
+2026-06-22 17:14:26,968 | INFO |   → OK | terdakwa: ADI SIGIT PRABOWO | lama disersi: ? | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,968 | INFO | [28/34] Memproses: case_029.txt
+2026-06-22 17:14:26,976 | INFO |   → OK | terdakwa: SERGIUS BARANGKEA | lama disersi: 181 hari | pidana: Penjara selama 12 BulanPidana Tambahan: diberhentikan dari dinas Kemiliteran C
+2026-06-22 17:14:26,976 | INFO | [29/34] Memproses: case_030.txt
+2026-06-22 17:14:26,977 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,977 | INFO | [30/34] Memproses: case_031.txt
+2026-06-22 17:14:26,982 | INFO |   → OK | terdakwa: FADLI SUARA | lama disersi: 210 hari | pidana: Penjara selama 1(satu) tahun
+2026-06-22 17:14:26,982 | INFO | [31/34] Memproses: case_032.txt
+2026-06-22 17:14:26,988 | INFO |   → OK | terdakwa: AGIL ROMANSA SAPUTRA LAY | lama disersi: ? | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,989 | INFO | [32/34] Memproses: case_033.txt
+2026-06-22 17:14:26,990 | INFO |   → OK | terdakwa: ? | lama disersi: ? | pidana: ?
+2026-06-22 17:14:26,990 | INFO | [33/34] Memproses: case_034.txt
+2026-06-22 17:14:26,996 | INFO |   → OK | terdakwa: YANCE INDRA BEDA | lama disersi: 30 hari | pidana: Penjara selama 1 (satu) tahun
+2026-06-22 17:14:26,996 | INFO | [34/34] Memproses: case_035.txt
+2026-06-22 17:14:27,002 | INFO |   → OK | terdakwa: SPENYEL RAWEYAI | lama disersi: 30 hari | pidana: Penjara selama 1(satu) tahun
+2026-06-22 17:14:27,028 | INFO | 
+CSV (tanpa text_full) disimpan ke: c:\file\cbr-desersi\data\processed\cases.csv
+2026-06-22 17:14:27,035 | INFO | JSON (dengan text_full) disimpan ke: c:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 17:14:27,035 | INFO | 
+============================================================
+2026-06-22 17:14:27,036 | INFO | RINGKASAN KUALITAS EKSTRAKSI:
+2026-06-22 17:14:27,036 | INFO |   no_perkara               : 7/34 (21%)
+2026-06-22 17:14:27,036 | INFO |   terdakwa                 : 23/34 (68%)
+2026-06-22 17:14:27,036 | INFO |   pangkat_nrp              : 12/34 (35%)
+2026-06-22 17:14:27,036 | INFO |   kesatuan                 : 23/34 (68%)
+2026-06-22 17:14:27,036 | INFO |   pasal                    : 22/34 (65%)
+2026-06-22 17:14:27,036 | INFO |   lama_disersi             : 17/34 (50%)
+2026-06-22 17:14:27,037 | INFO |   pidana_pokok             : 18/34 (53%)
+2026-06-22 17:14:27,037 | INFO |   pidana_tambahan          : 19/34 (56%)
+2026-06-22 17:14:27,037 | INFO | 
+Total kasus tersimpan: 34
+2026-06-22 17:14:27,037 | INFO | ============================================================
+2026-06-22 17:17:59,311 | INFO | ============================================================
+2026-06-22 17:17:59,311 | INFO | Mulai Case Representation — 2026-06-22 17:17:59
+2026-06-22 17:17:59,311 | INFO | Total file: 34
+2026-06-22 17:17:59,311 | INFO | ============================================================
+2026-06-22 17:17:59,311 | INFO | [1/34] Memproses: case_001.txt
+2026-06-22 17:17:59,318 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,318 | INFO | [2/34] Memproses: case_002.txt
+2026-06-22 17:17:59,328 | INFO |   → terdakwa: LABAN WANARURI | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,328 | INFO | [3/34] Memproses: case_003.txt
+2026-06-22 17:17:59,330 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,330 | INFO | [4/34] Memproses: case_004.txt
+2026-06-22 17:17:59,336 | INFO |   → terdakwa: ARNOLD JARE | lama: 491 hari | pidana: Ada
+2026-06-22 17:17:59,336 | INFO | [5/34] Memproses: case_005.txt
+2026-06-22 17:17:59,341 | INFO |   → terdakwa: MULYADI LHA | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,341 | INFO | [6/34] Memproses: case_006.txt
+2026-06-22 17:17:59,350 | INFO |   → terdakwa: SAID MALEWA | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,350 | INFO | [7/34] Memproses: case_007.txt
+2026-06-22 17:17:59,352 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,352 | INFO | [8/34] Memproses: case_008.txt
+2026-06-22 17:17:59,353 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,354 | INFO | [9/34] Memproses: case_009.txt
+2026-06-22 17:17:59,355 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,355 | INFO | [10/34] Memproses: case_010.txt
+2026-06-22 17:17:59,360 | INFO |   → terdakwa: RUSMAN RUMATA | lama: 42 hari | pidana: Ada
+2026-06-22 17:17:59,361 | INFO | [11/34] Memproses: case_011.txt
+2026-06-22 17:17:59,368 | INFO |   → terdakwa: Olimpus Ae Monibor | lama: 105 hari | pidana: Ada
+2026-06-22 17:17:59,368 | INFO | [12/34] Memproses: case_012.txt
+2026-06-22 17:17:59,369 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,370 | INFO | [13/34] Memproses: case_013.txt
+2026-06-22 17:17:59,371 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,371 | INFO | [14/34] Memproses: case_014.txt
+2026-06-22 17:17:59,372 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,372 | INFO | [15/34] Memproses: case_015.txt
+2026-06-22 17:17:59,377 | INFO |   → terdakwa: LEBRIK ADOLOF WANGGAI | lama: 41 hari | pidana: Ada
+2026-06-22 17:17:59,377 | INFO | [16/34] Memproses: case_016.txt
+2026-06-22 17:17:59,382 | INFO |   → terdakwa: ARIF RAHMAN SOLIHIN | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,382 | INFO | [17/34] Memproses: case_017.txt
+2026-06-22 17:17:59,383 | INFO |   → terdakwa: IIN KURNIAWAN | lama: 20 hari | pidana: ?
+2026-06-22 17:17:59,383 | INFO | [18/34] Memproses: case_018.txt
+2026-06-22 17:17:59,385 | INFO |   → terdakwa: TEREGIUS WANDIK | lama: 20 hari | pidana: ?
+2026-06-22 17:17:59,386 | INFO | [19/34] Memproses: case_019.txt
+2026-06-22 17:17:59,386 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,387 | INFO | [20/34] Memproses: case_020.txt
+2026-06-22 17:17:59,392 | INFO |   → terdakwa: CLAUDIO CANIGIA MAAIL | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,392 | INFO | [21/34] Memproses: case_022.txt
+2026-06-22 17:17:59,405 | INFO |   → terdakwa: NAFTALI SAKWARAI | lama: 46 hari | pidana: ?
+2026-06-22 17:17:59,406 | INFO | [22/34] Memproses: case_023.txt
+2026-06-22 17:17:59,417 | INFO |   → terdakwa: JIMI FERI ALDI PAIKI | lama: 97 hari | pidana: Ada
+2026-06-22 17:17:59,418 | INFO | [23/34] Memproses: case_024.txt
+2026-06-22 17:17:59,431 | INFO |   → terdakwa: PILISEN MOHI | lama: 207 hari | pidana: Ada
+2026-06-22 17:17:59,431 | INFO | [24/34] Memproses: case_025.txt
+2026-06-22 17:17:59,445 | INFO |   → terdakwa: YUNUS LUIS NAPOLIN | lama: 26 hari | pidana: ?
+2026-06-22 17:17:59,446 | INFO | [25/34] Memproses: case_026.txt
+2026-06-22 17:17:59,457 | INFO |   → terdakwa: DOMINGGUS FREDINAN UNTAILAWAL | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,458 | INFO | [26/34] Memproses: case_027.txt
+2026-06-22 17:17:59,466 | INFO |   → terdakwa: PAYANG APNER KENDY | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,467 | INFO | [27/34] Memproses: case_028.txt
+2026-06-22 17:17:59,479 | INFO |   → terdakwa: ADI SIGIT PRABOWO | lama: 52 hari | pidana: Ada
+2026-06-22 17:17:59,480 | INFO | [28/34] Memproses: case_029.txt
+2026-06-22 17:17:59,499 | INFO |   → terdakwa: SERGIUS BARANGKEA | lama: 181 hari | pidana: Ada
+2026-06-22 17:17:59,499 | INFO | [29/34] Memproses: case_030.txt
+2026-06-22 17:17:59,501 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,501 | INFO | [30/34] Memproses: case_031.txt
+2026-06-22 17:17:59,506 | INFO |   → terdakwa: FADLI SUARA | lama: 210 hari | pidana: Ada
+2026-06-22 17:17:59,507 | INFO | [31/34] Memproses: case_032.txt
+2026-06-22 17:17:59,516 | INFO |   → terdakwa: AGIL ROMANSA SAPUTRA LAY | lama: 145 hari | pidana: Ada
+2026-06-22 17:17:59,516 | INFO | [32/34] Memproses: case_033.txt
+2026-06-22 17:17:59,518 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 17:17:59,518 | INFO | [33/34] Memproses: case_034.txt
+2026-06-22 17:17:59,522 | INFO |   → terdakwa: YANCE INDRA BEDA | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,523 | INFO | [34/34] Memproses: case_035.txt
+2026-06-22 17:17:59,528 | INFO |   → terdakwa: SPENYEL RAWEYAI | lama: 30 hari | pidana: Ada
+2026-06-22 17:17:59,533 | INFO | 
+CSV disimpan: c:\file\cbr-desersi\data\processed\cases.csv
+2026-06-22 17:17:59,539 | INFO | JSON disimpan: c:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 17:17:59,539 | INFO | 
+============================================================
+2026-06-22 17:17:59,539 | INFO | RINGKASAN KUALITAS EKSTRAKSI:
+2026-06-22 17:17:59,540 | INFO |   no_perkara               : 34/34 (100.0%) [OK]
+2026-06-22 17:17:59,540 | INFO |   terdakwa                 : 23/34 ( 67.6%) [OK]
+2026-06-22 17:17:59,540 | INFO |   pangkat_nrp              : 13/34 ( 38.2%) [PERLU CEK]
+2026-06-22 17:17:59,540 | INFO |   kesatuan                 :  9/34 ( 26.5%) [PERLU CEK]
+2026-06-22 17:17:59,540 | INFO |   pasal                    : 23/34 ( 67.6%) [OK]
+2026-06-22 17:17:59,540 | INFO |   lama_disersi             : 23/34 ( 67.6%) [OK]
+2026-06-22 17:17:59,540 | INFO |   pidana_pokok             : 19/34 ( 55.9%) [PERLU CEK]
+2026-06-22 17:17:59,540 | INFO |   pidana_tambahan          : 19/34 ( 55.9%) [PERLU CEK]
+2026-06-22 17:17:59,540 | INFO |   tgl_disersi_mulai        :  8/34 ( 23.5%) [PERLU CEK]
+2026-06-22 17:17:59,540 | INFO |   amar_putusan             :  9/34 ( 26.5%) [PERLU CEK]
+2026-06-22 17:17:59,541 | INFO | 
+Total kasus: 34
+2026-06-22 17:17:59,541 | INFO | ============================================================
+2026-06-22 18:27:26,252 | INFO | ============================================================
+2026-06-22 18:27:26,253 | INFO | Mulai Case Representation — 2026-06-22 18:27:26
+2026-06-22 18:27:26,253 | INFO | Total file: 34
+2026-06-22 18:27:26,253 | INFO | ============================================================
+2026-06-22 18:27:26,253 | INFO | [1/34] Memproses: case_001.txt
+2026-06-22 18:27:26,269 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,269 | INFO | [2/34] Memproses: case_002.txt
+2026-06-22 18:27:26,343 | INFO |   → terdakwa: LABAN WANARURI | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:26,344 | INFO | [3/34] Memproses: case_003.txt
+2026-06-22 18:27:26,350 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,351 | INFO | [4/34] Memproses: case_004.txt
+2026-06-22 18:27:26,393 | INFO |   → terdakwa: ARNOLD JARE | lama: 491 hari | pidana: Ada
+2026-06-22 18:27:26,393 | INFO | [5/34] Memproses: case_005.txt
+2026-06-22 18:27:26,433 | INFO |   → terdakwa: MULYADI LHA | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:26,433 | INFO | [6/34] Memproses: case_006.txt
+2026-06-22 18:27:26,496 | INFO |   → terdakwa: SAID MALEWA | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:26,497 | INFO | [7/34] Memproses: case_007.txt
+2026-06-22 18:27:26,503 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,504 | INFO | [8/34] Memproses: case_008.txt
+2026-06-22 18:27:26,515 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,515 | INFO | [9/34] Memproses: case_009.txt
+2026-06-22 18:27:26,521 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,521 | INFO | [10/34] Memproses: case_010.txt
+2026-06-22 18:27:26,569 | INFO |   → terdakwa: RUSMAN RUMATA | lama: 42 hari | pidana: Ada
+2026-06-22 18:27:26,570 | INFO | [11/34] Memproses: case_011.txt
+2026-06-22 18:27:26,655 | INFO |   → terdakwa: Olimpus Ae Monibor | lama: 105 hari | pidana: Ada
+2026-06-22 18:27:26,655 | INFO | [12/34] Memproses: case_012.txt
+2026-06-22 18:27:26,662 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,662 | INFO | [13/34] Memproses: case_013.txt
+2026-06-22 18:27:26,669 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,669 | INFO | [14/34] Memproses: case_014.txt
+2026-06-22 18:27:26,671 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,671 | INFO | [15/34] Memproses: case_015.txt
+2026-06-22 18:27:26,722 | INFO |   → terdakwa: LEBRIK ADOLOF WANGGAI | lama: 41 hari | pidana: Ada
+2026-06-22 18:27:26,723 | INFO | [16/34] Memproses: case_016.txt
+2026-06-22 18:27:26,767 | INFO |   → terdakwa: ARIF RAHMAN SOLIHIN | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:26,767 | INFO | [17/34] Memproses: case_017.txt
+2026-06-22 18:27:26,773 | INFO |   → terdakwa: IIN KURNIAWAN | lama: 20 hari | pidana: Ada
+2026-06-22 18:27:26,773 | INFO | [18/34] Memproses: case_018.txt
+2026-06-22 18:27:26,782 | INFO |   → terdakwa: TEREGIUS WANDIK | lama: 20 hari | pidana: Ada
+2026-06-22 18:27:26,782 | INFO | [19/34] Memproses: case_019.txt
+2026-06-22 18:27:26,785 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:26,785 | INFO | [20/34] Memproses: case_020.txt
+2026-06-22 18:27:26,831 | INFO |   → terdakwa: CLAUDIO CANIGIA MAAIL | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:26,832 | INFO | [21/34] Memproses: case_022.txt
+2026-06-22 18:27:26,890 | INFO |   → terdakwa: NAFTALI SAKWARAI | lama: 46 hari | pidana: Ada
+2026-06-22 18:27:26,891 | INFO | [22/34] Memproses: case_023.txt
+2026-06-22 18:27:26,940 | INFO |   → terdakwa: JIMI FERI ALDI PAIKI | lama: 97 hari | pidana: Ada
+2026-06-22 18:27:26,940 | INFO | [23/34] Memproses: case_024.txt
+2026-06-22 18:27:26,988 | INFO |   → terdakwa: PILISEN MOHI | lama: 207 hari | pidana: Ada
+2026-06-22 18:27:26,988 | INFO | [24/34] Memproses: case_025.txt
+2026-06-22 18:27:27,031 | INFO |   → terdakwa: YUNUS LUIS NAPOLIN | lama: 26 hari | pidana: ?
+2026-06-22 18:27:27,031 | INFO | [25/34] Memproses: case_026.txt
+2026-06-22 18:27:27,074 | INFO |   → terdakwa: DOMINGGUS FREDINAN UNTAILAWAL | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:27,075 | INFO | [26/34] Memproses: case_027.txt
+2026-06-22 18:27:27,102 | INFO |   → terdakwa: PAYANG APNER KENDY | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:27,103 | INFO | [27/34] Memproses: case_028.txt
+2026-06-22 18:27:27,134 | INFO |   → terdakwa: ADI SIGIT PRABOWO | lama: 52 hari | pidana: Ada
+2026-06-22 18:27:27,134 | INFO | [28/34] Memproses: case_029.txt
+2026-06-22 18:27:27,188 | INFO |   → terdakwa: SERGIUS BARANGKEA | lama: 181 hari | pidana: Ada
+2026-06-22 18:27:27,189 | INFO | [29/34] Memproses: case_030.txt
+2026-06-22 18:27:27,194 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:27,194 | INFO | [30/34] Memproses: case_031.txt
+2026-06-22 18:27:27,233 | INFO |   → terdakwa: FADLI SUARA | lama: 210 hari | pidana: Ada
+2026-06-22 18:27:27,233 | INFO | [31/34] Memproses: case_032.txt
+2026-06-22 18:27:27,271 | INFO |   → terdakwa: AGIL ROMANSA SAPUTRA LAY | lama: 145 hari | pidana: Ada
+2026-06-22 18:27:27,271 | INFO | [32/34] Memproses: case_033.txt
+2026-06-22 18:27:27,278 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:27:27,278 | INFO | [33/34] Memproses: case_034.txt
+2026-06-22 18:27:27,337 | INFO |   → terdakwa: YANCE INDRA BEDA | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:27,338 | INFO | [34/34] Memproses: case_035.txt
+2026-06-22 18:27:27,400 | INFO |   → terdakwa: SPENYEL RAWEYAI | lama: 30 hari | pidana: Ada
+2026-06-22 18:27:27,411 | INFO | 
+CSV disimpan: C:\file\cbr-desersi\data\processed\cases.csv
+2026-06-22 18:27:27,424 | INFO | JSON disimpan: C:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 18:27:27,424 | INFO | 
+============================================================
+2026-06-22 18:27:27,424 | INFO | RINGKASAN KUALITAS EKSTRAKSI:
+2026-06-22 18:27:27,424 | INFO |   no_perkara               : 34/34 (100.0%) [OK]
+2026-06-22 18:27:27,425 | INFO |   terdakwa                 : 23/34 ( 67.6%) [OK]
+2026-06-22 18:27:27,425 | INFO |   pangkat_nrp              : 23/34 ( 67.6%) [OK]
+2026-06-22 18:27:27,425 | INFO |   kesatuan                 : 22/34 ( 64.7%) [OK]
+2026-06-22 18:27:27,425 | INFO |   pasal                    : 23/34 ( 67.6%) [OK]
+2026-06-22 18:27:27,425 | INFO |   lama_disersi             : 23/34 ( 67.6%) [OK]
+2026-06-22 18:27:27,425 | INFO |   pidana_pokok             : 22/34 ( 64.7%) [OK]
+2026-06-22 18:27:27,425 | INFO |   pidana_tambahan          : 19/34 ( 55.9%) [PERLU CEK]
+2026-06-22 18:27:27,425 | INFO |   tgl_disersi_mulai        :  8/34 ( 23.5%) [PERLU CEK]
+2026-06-22 18:27:27,426 | INFO |   amar_putusan             : 22/34 ( 64.7%) [OK]
+2026-06-22 18:27:27,426 | INFO | 
+Total kasus: 34
+2026-06-22 18:27:27,426 | INFO | ============================================================
+2026-06-22 18:31:49,867 | INFO | ============================================================
+2026-06-22 18:31:49,867 | INFO | Mulai Case Representation — 2026-06-22 18:31:49
+2026-06-22 18:31:49,868 | INFO | Total file: 34
+2026-06-22 18:31:49,868 | INFO | ============================================================
+2026-06-22 18:31:49,868 | INFO | [1/34] Memproses: case_001.txt
+2026-06-22 18:31:49,896 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:49,896 | INFO | [2/34] Memproses: case_002.txt
+2026-06-22 18:31:49,958 | INFO |   → terdakwa: LABAN WANARURI | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:49,958 | INFO | [3/34] Memproses: case_003.txt
+2026-06-22 18:31:49,975 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:49,975 | INFO | [4/34] Memproses: case_004.txt
+2026-06-22 18:31:50,018 | INFO |   → terdakwa: ARNOLD JARE | lama: 491 hari | pidana: Ada
+2026-06-22 18:31:50,019 | INFO | [5/34] Memproses: case_005.txt
+2026-06-22 18:31:50,059 | INFO |   → terdakwa: MULYADI LHA | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:50,060 | INFO | [6/34] Memproses: case_006.txt
+2026-06-22 18:31:50,120 | INFO |   → terdakwa: SAID MALEWA | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:50,120 | INFO | [7/34] Memproses: case_007.txt
+2026-06-22 18:31:50,139 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,140 | INFO | [8/34] Memproses: case_008.txt
+2026-06-22 18:31:50,154 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,155 | INFO | [9/34] Memproses: case_009.txt
+2026-06-22 18:31:50,170 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,170 | INFO | [10/34] Memproses: case_010.txt
+2026-06-22 18:31:50,217 | INFO |   → terdakwa: RUSMAN RUMATA | lama: 42 hari | pidana: Ada
+2026-06-22 18:31:50,217 | INFO | [11/34] Memproses: case_011.txt
+2026-06-22 18:31:50,278 | INFO |   → terdakwa: Olimpus Ae Monibor | lama: 105 hari | pidana: Ada
+2026-06-22 18:31:50,278 | INFO | [12/34] Memproses: case_012.txt
+2026-06-22 18:31:50,295 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,295 | INFO | [13/34] Memproses: case_013.txt
+2026-06-22 18:31:50,312 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,312 | INFO | [14/34] Memproses: case_014.txt
+2026-06-22 18:31:50,326 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,326 | INFO | [15/34] Memproses: case_015.txt
+2026-06-22 18:31:50,372 | INFO |   → terdakwa: LEBRIK ADOLOF WANGGAI | lama: 41 hari | pidana: Ada
+2026-06-22 18:31:50,372 | INFO | [16/34] Memproses: case_016.txt
+2026-06-22 18:31:50,413 | INFO |   → terdakwa: ARIF RAHMAN SOLIHIN | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:50,414 | INFO | [17/34] Memproses: case_017.txt
+2026-06-22 18:31:50,432 | INFO |   → terdakwa: IIN KURNIAWAN | lama: 20 hari | pidana: Ada
+2026-06-22 18:31:50,432 | INFO | [18/34] Memproses: case_018.txt
+2026-06-22 18:31:50,458 | INFO |   → terdakwa: TEREGIUS WANDIK | lama: 20 hari | pidana: Ada
+2026-06-22 18:31:50,458 | INFO | [19/34] Memproses: case_019.txt
+2026-06-22 18:31:50,474 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,474 | INFO | [20/34] Memproses: case_020.txt
+2026-06-22 18:31:50,518 | INFO |   → terdakwa: CLAUDIO CANIGIA MAAIL | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:50,518 | INFO | [21/34] Memproses: case_022.txt
+2026-06-22 18:31:50,578 | INFO |   → terdakwa: NAFTALI SAKWARAI | lama: 46 hari | pidana: Ada
+2026-06-22 18:31:50,578 | INFO | [22/34] Memproses: case_023.txt
+2026-06-22 18:31:50,632 | INFO |   → terdakwa: JIMI FERI ALDI PAIKI | lama: 97 hari | pidana: Ada
+2026-06-22 18:31:50,632 | INFO | [23/34] Memproses: case_024.txt
+2026-06-22 18:31:50,683 | INFO |   → terdakwa: PILISEN MOHI | lama: 207 hari | pidana: Ada
+2026-06-22 18:31:50,684 | INFO | [24/34] Memproses: case_025.txt
+2026-06-22 18:31:50,731 | INFO |   → terdakwa: YUNUS LUIS NAPOLIN | lama: 26 hari | pidana: ?
+2026-06-22 18:31:50,731 | INFO | [25/34] Memproses: case_026.txt
+2026-06-22 18:31:50,788 | INFO |   → terdakwa: DOMINGGUS FREDINAN UNTAILAWAL | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:50,788 | INFO | [26/34] Memproses: case_027.txt
+2026-06-22 18:31:50,824 | INFO |   → terdakwa: PAYANG APNER KENDY | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:50,825 | INFO | [27/34] Memproses: case_028.txt
+2026-06-22 18:31:50,864 | INFO |   → terdakwa: ADI SIGIT PRABOWO | lama: 52 hari | pidana: Ada
+2026-06-22 18:31:50,864 | INFO | [28/34] Memproses: case_029.txt
+2026-06-22 18:31:50,916 | INFO |   → terdakwa: SERGIUS BARANGKEA | lama: 181 hari | pidana: Ada
+2026-06-22 18:31:50,916 | INFO | [29/34] Memproses: case_030.txt
+2026-06-22 18:31:50,932 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:50,932 | INFO | [30/34] Memproses: case_031.txt
+2026-06-22 18:31:50,966 | INFO |   → terdakwa: FADLI SUARA | lama: 210 hari | pidana: Ada
+2026-06-22 18:31:50,966 | INFO | [31/34] Memproses: case_032.txt
+2026-06-22 18:31:51,006 | INFO |   → terdakwa: AGIL ROMANSA SAPUTRA LAY | lama: 145 hari | pidana: Ada
+2026-06-22 18:31:51,006 | INFO | [32/34] Memproses: case_033.txt
+2026-06-22 18:31:51,023 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:31:51,023 | INFO | [33/34] Memproses: case_034.txt
+2026-06-22 18:31:51,067 | INFO |   → terdakwa: YANCE INDRA BEDA | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:51,067 | INFO | [34/34] Memproses: case_035.txt
+2026-06-22 18:31:51,111 | INFO |   → terdakwa: SPENYEL RAWEYAI | lama: 30 hari | pidana: Ada
+2026-06-22 18:31:51,118 | INFO | 
+CSV disimpan: C:\file\cbr-desersi\data\processed\cases.csv
+2026-06-22 18:31:51,125 | INFO | JSON disimpan: C:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 18:31:51,125 | INFO | 
+============================================================
+2026-06-22 18:31:51,125 | INFO | RINGKASAN KUALITAS EKSTRAKSI:
+2026-06-22 18:31:51,126 | INFO |   no_perkara               : 34/34 (100.0%) [OK]
+2026-06-22 18:31:51,126 | INFO |   terdakwa                 : 23/34 ( 67.6%) [OK]
+2026-06-22 18:31:51,126 | INFO |   pangkat_nrp              : 23/34 ( 67.6%) [OK]
+2026-06-22 18:31:51,126 | INFO |   kesatuan                 : 22/34 ( 64.7%) [OK]
+2026-06-22 18:31:51,126 | INFO |   pasal                    : 23/34 ( 67.6%) [OK]
+2026-06-22 18:31:51,126 | INFO |   lama_disersi             : 23/34 ( 67.6%) [OK]
+2026-06-22 18:31:51,126 | INFO |   pidana_pokok             : 22/34 ( 64.7%) [OK]
+2026-06-22 18:31:51,127 | INFO |   pidana_tambahan          : 19/34 ( 55.9%) [PERLU CEK]
+2026-06-22 18:31:51,127 | INFO |   tgl_disersi_mulai        :  8/34 ( 23.5%) [PERLU CEK]
+2026-06-22 18:31:51,127 | INFO |   amar_putusan             : 22/34 ( 64.7%) [OK]
+2026-06-22 18:31:51,127 | INFO | 
+Total kasus: 34
+2026-06-22 18:31:51,127 | INFO | ============================================================
+2026-06-22 18:34:34,505 | INFO | ============================================================
+2026-06-22 18:34:34,505 | INFO | Mulai Case Representation — 2026-06-22 18:34:34
+2026-06-22 18:34:34,505 | INFO | Total file: 34
+2026-06-22 18:34:34,505 | INFO | ============================================================
+2026-06-22 18:34:34,505 | INFO | [1/34] Memproses: case_001.txt
+2026-06-22 18:34:34,531 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,532 | INFO | [2/34] Memproses: case_002.txt
+2026-06-22 18:34:34,578 | INFO |   → terdakwa: LABAN WANARURI | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:34,578 | INFO | [3/34] Memproses: case_003.txt
+2026-06-22 18:34:34,593 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,593 | INFO | [4/34] Memproses: case_004.txt
+2026-06-22 18:34:34,631 | INFO |   → terdakwa: ARNOLD JARE | lama: 491 hari | pidana: Ada
+2026-06-22 18:34:34,632 | INFO | [5/34] Memproses: case_005.txt
+2026-06-22 18:34:34,660 | INFO |   → terdakwa: MULYADI LHA | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:34,660 | INFO | [6/34] Memproses: case_006.txt
+2026-06-22 18:34:34,700 | INFO |   → terdakwa: SAID MALEWA | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:34,701 | INFO | [7/34] Memproses: case_007.txt
+2026-06-22 18:34:34,715 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,715 | INFO | [8/34] Memproses: case_008.txt
+2026-06-22 18:34:34,731 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,731 | INFO | [9/34] Memproses: case_009.txt
+2026-06-22 18:34:34,747 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,748 | INFO | [10/34] Memproses: case_010.txt
+2026-06-22 18:34:34,783 | INFO |   → terdakwa: RUSMAN RUMATA | lama: 42 hari | pidana: Ada
+2026-06-22 18:34:34,784 | INFO | [11/34] Memproses: case_011.txt
+2026-06-22 18:34:34,829 | INFO |   → terdakwa: Olimpus Ae Monibor | lama: 105 hari | pidana: Ada
+2026-06-22 18:34:34,829 | INFO | [12/34] Memproses: case_012.txt
+2026-06-22 18:34:34,846 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,846 | INFO | [13/34] Memproses: case_013.txt
+2026-06-22 18:34:34,860 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,861 | INFO | [14/34] Memproses: case_014.txt
+2026-06-22 18:34:34,873 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,873 | INFO | [15/34] Memproses: case_015.txt
+2026-06-22 18:34:34,906 | INFO |   → terdakwa: LEBRIK ADOLOF WANGGAI | lama: 41 hari | pidana: Ada
+2026-06-22 18:34:34,906 | INFO | [16/34] Memproses: case_016.txt
+2026-06-22 18:34:34,936 | INFO |   → terdakwa: ARIF RAHMAN SOLIHIN | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:34,936 | INFO | [17/34] Memproses: case_017.txt
+2026-06-22 18:34:34,950 | INFO |   → terdakwa: IIN KURNIAWAN | lama: 20 hari | pidana: Ada
+2026-06-22 18:34:34,950 | INFO | [18/34] Memproses: case_018.txt
+2026-06-22 18:34:34,966 | INFO |   → terdakwa: TEREGIUS WANDIK | lama: 20 hari | pidana: Ada
+2026-06-22 18:34:34,966 | INFO | [19/34] Memproses: case_019.txt
+2026-06-22 18:34:34,980 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:34,980 | INFO | [20/34] Memproses: case_020.txt
+2026-06-22 18:34:35,013 | INFO |   → terdakwa: CLAUDIO CANIGIA MAAIL | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:35,013 | INFO | [21/34] Memproses: case_022.txt
+2026-06-22 18:34:35,054 | INFO |   → terdakwa: NAFTALI SAKWARAI | lama: 46 hari | pidana: Ada
+2026-06-22 18:34:35,054 | INFO | [22/34] Memproses: case_023.txt
+2026-06-22 18:34:35,095 | INFO |   → terdakwa: JIMI FERI ALDI PAIKI | lama: 97 hari | pidana: Ada
+2026-06-22 18:34:35,096 | INFO | [23/34] Memproses: case_024.txt
+2026-06-22 18:34:35,134 | INFO |   → terdakwa: PILISEN MOHI | lama: 207 hari | pidana: Ada
+2026-06-22 18:34:35,134 | INFO | [24/34] Memproses: case_025.txt
+2026-06-22 18:34:35,171 | INFO |   → terdakwa: YUNUS LUIS NAPOLIN | lama: 26 hari | pidana: ?
+2026-06-22 18:34:35,172 | INFO | [25/34] Memproses: case_026.txt
+2026-06-22 18:34:35,208 | INFO |   → terdakwa: DOMINGGUS FREDINAN UNTAILAWAL | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:35,208 | INFO | [26/34] Memproses: case_027.txt
+2026-06-22 18:34:35,237 | INFO |   → terdakwa: PAYANG APNER KENDY | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:35,238 | INFO | [27/34] Memproses: case_028.txt
+2026-06-22 18:34:35,270 | INFO |   → terdakwa: ADI SIGIT PRABOWO | lama: 52 hari | pidana: Ada
+2026-06-22 18:34:35,271 | INFO | [28/34] Memproses: case_029.txt
+2026-06-22 18:34:35,319 | INFO |   → terdakwa: SERGIUS BARANGKEA | lama: 181 hari | pidana: Ada
+2026-06-22 18:34:35,319 | INFO | [29/34] Memproses: case_030.txt
+2026-06-22 18:34:35,335 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:35,335 | INFO | [30/34] Memproses: case_031.txt
+2026-06-22 18:34:35,369 | INFO |   → terdakwa: FADLI SUARA | lama: 210 hari | pidana: Ada
+2026-06-22 18:34:35,369 | INFO | [31/34] Memproses: case_032.txt
+2026-06-22 18:34:35,404 | INFO |   → terdakwa: AGIL ROMANSA SAPUTRA LAY | lama: 145 hari | pidana: Ada
+2026-06-22 18:34:35,405 | INFO | [32/34] Memproses: case_033.txt
+2026-06-22 18:34:35,422 | INFO |   → terdakwa: ? | lama: ? | pidana: ?
+2026-06-22 18:34:35,422 | INFO | [33/34] Memproses: case_034.txt
+2026-06-22 18:34:35,467 | INFO |   → terdakwa: YANCE INDRA BEDA | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:35,467 | INFO | [34/34] Memproses: case_035.txt
+2026-06-22 18:34:35,510 | INFO |   → terdakwa: SPENYEL RAWEYAI | lama: 30 hari | pidana: Ada
+2026-06-22 18:34:35,518 | INFO | 
+CSV disimpan: c:\file\cbr-desersi\data\processed\cases.csv
+2026-06-22 18:34:35,524 | INFO | JSON disimpan: c:\file\cbr-desersi\data\processed\cases.json
+2026-06-22 18:34:35,524 | INFO | 
+============================================================
+2026-06-22 18:34:35,524 | INFO | RINGKASAN KUALITAS EKSTRAKSI:
+2026-06-22 18:34:35,524 | INFO |   no_perkara               : 34/34 (100.0%) [OK]
+2026-06-22 18:34:35,525 | INFO |   terdakwa                 : 23/34 ( 67.6%) [OK]
+2026-06-22 18:34:35,525 | INFO |   pangkat_nrp              : 23/34 ( 67.6%) [OK]
+2026-06-22 18:34:35,525 | INFO |   kesatuan                 : 22/34 ( 64.7%) [OK]
+2026-06-22 18:34:35,525 | INFO |   pasal                    : 23/34 ( 67.6%) [OK]
+2026-06-22 18:34:35,525 | INFO |   lama_disersi             : 23/34 ( 67.6%) [OK]
+2026-06-22 18:34:35,525 | INFO |   pidana_pokok             : 22/34 ( 64.7%) [OK]
+2026-06-22 18:34:35,525 | INFO |   pidana_tambahan          : 19/34 ( 55.9%) [PERLU CEK]
+2026-06-22 18:34:35,525 | INFO |   tgl_disersi_mulai        :  8/34 ( 23.5%) [PERLU CEK]
+2026-06-22 18:34:35,526 | INFO |   amar_putusan             : 22/34 ( 64.7%) [OK]
+2026-06-22 18:34:35,526 | INFO | 
+Total kasus: 34
+2026-06-22 18:34:35,526 | INFO | ============================================================
